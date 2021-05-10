@@ -98,13 +98,27 @@ p {
   color: var(--primary-color);
   font-family: var(--primary-font);
 }
-
+.bodyclass {
+  max-height: 100vh;
+}
 .children {
   --primary-color: blue;
 }
 body {
   margin: 0;
   padding: 0;
+}
+.landing-element {
+  height: 100vh;
+}
+.col {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.florb-wrapper {
+  display: grid;
+  place-content: center;
+  height: 100%;
 }
 img {
   width: 100%;
@@ -149,7 +163,7 @@ nav {
 }
 .wrapper {
 }
-.circle {
+.face {
   height: 400px;
   width: 400px;
   background: #9987b7;
@@ -201,13 +215,6 @@ nav {
   transform: scale(1.05);
 }
 
-.faced {
-  width: 600px;
-  height: 600px;
-  position: relative;
-  bottom: 110px;
-}
-
 .is-dragging {
   outline: 5px solid hotpink;
 }
@@ -218,13 +225,6 @@ nav {
   left: 0;
   bottom: 125px;
 }
-
-h4 {
-  font-family: "Love Ya Like A Sister", cursive;
-}
-/* .menu-1 {
-  filter: grayscale(100%);
-} */
 
 .menu-item {
   pointer-events: none;
@@ -255,20 +255,122 @@ h4 {
   align-items: center;
 }
 .sidebar-right {
-  width: 300px;
   height: 100vh;
   background: #ffffff;
   box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 50px 50px 0px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  position: absolute;
-  right: 0;
+  border-radius: 50px 0 0 50px;
+  padding: 20px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-content-1 {
+  display: Flex;
+}
+.sidebar-content-1 img {
+  width: 170px;
+  height: 170px;
+}
+.sidebar-content-2 {
+  display: Flex;
+  align-items: center;
+  border: 1px solid #e1e4eb;
+  box-sizing: border-box;
+  border-radius: 35px;
+}
+
+.sidebar-content-2 img {
+  width: 60px;
+  height: 60px;
+}
+.sidebar-content-3 {
+  border: 1px solid #e1e4eb;
+  box-sizing: border-box;
+  border-radius: 35px;
+}
+.medalje {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.medalje img {
+  width: 40px;
+  height: 40px;
+}
+.sidebar-content-4 {
+  border: 1px solid #e1e4eb;
+  box-sizing: border-box;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-content-4 h2 {
+  margin-bottom: 0;
+  font-family: "lufgaregular";
+  font-size: 25px;
+}
+.friend-wrapper {
+  display: flex;
+  margin: 15px 0 15px 0;
+}
+.friend-item {
+  flex-grow: 1;
+  width: 33%;
+}
+.medalje-img {
+  height: 40px;
+  width: 40px;
+  align-items: flex-end;
+}
+.friend-img {
+  height: 50px;
+  width: 50px;
+}
+.friend-wrapper h3 {
+  font-size: 16px;
+  color: black;
+  font-weight: 800;
+  margin: 0;
+}
+
+.friend p {
+  font-size: 10px;
+  color: black;
+  font-weight: 400;
 }
 .logo {
   position: absolute;
   width: 50px;
   left: 25px;
   top: 75px;
+}
+.row {
+  margin-bottom: 0;
+}
+.scores {
+  font-size: 10px;
+  color: #2d3331;
+  font-family: "lufgaextralight";
+  margin-bottom: 20px;
+}
+
+.name-tag-1 {
+  font-size: 10px;
+  position: relative;
+  left: -50px;
+  top: 12px;
+}
+.name-tag-2 {
+  font-size: 10px;
+  position: relative;
+  left: -77px;
+  top: 12px;
+}
+.name-tag-3 {
+  font-size: 10px;
+  position: relative;
+  left: -79px;
+  top: 12px;
 }
 .icon-wrapper {
 }
@@ -302,10 +404,7 @@ h4 {
   background: #4aa67b;
 }
 .boxes {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: Flex;
 }
 main {
   display: flex;
@@ -322,21 +421,145 @@ main {
 }
 .box {
   height: 260px;
-  width: 200px;
+  width: 100%;
+  border-radius: 25px;
+  margin: 10px;
 }
 .box-1 {
-  background: #fb7f7d;
+  background: #fb7f7d76;
 }
 .box-2 {
-  background: #f6acf8;
+  background: #f6acf87e;
 }
 .box-3 {
-  background: #62d0da;
+  background: #62d0da7f;
 }
 .box-4 {
-  background: #4aa67b;
+  background: #4aa67b74;
+}
+.menu-img {
+  width: 86px;
+  height: 86px;
+}
+.menu-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+h3 {
+  font-family: "lufgaextralight";
+  font-weight: 400;
+  font-size: 24px;
+  color: #2d3331;
+}
+.box-wrapper {
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: flex;
+  flex-direction: column;
+}
+.placeholder {
+  max-width: 500px;
 }
 
-.placeholder {
-  max-width: 400px;
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.1);
+}
+
+.colorpick {
+  height: 90vh;
+}
+
+.build-face {
+  width: 434px;
+  height: 434px;
+}
+
+.eyes {
+  position: absolute;
+  z-index: 100;
+}
+
+.faced {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  bottom: 110px;
+  z-index: 10;
+}
+
+.eyes {
+  position: relative;
+  bottom: 200px;
+  left: 70px;
+  z-index: 100;
+}
+.pupils {
+  position: relative;
+  bottom: 200px;
+  left: 70px;
+  z-index: 101;
+}
+
+.brows {
+  position: relative;
+  bottom: 200px;
+  left: 70px;
+  z-index: 102;
+}
+
+.mouths {
+  position: relative;
+  bottom: 200px;
+  left: 70px;
+  z-index: 103;
+}
+.build-tool {
+  /* position: absolute;
+  bottom: 185px;
+  left: 0; */
+}
+.landing {
+  max-height: 100vh;
+}
+
+.florb-header {
+  text-align: center;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-2 {
+  height: 100vh;
+}
+
+.right-builder-sidebar {
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50px 0px 0px 50px;
+}
+
+.form-field {
+  margin: 20px;
+}
+
+.save-button {
+  font-family: "lufgaregular";
+  width: 150px;
+  height: 50px;
+  background: #62d0da;
+  border: 2px solid #e1e4eb;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 16px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
