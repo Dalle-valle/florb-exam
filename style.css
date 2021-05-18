@@ -94,6 +94,9 @@
 * {
   box-sizing: border-box;
 }
+h1 {
+  font-family: var(--primary-font);
+}
 p {
   color: var(--primary-color);
   font-family: var(--primary-font);
@@ -244,15 +247,7 @@ nav {
 /**Landing page**/
 
 .sidebar-left {
-  position: absolute;
-  width: 100px;
-  height: 100vh;
-  box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 50px 50px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 .sidebar-right {
   height: 100vh;
@@ -493,7 +488,7 @@ h3 {
 }
 
 .eyes {
-  position: relative;
+  position: absolute;
   bottom: 200px;
   left: 70px;
   z-index: 100;
@@ -562,4 +557,28 @@ h3 {
   box-sizing: border-box;
   box-shadow: 0px 4px 16px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+
+.eyes-tab {
+}
+
+/* .hide {
+  display: none;
+} */
+
+.inuse {
+  fill: red;
+}
+@media only screen and (min-width: 768px) {
+  .sidebar-left {
+    position: absolute;
+    width: 100px;
+    height: 100vh;
+    box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 50px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

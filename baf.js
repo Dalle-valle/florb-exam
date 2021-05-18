@@ -1,29 +1,51 @@
-// const allColors = document.querySelectorAll(".color rect");
-// let currentColor;
+const faceRect = document.querySelector(".face").getBoundingClientRect();
 
-// for (let color of allColors) {
-//   color.addEventListener("click", getColor);
-// }
+const cx = faceRect.x + faceRect.width / 2;
+const cy = faceRect.y + faceRect.height / 2;
+const coords = document.querySelector(".trackable");
 
-// function getColor() {
-//   currentColor = this.getAttribute("fill");
-//   document.querySelector(".current-color").style.fill = currentColor;
-//   document.querySelector(".faced circle").style.fill = currentColor;
-//   console.log(currentColor);
-// }
+draggies.forEach((item) => {
+  item.on("dragEnd", function (event, pointer) {
+    const rect = event.target.getBoundingClientRect();
+    const dx = rect.x + rect.width / 2;
+    const dy = rect.y + rect.height / 2;
+    const dist = Math.hypot(cx - dx, cy - dy);
+    console.log(dist);
+    console.log(rect);
 
-// document.querySelector(".faced circle").addEventListener("click", addColor);
-// document.querySelector(".tool-item").addEventListener("click", addColor);
-// function addColor() {
-//   this.style.fill = currentColor;
-// }
+    if (dist < 250) {
+      event.target.parentElement.classList.add("inuse");
+    } else {
+      event.target.parentElement.classList.remove("inuse");
+    }
+  });
+});
+const colors = document.querySelectorAll(".color");
+const face = document.querySelector(".specialface");
+for (let color of colors) {
+  color.addEventListener("click", getColor);
 
-const tabs = document.querySelectorAll(".tab");
-
-for (let tab of tabs) {
-  tab.addEventListener("click", selected);
+  function getColor() {
+    let currentColor = window.getComputedStyle(color)["background-color"];
+    console.log(currentColor);
+    face.style.backgroundColor = currentColor;
+  }
 }
 
-function selected() {
-  this.classList.add("selected");
+if (document.title === "Florbs | Landing") {
+  document.querySelector(".link-1").classList.add("selected");
+  document.querySelector(".outer-1").classList.remove("hide");
+  document.querySelector(".special-link-1").style.transform = "translateY(30px)";
+} else if (document.title === "Florbs | Games") {
+  document.querySelector(".link-2").classList.add("selected");
+  document.querySelector(".outer-2").classList.remove("hide");
+  document.querySelector(".special-link-2").style.transform = "translateY(30px)";
+} else if (document.title === "Florbs | Builder") {
+  document.querySelector(".link-3").classList.add("selected");
+  document.querySelector(".outer-3").classList.remove("hide");
+  document.querySelector(".special-link-3").style.transform = "translateY(30px)";
+} else if (document.title === "Florbs | Profile") {
+  document.querySelector(".link-4").classList.add("selected");
+  document.querySelector(".outer-4").classList.remove("hide");
+  document.querySelector(".special-link-4").style.transform = "translateY(30px)";
 }
