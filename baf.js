@@ -13,7 +13,7 @@ draggies.forEach((item) => {
     console.log(dist);
     console.log(rect);
 
-    if (dist < 250) {
+    if (dist < 400) {
       event.target.parentElement.classList.add("inuse");
     } else {
       event.target.parentElement.classList.remove("inuse");
@@ -48,4 +48,9 @@ if (document.title === "Florbs | Landing") {
   document.querySelector(".link-4").classList.add("selected");
   document.querySelector(".outer-4").classList.remove("hide");
   document.querySelector(".special-link-4").style.transform = "translateY(30px)";
+}
+
+document.querySelector(".reset-button").addEventListener("click", resetThis);
+function resetThis() {
+  location.reload();
 }

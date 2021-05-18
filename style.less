@@ -104,7 +104,8 @@ body {
     margin-bottom: 20px;
     box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: center;
+    justify-items: center;
+    max-height: 350px;
   }
 }
 .mobile-builder {
@@ -252,15 +253,37 @@ h1 {
   height: 40px;
   width: 55px;
 }
-
-.inuse {
-  transform: scale(1.5);
+.mobile-builder {
+  .inuse {
+    transform: scale(1.5);
+  }
 }
+
 .button-wrapper {
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: 200px;
 }
 .save-button {
+  margin-top: 10px;
+  background: #62d0da;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--primary-font);
+}
+.reset-button {
+  margin-top: 10px;
+  background: #bf6b11;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--primary-font);
+}
+.back-button {
   margin-top: 10px;
   background: #62d0da;
   width: 100px;
@@ -292,9 +315,6 @@ h1 {
   }
   .button {
     width: 200px;
-  }
-  .button-wrapper {
-    justify-content: space-evenly;
   }
 }
 
@@ -363,14 +383,20 @@ h1 {
       }
     }
     .button-wrapper {
+      position: absolute;
+      top: 540px;
+
+      width: 600px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .button {
+      background: white;
+      width: 100px;
       position: relative;
-      .button {
-        background: white;
-        width: 100%;
-        position: relative;
-        top: -20px;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-      }
+      top: -20px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     }
   }
   .logo {

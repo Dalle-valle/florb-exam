@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link rel="stylesheet/less" type="text/css" href="style.less" />
@@ -101,13 +100,6 @@
             <div class="face specialface"></div>
 
             <div class="toolbox">
-              <div class="button-wrapper">
-                <button class="button" data-type="eyes">Eyes</button>
-                <button class="button" data-type="eyes">Pupils</button>
-                <button class="button" data-type="eyes">Brows</button>
-                <button class="button" data-type="eyes">Mouth</button>
-                <button class="button" data-type="eyes">Teeth</button>
-              </div>
               <div class="eyes">
                 <div class="eyes-set-1">
                   <svg class="draggable trackable" width="75" height="75" viewBox="0 0 149 151" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -145,7 +137,29 @@
                     </svg>
                   </div>
                 </div>
+                <div class="mouth">
+                  <div class="mouth-set-1">
+                    <svg class="draggable trackable" width="75" height="56" viewBox="0 0 75 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <ellipse cx="37.6006" cy="27.5639" rx="33.5" ry="21.5" transform="rotate(-11.1077 37.6006 27.5639)" fill="#676767" />
+                    </svg>
+                  </div>
+                  <div class="mouth-set-2">
+                    <svg class="draggable trackable" width="51" height="8" viewBox="0 0 51 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M51 6.51349C51 9.39134 41.0452 4.55945 26.6821 4.55945C12.3191 4.55945 0 10.0427 0 7.16484C0 4.287 12.3191 0 26.6821 0C41.0452 0 51 3.63565 51 6.51349Z"
+                        fill="#676767"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="button-wrapper">
+              <button class="button" data-type="eyes">Eyes</button>
+              <button class="button" data-type="pupils">Pupils</button>
+              <button class="button" data-type="brows">Brows</button>
+              <button class="button" data-type="mouth">Mouth</button>
+              <button class="button" data-type="teeth">Teeth</button>
             </div>
           </div>
         </div>
@@ -156,6 +170,7 @@
               <input type="text" name="florb-name" />
               <label for="florb-story">Florb Story</label>
               <input type="text" name="florb-story" />
+              <button class="reset-button" type="button">Reset</button>
               <button class="save-button" type="button">Save</button>
             </form>
           </div>
