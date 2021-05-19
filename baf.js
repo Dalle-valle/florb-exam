@@ -22,6 +22,7 @@ draggies.forEach((item) => {
 });
 const colors = document.querySelectorAll(".color");
 const face = document.querySelector(".specialface");
+const mobileFace = document.querySelector(".mobile-face");
 for (let color of colors) {
   color.addEventListener("click", getColor);
 
@@ -29,6 +30,7 @@ for (let color of colors) {
     let currentColor = window.getComputedStyle(color)["background-color"];
     console.log(currentColor);
     face.style.backgroundColor = currentColor;
+    mobileFace.style.backgroundColor = currentColor;
   }
 }
 
