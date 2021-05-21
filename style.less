@@ -233,7 +233,7 @@ h1 {
   color: black;
 }
 .logo {
-  position: absolute;
+  position: fixed;
   width: 50px;
   left: 25px;
   top: 75px;
@@ -356,10 +356,13 @@ h1 {
 }
 .inuse {
   stroke: none;
-  width: 100%;
+  // width: 100%;
   display: block !important;
 }
 
+.inuse.culprit-2 {
+  width: 10%;
+}
 .trackable:not(.inuse) {
   stroke: black;
   stroke-width: 2px;
@@ -378,6 +381,9 @@ h1 {
   }
   .button {
     width: 200px;
+  }
+  .bottom-nav {
+    display: none;
   }
 }
 
@@ -474,11 +480,23 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     left: 0;
   }
   .face {
     width: 320px;
     height: 320px;
   }
+}
+
+/**Testing FLIP**/
+
+.testwrapper {
+  height: 100vh;
+  background: hotpink;
+}
+.drag-item {
+  height: 200px;
+  width: 100px;
+  background-color: white;
 }

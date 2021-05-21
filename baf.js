@@ -1,8 +1,11 @@
 const faceRect = document.querySelector(".face").getBoundingClientRect();
-
+const colors = document.querySelectorAll(".color");
+const face = document.querySelector(".specialface");
+const mobileFace = document.querySelector(".mobile-face");
 const cx = faceRect.x + faceRect.width / 2;
 const cy = faceRect.y + faceRect.height / 2;
 const coords = document.querySelector(".trackable");
+let inuse = document.querySelector(".inuse");
 
 draggies.forEach((item) => {
   item.on("dragEnd", function (event, pointer) {
@@ -15,14 +18,14 @@ draggies.forEach((item) => {
 
     if (dist < 400) {
       event.target.parentElement.classList.add("inuse");
+      document.querySelector(".mobile-face").appendChild(event.target);
+      console.log(rect);
     } else {
       event.target.parentElement.classList.remove("inuse");
     }
   });
 });
-const colors = document.querySelectorAll(".color");
-const face = document.querySelector(".specialface");
-const mobileFace = document.querySelector(".mobile-face");
+
 for (let color of colors) {
   color.addEventListener("click", getColor);
 
