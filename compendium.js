@@ -22,6 +22,7 @@ function showFlorbs() {
     clone.querySelector(".florb-img").src = florb.image.guid;
     clone.querySelector(".florb-img").alt = florb.title.rendered;
     clone.querySelector(".florb-phrase").textContent = florb.phrase;
+    clone.querySelector("article").setAttribute("id", `florb-${florb.number}`);
     container.appendChild(clone);
   });
 }

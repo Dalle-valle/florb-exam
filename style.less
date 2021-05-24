@@ -83,6 +83,7 @@
 }
 :root {
   --primary-font: "lufgaregular";
+  --light-font: "lufgaextralight";
 }
 * {
   box-sizing: border-box;
@@ -372,13 +373,40 @@ h1 {
   width: 50%;
 }
 
+.florb {
+  height: 100vh;
+  display: flex;
+  h2 {
+    font-family: var(--primary-font);
+  }
+  img {
+    height: 80vh;
+  }
+}
+
+.florb-index {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  span {
+    font-family: var(--light-font);
+    font-weight: 300;
+    font-size: 6em;
+    margin: 10px 0;
+  }
+  img {
+    cursor: pointer;
+  }
+}
 @media only screen and (min-width: 768px) {
   .face {
     width: 350px;
     height: 350px;
   }
-  .eyes svg {
-  }
+
   .button {
     width: 200px;
   }
