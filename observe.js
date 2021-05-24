@@ -11,6 +11,7 @@ window.addEventListener("load", observe1);
 
 function observe1() {
   const sections = document.querySelectorAll(".florbers");
+  console.log(sections);
   const options = {
     threshold: [0.1, 0.5],
   };
