@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", start);
 
-const endpoint = "http://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/florbs";
+const endpoint = "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/florbs";
 let allFlorbs;
 let filter = "all";
 let visibleFlorb;
