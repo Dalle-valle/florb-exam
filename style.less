@@ -607,37 +607,92 @@ h1 {
   font-size: 5rem;
   font-family: var(--primary-font);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
   background-color: #f3edd3;
+
+  transition: width 1s;
 }
 
 .landing-right {
   font-size: 5rem;
   font-family: var(--primary-font);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100%;
   background-color: white;
-}
-.landing-left .landing-right {
   width: 100%;
-  transition: width 2s;
+  transition: width 1s;
 }
 
 .landing-right:hover,
 .landing-left:hover {
-  width: 120%;
+  width: 110%;
   transition-property: all;
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 .logo-main {
   position: absolute;
   top: 0;
   left: 0;
   width: 50%;
+}
+
+svg {
+  overflow: visible;
+}
+#left-white {
+  animation: wink 3s ease-in-out infinite;
+}
+#right-white {
+  transform-box: fill-box;
+  transform: rotate(15deg);
+
+  animation: wink 3s ease-in-out infinite;
+}
+@keyframes wink {
+  0% {
+    ry: 22.2;
+  }
+  5% {
+    ry: 0;
+  }
+  10% {
+    ry: 22.2;
+  }
+}
+
+.landing-btn-1 {
+  width: 200px;
+  background: #fcfafb;
+  color: #e46f21;
+  border-radius: 10px;
+}
+.landing-btn-2 {
+  width: 200px;
+  background: #b58171;
+  color: #fcfafb;
+  border-radius: 10px;
+}
+.landing-btn-1:hover {
+  background: #e46f21;
+  color: #fcfafb;
+  transform: scale(1.2);
+}
+.landing-btn-1:focus {
+  background: #fcfafb;
+  color: #e46f21;
+}
+.landing-btn-2:hover {
+  color: #b58171;
+  background: #fcfafb;
+}
+.landing-btn-2:focus {
+  background: #b58171;
+  color: #fcfafb;
 }
