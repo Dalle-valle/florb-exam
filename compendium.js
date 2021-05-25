@@ -19,6 +19,7 @@ async function getData() {
   document.querySelector(".a-up").addEventListener("click", clickPrev);
 
   observe1();
+  addStuff();
 }
 function showFlorbs() {
   const container = document.querySelector(".compendium");
@@ -27,7 +28,7 @@ function showFlorbs() {
   allFlorbs.forEach((florb) => {
     let clone = florbTemplate.cloneNode(true).content;
     clone.querySelector(".florb-name").textContent = florb.title.rendered;
-    clone.querySelector(".florb-img").src = florb.image.guid;
+    clone.querySelector(".florb-img").innerHTML = florb.svgpath;
     clone.querySelector(".florb-img").alt = florb.title.rendered;
     clone.querySelector(".florb-phrase").textContent = florb.phrase;
     clone.querySelector("article").setAttribute("id", `florb-${florb.number}`);
@@ -88,4 +89,15 @@ function fillBar() {
 
   document.querySelector(".progress-bar").style.width = scrolled + "%";
   document.querySelector(".scroll-img").style.transform = `rotate(${scrolled * 25}deg)`;
+}
+
+function addStuff() {
+  const sectionSnaps = document.querySelectorAll(".section-wrap");
+  const florbSnaps = document.querySelectorAll(".florber-snap");
+  for (sectionSnap of sectionSnaps) {
+    sectionSnap.classList.add("sectionwrapper");
+  }
+  for (florbSnap of florbSnaps) {
+    florbSnap.classList.add("florb-snap");
+  }
 }

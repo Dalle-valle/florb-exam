@@ -376,6 +376,7 @@ h1 {
 .florb {
   height: 100vh;
   display: flex;
+
   h2 {
     font-family: var(--primary-font);
   }
@@ -570,10 +571,23 @@ h1 {
   top: -25px;
   transform-origin: center;
 }
+
 #progress {
   margin-bottom: 2vh;
 }
 
+.sectionwrapper {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  scroll-snap-type: y mandatory;
+}
+
+.florb-snap {
+  scroll-snap-align: start;
+}
 // .top-header {
 //   position: fixed;
 //   height: 75px;

@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <title>Florbs | Florbs</title>
   </head>
-  <body>
+  <body class="florb-build">
     <div class="top-header"></div>
     <div id="progress">
       <div class="bar">
@@ -32,22 +32,27 @@
         </div>
       </div>
       <div class="col l10">
-        <section class="compendium"></section>
+        <div class="compendium"></div>
         <main class="list">
           <template>
-            <article class="florb florbers" id="">
-              <div class="row">
-                <div class="col florb-char">
-                  <img class="florb-img" src="" alt="" />
-                </div>
-                <div class="col florb-info">
-                  <h2 class="florb-name"></h2>
-                  <p class="florb-phrase"></p>
-                </div>
-                <p class="florb-desc"></p>
-                <p class="florb-set"></p>
-              </div>
-            </article>
+            <div class="section-wrap">
+              <section class="florber-snap">
+                <article class="florb florbers" id="">
+                  <div class="row">
+                    <div class="col florb-char">
+                      <!-- <img class="florb-img" src="" alt="" /> -->
+                      <div class="florb-img"></div>
+                    </div>
+                    <div class="col florb-info">
+                      <h2 class="florb-name"></h2>
+                      <p class="florb-phrase"></p>
+                    </div>
+                    <p class="florb-desc"></p>
+                    <p class="florb-set"></p>
+                  </div>
+                </article>
+              </section>
+            </div>
           </template>
         </main>
       </div>
