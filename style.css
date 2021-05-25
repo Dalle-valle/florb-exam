@@ -2,84 +2,96 @@
 
 @font-face {
   font-family: "lufgabold";
-  src: url("fonts/lufga-bold-webfont.woff2") format("woff2"), url("fonts/lufga-bold-webfont.woff") format("woff");
+  src: url("fonts/lufga-bold-webfont.woff2") format("woff2"),
+    url("fonts/lufga-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "lufgabold_italic";
-  src: url("fonts/lufga-bolditalic-webfont.woff2") format("woff2"), url("fonts/lufga-bolditalic-webfont.woff") format("woff");
+  src: url("fonts/lufga-bolditalic-webfont.woff2") format("woff2"),
+    url("fonts/lufga-bolditalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "lufgaextrabold";
-  src: url("fonts/lufga-extrabold-webfont.woff2") format("woff2"), url("fonts/lufga-extrabold-webfont.woff") format("woff");
+  src: url("fonts/lufga-extrabold-webfont.woff2") format("woff2"),
+    url("fonts/lufga-extrabold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "lufgaextrabold_italic";
-  src: url("fonts/lufga-extrabolditalic-webfont.woff2") format("woff2"), url("fonts/lufga-extrabolditalic-webfont.woff") format("woff");
+  src: url("fonts/lufga-extrabolditalic-webfont.woff2") format("woff2"),
+    url("fonts/lufga-extrabolditalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "lufgaextralight";
-  src: url("fonts/lufga-extralight-webfont.woff2") format("woff2"), url("fonts/lufga-extralight-webfont.woff") format("woff");
+  src: url("fonts/lufga-extralight-webfont.woff2") format("woff2"),
+    url("fonts/lufga-extralight-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "lufgaextralight_italic";
-  src: url("fonts/lufga-extralightitalic-webfont.woff2") format("woff2"), url("fonts/lufga-extralightitalic-webfont.woff") format("woff");
+  src: url("fonts/lufga-extralightitalic-webfont.woff2") format("woff2"),
+    url("fonts/lufga-extralightitalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "lufgaitalic";
-  src: url("fonts/lufga-italic-webfont.woff2") format("woff2"), url("fonts/lufga-italic-webfont.woff") format("woff");
+  src: url("fonts/lufga-italic-webfont.woff2") format("woff2"),
+    url("fonts/lufga-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "lufgalight";
-  src: url("fonts/lufga-light-webfont.woff2") format("woff2"), url("fonts/lufga-light-webfont.woff") format("woff");
+  src: url("fonts/lufga-light-webfont.woff2") format("woff2"),
+    url("fonts/lufga-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "lufgalight_italic";
-  src: url("fonts/lufga-lightitalic-webfont.woff2") format("woff2"), url("fonts/lufga-lightitalic-webfont.woff") format("woff");
+  src: url("fonts/lufga-lightitalic-webfont.woff2") format("woff2"),
+    url("fonts/lufga-lightitalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "lufgamedium";
-  src: url("fonts/lufga-medium-webfont.woff2") format("woff2"), url("fonts/lufga-medium-webfont.woff") format("woff");
+  src: url("fonts/lufga-medium-webfont.woff2") format("woff2"),
+    url("fonts/lufga-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "lufgamedium_italic";
-  src: url("fonts/lufga-mediumitalic-webfont.woff2") format("woff2"), url("fonts/lufga-mediumitalic-webfont.woff") format("woff");
+  src: url("fonts/lufga-mediumitalic-webfont.woff2") format("woff2"),
+    url("fonts/lufga-mediumitalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "lufgaregular";
-  src: url("fonts/lufga-regular-webfont.woff2") format("woff2"), url("fonts/lufga-regular-webfont.woff") format("woff");
+  src: url("fonts/lufga-regular-webfont.woff2") format("woff2"),
+    url("fonts/lufga-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -229,6 +241,16 @@ nav {
   bottom: 125px;
 }
 
+<<<<<<< HEAD
+=======
+h4 {
+  /* font-family: "Love Ya Like A Sister", cursive; */
+}
+/* .menu-1 {
+  filter: grayscale(100%);
+} */
+
+>>>>>>> mobile-webshop-alex
 .menu-item {
   pointer-events: none;
 }
@@ -273,6 +295,33 @@ nav {
   box-sizing: border-box;
   border-radius: 35px;
 }
+<<<<<<< HEAD
+=======
+.sidebar-right {
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50px 0 0 50px;
+  padding: 20px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-content-1 {
+  display: Flex;
+}
+.sidebar-content-1 img {
+  width: 60px;
+  height: 60px;
+}
+.sidebar-content-2 {
+  display: Flex;
+  align-items: center;
+  border: 1px solid #e1e4eb;
+  box-sizing: border-box;
+  border-radius: 35px;
+}
+>>>>>>> mobile-webshop-alex
 
 .sidebar-content-2 img {
   width: 60px;
@@ -296,6 +345,7 @@ nav {
   border: 1px solid #e1e4eb;
   box-sizing: border-box;
   border-radius: 35px;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
 }
@@ -311,23 +361,41 @@ nav {
 .friend-item {
   flex-grow: 1;
   width: 33%;
+=======
+}
+.friend {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> mobile-webshop-alex
 }
 .medalje-img {
   height: 40px;
   width: 40px;
+<<<<<<< HEAD
   align-items: flex-end;
+=======
+>>>>>>> mobile-webshop-alex
 }
 .friend-img {
   height: 50px;
   width: 50px;
 }
+<<<<<<< HEAD
 .friend-wrapper h3 {
   font-size: 16px;
+=======
+.friend h4 {
+  font-size: 20px;
+>>>>>>> mobile-webshop-alex
   color: black;
   font-weight: 800;
   margin: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> mobile-webshop-alex
 .friend p {
   font-size: 10px;
   color: black;
