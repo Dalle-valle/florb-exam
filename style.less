@@ -319,8 +319,6 @@ h1 {
   height: 40px;
   width: 55px;
 }
-.mobile-builder {
-}
 
 .button-wrapper {
   display: flex;
@@ -626,17 +624,17 @@ h1 {
   width: 100%;
   background-color: white;
 }
+.landing-left .landing-right {
+  width: 100%;
+  transition: width 2s;
+}
 
+.landing-right:hover,
 .landing-left:hover {
   width: 120%;
-  transition: width 0.5s;
+  transition-property: all;
+  transition-duration: 2s;
 }
-
-.landing-right:hover {
-  width: 120%;
-  transition: width 0.5s;
-}
-
 .logo-main {
   position: absolute;
   top: 0;
