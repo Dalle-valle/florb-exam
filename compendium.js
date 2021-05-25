@@ -17,9 +17,7 @@ async function getData() {
 
   document.querySelector(".a-down").addEventListener("click", clickNext);
   document.querySelector(".a-up").addEventListener("click", clickPrev);
-
   observe1();
-  addStuff();
 }
 function showFlorbs() {
   const container = document.querySelector(".compendium");
@@ -89,15 +87,4 @@ function fillBar() {
 
   document.querySelector(".progress-bar").style.width = scrolled + "%";
   document.querySelector(".scroll-img").style.transform = `rotate(${scrolled * 25}deg)`;
-}
-
-function addStuff() {
-  const sectionSnaps = document.querySelectorAll(".section-wrap");
-  const florbSnaps = document.querySelectorAll(".florber-snap");
-  for (sectionSnap of sectionSnaps) {
-    sectionSnap.classList.add("sectionwrapper");
-  }
-  for (florbSnap of florbSnaps) {
-    florbSnap.classList.add("florb-snap");
-  }
 }

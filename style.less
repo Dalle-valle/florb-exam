@@ -582,11 +582,13 @@ h1 {
   overflow: auto;
   scroll-behavior: smooth;
   overscroll-behavior: contain;
-  scroll-snap-type: y mandatory;
-}
-
-.florb-snap {
   scroll-snap-align: start;
+}
+.compendium {
+  // overflow: scroll;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-type: y mandatory;
 }
 // .top-header {
 //   position: fixed;
@@ -595,3 +597,49 @@ h1 {
 //   background: hotpink;
 //   top: 0;
 // }
+
+/**Landing**/
+.landing-choice {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.landing-left {
+  font-size: 5rem;
+  font-family: var(--primary-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f3edd3;
+}
+
+.landing-right {
+  font-size: 5rem;
+  font-family: var(--primary-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+.landing-left:hover {
+  width: 120%;
+  transition: width 0.5s;
+}
+
+.landing-right:hover {
+  width: 120%;
+  transition: width 0.5s;
+}
+
+.logo-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
