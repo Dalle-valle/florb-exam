@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", start);
+window.addEventListener("scroll", fillBar);
 
 const endpoint = "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/florbs";
 let allFlorbs;
@@ -13,6 +14,7 @@ async function getData() {
   const response = await fetch(endpoint);
   allFlorbs = await response.json();
   showFlorbs();
+
   document.querySelector(".a-down").addEventListener("click", clickNext);
   document.querySelector(".a-up").addEventListener("click", clickPrev);
 
@@ -77,4 +79,13 @@ function clickNext() {
 
 function clickPrev() {
   document.querySelector(`#florb-${currentFlorbId - 1}`).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+}
+
+function fillBar() {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrolled = (winScroll / height) * 100;
+
+  document.querySelector(".progress-bar").style.width = scrolled + "%";
+  document.querySelector(".scroll-img").style.transform = `rotate(${scrolled * 25}deg)`;
 }

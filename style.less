@@ -237,7 +237,7 @@ h1 {
   position: fixed;
   width: 50px;
   left: 25px;
-  top: 75px;
+  top: 175px;
   display: none;
 }
 .sidebar-left {
@@ -391,7 +391,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 150px;
   span {
     font-family: var(--light-font);
     font-weight: 300;
@@ -534,3 +534,50 @@ h1 {
   opacity: 0.1;
   pointer-events: none;
 }
+
+.bar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 98%;
+  left: 0.5vw;
+  background-color: rgba(28, 16, 16, 0);
+}
+
+.progress-container {
+  position: absolute;
+  top: 70px;
+  width: 94%;
+  height: 5px;
+  left: 50.6%;
+  transform: translate(-50%);
+  // background: #fff;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 5px;
+  background: #fb7f7d;
+  width: 0%;
+  text-align: right;
+}
+
+.scroll-img {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  right: -30px;
+  top: -25px;
+  transform-origin: center;
+}
+#progress {
+  margin-bottom: 2vh;
+}
+
+// .top-header {
+//   position: fixed;
+//   height: 75px;
+//   width: 100vw;
+//   background: hotpink;
+//   top: 0;
+// }
