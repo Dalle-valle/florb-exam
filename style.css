@@ -236,10 +236,10 @@ nav {
   stroke: black;
   stroke-width: 5px;
 }
-.selected {
+/* .selected {
   stroke: black;
   stroke-width: 5px;
-}
+} */
 .tab {
   cursor: pointer;
 }
