@@ -1,9 +1,4 @@
-31482
-38C:\Users\Atyll\Desktop\florb_exam\dist132668733824386565 1
-106C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\fn\math\sign.js121436361000000000 0
-77C:\Users\Atyll\Desktop\florb_exam\node_modules\svgo\plugins\removeComments.js121436361000000000 0
-101C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\scss\obsidian.scss121436361000000000 0
-78C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\dist\element.min.js132654395979241192 0
+31491
 84C:\Users\Atyll\Desktop\florb_exam\node_modules\argparse\node_modules\sprintf-js\demo132668664431320799 1
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\cipher-base\README.md131438162440000000 0
 71C:\Users\Atyll\Desktop\florb_exam\node_modules\htmlparser2\lib\index.js121436361000000000 0
@@ -44,6 +39,33 @@
 59C:\Users\Atyll\Desktop\florb_exam\node_modules\opn\index.js121436361000000000 0
 111C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-normalize-whitespace\node_modules\postcss\lib\at-rule.js121436361000000000 0
 44C:\Users\Atyll\Desktop\florb_exam\.gitignore132668729118189633 0
+70C:\Users\Atyll\Desktop\florb_exam\node_modules\escalade\sync\index.mjs121436361000000000 0
+69C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-admin\js\farbtastic.js132654395964425750 0
+60C:\Users\Atyll\Desktop\florb_exam\node_modules\node-releases132665137201856983 1
+110C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\library\modules\_own-keys.js121436361000000000 0
+60C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\Text132654395972404824 1
+96C:\Users\Atyll\Desktop\florb_exam\node_modules\less\test\browser\runner-relative-urls-options.js121436361000000000 0
+129C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-normalize-unicode\node_modules\chalk\node_modules\supports-color\readme.md131663821590000000 0
+53C:\Users\Atyll\Desktop\florb_exam\node_modules\is-wsl132665137203638127 1
+112C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\modules\_string-ws.js121436361000000000 0
+82C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\jquery\ui\slider.min.js132654395981166044 0
+85C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\core\lib\config\files\import.js121012626000000000 0
+85C:\Users\Atyll\Desktop\florb_exam\node_modules\remove-trailing-separator\package.json132665160430169784 0
+48C:\Users\Atyll\Desktop\florb_exam\dashboard.html132668726689099042 0
+80C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-admin\js\application-passwords.js132654395964176403 0
+74C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\es\regexp\search.js121436361000000000 0
+90C:\Users\Atyll\Desktop\florb_exam\node_modules\css-tree\lib\syntax\node\DeclarationList.js121436361000000000 0
+63C:\Users\Atyll\Desktop\florb_exam\node_modules\split2\README.md121436361000000000 0
+79C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\functions.wp-styles.php132654395976593625 0
+77C:\Users\Atyll\Desktop\florb_exam\node_modules\es-abstract\2017\CreateHTML.js121436361000000000 0
+115C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-content\themes\twentytwentyone\assets\images\playing-in-the-sand.jpg132654395968270764 0
+82C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\math\clz32.js131473721010000000 0
+116C:\Users\Atyll\Desktop\florb_exam\node_modules\uncss\node_modules\postcss-selector-parser\dist\selectors\selector.js121436361000000000 0
+99C:\Users\Atyll\Desktop\florb_exam\node_modules\jsdom\lib\jsdom\living\navigator\PluginArray-impl.js121436361000000000 0
+78C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\regions\BZ.js121436361000000000 0
+79C:\Users\Atyll\Desktop\florb_exam\node_modules\es-abstract\2020\BigInt\index.js121436361000000000 0
+81C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\jquery\ui\droppable.js132654395980777084 0
+48C:\Users\Atyll\Desktop\florb_exam\.htmlnanorc.js132668735501110042 0
 115C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-content\themes\twentytwentyone\assets\js\editor-dark-mode-support.js132654395968420365 0
 61C:\Users\Atyll\Desktop\florb_exam\node_modules\clone\clone.js131661396530000000 0
 93C:\Users\Atyll\Desktop\florb_exam\node_modules\materialize-css\sass\components\_dropdown.scss121436361000000000 0
@@ -85,32 +107,6 @@
 40C:\Users\Atyll\Desktop\florb_exam\baf.js132668689597513659 0
 65C:\Users\Atyll\Desktop\florb_exam\node_modules\is-buffer\index.js131534404580000000 0
 69C:\Users\Atyll\Desktop\florb_exam\node_modules\lodash\_baseFindKey.js121436361000000000 0
-70C:\Users\Atyll\Desktop\florb_exam\node_modules\escalade\sync\index.mjs121436361000000000 0
-69C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-admin\js\farbtastic.js132654395964425750 0
-60C:\Users\Atyll\Desktop\florb_exam\node_modules\node-releases132665137201856983 1
-110C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\library\modules\_own-keys.js121436361000000000 0
-60C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\Text132654395972404824 1
-96C:\Users\Atyll\Desktop\florb_exam\node_modules\less\test\browser\runner-relative-urls-options.js121436361000000000 0
-129C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-normalize-unicode\node_modules\chalk\node_modules\supports-color\readme.md131663821590000000 0
-53C:\Users\Atyll\Desktop\florb_exam\node_modules\is-wsl132665137203638127 1
-112C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\modules\_string-ws.js121436361000000000 0
-82C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\jquery\ui\slider.min.js132654395981166044 0
-85C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\core\lib\config\files\import.js121012626000000000 0
-85C:\Users\Atyll\Desktop\florb_exam\node_modules\remove-trailing-separator\package.json132665160430169784 0
-48C:\Users\Atyll\Desktop\florb_exam\dashboard.html132668726689099042 0
-80C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-admin\js\application-passwords.js132654395964176403 0
-74C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\es\regexp\search.js121436361000000000 0
-90C:\Users\Atyll\Desktop\florb_exam\node_modules\css-tree\lib\syntax\node\DeclarationList.js121436361000000000 0
-63C:\Users\Atyll\Desktop\florb_exam\node_modules\split2\README.md121436361000000000 0
-79C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\functions.wp-styles.php132654395976593625 0
-77C:\Users\Atyll\Desktop\florb_exam\node_modules\es-abstract\2017\CreateHTML.js121436361000000000 0
-115C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-content\themes\twentytwentyone\assets\images\playing-in-the-sand.jpg132654395968270764 0
-82C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\math\clz32.js131473721010000000 0
-116C:\Users\Atyll\Desktop\florb_exam\node_modules\uncss\node_modules\postcss-selector-parser\dist\selectors\selector.js121436361000000000 0
-99C:\Users\Atyll\Desktop\florb_exam\node_modules\jsdom\lib\jsdom\living\navigator\PluginArray-impl.js121436361000000000 0
-78C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\regions\BZ.js121436361000000000 0
-79C:\Users\Atyll\Desktop\florb_exam\node_modules\es-abstract\2020\BigInt\index.js121436361000000000 0
-81C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\jquery\ui\droppable.js132654395980777084 0
 77C:\Users\Atyll\Desktop\florb_exam\node_modules\es-abstract\2020\SplitMatch.js121436361000000000 0
 77C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\css\admin-bar.min.css132654395974598970 0
 84C:\Users\Atyll\Desktop\florb_exam\node_modules\mixin-deep\node_modules\is-extendable132665137202521109 1
@@ -148,6 +144,11 @@
 65C:\Users\Atyll\Desktop\florb_exam\node_modules\lodash\isObject.js121436361000000000 0
 46C:\Users\Atyll\Desktop\florb_exam\dashboard.js132668732843401471 0
 109C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-minify-font-values\node_modules\color-convert\index.js121436361000000000 0
+38C:\Users\Atyll\Desktop\florb_exam\dist132668784601613993 1
+106C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\fn\math\sign.js121436361000000000 0
+77C:\Users\Atyll\Desktop\florb_exam\node_modules\svgo\plugins\removeComments.js121436361000000000 0
+101C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\scss\obsidian.scss121436361000000000 0
+78C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\dist\element.min.js132654395979241192 0
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\regions\BR.js121436361000000000 0
 74C:\Users\Atyll\Desktop\florb_exam\node_modules\es-abstract\2019\ToIndex.js121436361000000000 0
 43C:\Users\Atyll\Desktop\florb_exam\README.md132654395960466339 0
@@ -326,7 +327,7 @@
 89C:\Users\Atyll\Desktop\florb_exam\node_modules\materialize-css\sass\components\_tabs.scss121436361000000000 0
 97C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-modules-values\node_modules\supports-color132665137192351986 1
 119C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-content\themes\twentynineteen\template-parts\content\content-excerpt.php132654395967437714 0
-40C:\Users\Atyll\Desktop\florb_exam\images132668687051676727 1
+40C:\Users\Atyll\Desktop\florb_exam\images132668752540478981 1
 66C:\Users\Atyll\Desktop\florb_exam\node_modules\through2\LICENSE.md121436361000000000 0
 116C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-ordered-values\node_modules\postcss-value-parser\package.json132665137185902717 0
 63C:\Users\Atyll\Desktop\florb_exam\node_modules\format\format.js130854524920000000 0
@@ -406,7 +407,7 @@
 111C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\library\modules\es7.map.of.js121436361000000000 0
 118C:\Users\Atyll\Desktop\florb_exam\node_modules\uncss\node_modules\postcss-selector-parser\postcss-selector-parser.d.ts121436361000000000 0
 110C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-normalize-url\node_modules\postcss-value-parser\LICENSE121436361000000000 0
-58C:\Users\Atyll\Desktop\florb_exam\dist\florbs.3025a724.css132668727359287688 0
+58C:\Users\Atyll\Desktop\florb_exam\dist\florbs.3025a724.css132668784600277568 0
 70C:\Users\Atyll\Desktop\florb_exam\node_modules\@types\node\crypto.d.ts132663744980000000 0
 86C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\string\pad-end.js131473721010000000 0
 92C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-admin\includes\class-file-upload-upgrader.php132654395963248900 0
@@ -472,19 +473,6 @@
 67C:\Users\Atyll\Desktop\florb_exam\node_modules\rgba-regex\README.md130673245100000000 0
 44C:\Users\Atyll\Desktop\florb_exam\observe.js132668659466647514 0
 81C:\Users\Atyll\Desktop\florb_exam\node_modules\serve-handler\node_modules\mime-db132665137181096573 1
-96C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\features\css-read-only-write.js121436361000000000 0
-43C:\Users\Atyll\Desktop\florb_exam\yeah.html132668671541204471 0
-118C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-content\themes\twentytwentyone\assets\sass\05-blocks\cover\_editor.scss132654395968689648 0
-119C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-less\node_modules\less\test\plugins\visitor\index.js121436361000000000 0
-108C:\Users\Atyll\Desktop\florb_exam\node_modules\regenerate-unicode-properties\Script_Extensions\Kharoshthi.js121436361000000000 0
-85C:\Users\Atyll\Desktop\florb_exam\node_modules\needle\node_modules\debug\package.json132665157178043996 0
-70C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-admin\js\gallery.min.js132654395964445694 0
-61C:\Users\Atyll\Desktop\florb_exam\node_modules\.bin\which.cmd132665137216391584 0
-90C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\SimplePie\Decode\HTML\Entities.php132654395972215329 0
-85C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\jcrop\jquery.Jcrop.min.css132654395980368181 0
-97C:\Users\Atyll\Desktop\florb_exam\node_modules\svgo\node_modules\util.promisify\implementation.js121436361000000000 0
-73C:\Users\Atyll\Desktop\florb_exam\node_modules\static-module\test\vars.js121436361000000000 0
-53C:\Users\Atyll\Desktop\florb_exam\package-lock 2.json132668659513740653 0
 93C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\stage\2.js121436361000000000 0
 60C:\Users\Atyll\Desktop\florb_exam\node_modules\url\README.md130851633840000000 0
 90C:\Users\Atyll\Desktop\florb_exam\node_modules\@nodelib\fs.walk\out\readers\common.spec.js121436361000000000 0
@@ -508,7 +496,7 @@
 69C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-admin\setup-config.php132654395965598189 0
 82C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\string\raw.js131473721010000000 0
 83C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\class-wp-simplepie-file.php132654395974249884 0
-46C:\Users\Atyll\Desktop\florb_exam\package.json132668733644665754 0
+46C:\Users\Atyll\Desktop\florb_exam\package.json132668784579355620 0
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\regions\MX.js121436361000000000 0
 94C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\class-wp-text-diff-renderer-inline.php132654395974329673 0
 84C:\Users\Atyll\Desktop\florb_exam\node_modules\serialize-to-js\lib\internal\utils.js121436361000000000 0
@@ -563,6 +551,9 @@
 69C:\Users\Atyll\Desktop\florb_exam\node_modules\lodash\fp\lowerCase.js121436361000000000 0
 43C:\Users\Atyll\Desktop\florb_exam\wordpress132654395985730179 1
 71C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\src\utils132665160380957728 1
+96C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\features\css-read-only-write.js121436361000000000 0
+43C:\Users\Atyll\Desktop\florb_exam\yeah.html132668671541204471 0
+118C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-content\themes\twentytwentyone\assets\sass\05-blocks\cover\_editor.scss132654395968689648 0
 53C:\Users\Atyll\Desktop\florb_exam\wordpress\index.php132654395961324034 0
 51C:\Users\Atyll\Desktop\florb_exam\node_modules\uuid132665137165002923 1
 61C:\Users\Atyll\Desktop\florb_exam\node_modules\native-request132668671073845078 1
@@ -802,7 +793,7 @@
 98C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-colormin\node_modules\has-flag\package.json132665137198027218 0
 90C:\Users\Atyll\Desktop\florb_exam\node_modules\has-values\node_modules\is-number\README.md131180229910000000 0
 84C:\Users\Atyll\Desktop\florb_exam\node_modules\purgecss\node_modules\postcss\LICENSE121436361000000000 0
-74C:\Users\Atyll\Desktop\florb_exam\dist\lufga-regular-webfont.a6f600fe.woff132668727358285281 0
+74C:\Users\Atyll\Desktop\florb_exam\dist\lufga-regular-webfont.a6f600fe.woff132668784596973634 0
 102C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\fn\error\is-error.js121436361000000000 0
 54C:\Users\Atyll\Desktop\florb_exam\node_modules\timsort132665137172989149 1
 110C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-normalize-whitespace\node_modules\postcss\lib\vendor.js121436361000000000 0
@@ -1067,7 +1058,7 @@
 113C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-minify-font-values\node_modules\color-convert\CHANGELOG.md121436361000000000 0
 66C:\Users\Atyll\Desktop\florb_exam\images\build-a-florb\tab-nav.svg132654397159282046 0
 95C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\sitemaps\class-wp-sitemaps-registry.php132654395984303997 0
-65C:\Users\Atyll\Desktop\florb_exam\dist\florbsketball.459d3c05.png132668727359666674 0
+65C:\Users\Atyll\Desktop\florb_exam\dist\florbsketball.459d3c05.png132668784599217905 0
 73C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\script-loader.php132654395984254131 0
 107C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\fn\number\parse-float.js121436361000000000 0
 86C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-discard-overridden\package.json132665137177775454 0
@@ -1414,7 +1405,7 @@
 67C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\ms-load.php132654395983556002 0
 99C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\tinymce\skins\wordpress\images\video.png132654395982693203 0
 79C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\class-wp-http-proxy.php132654395973930747 0
-58C:\Users\Atyll\Desktop\florb_exam\dist\webshop.7b03b732.js132668727359277724 0
+58C:\Users\Atyll\Desktop\florb_exam\dist\webshop.7b03b732.js132668784600207761 0
 66C:\Users\Atyll\Desktop\florb_exam\node_modules\psl\dist\psl.min.js121436361000000000 0
 87C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\widgets\class-wp-widget-rss.php132654395985610507 0
 88C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\class-wp-http-requests-hooks.php132654395973940714 0
@@ -2440,7 +2431,7 @@
 82C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-content\themes\twentynineteen\fonts132654395966724558 1
 80C:\Users\Atyll\Desktop\florb_exam\node_modules\public-encrypt\test\rsa.1024.priv121436361000000000 0
 70C:\Users\Atyll\Desktop\florb_exam\node_modules\lodash\_wrapperClone.js121436361000000000 0
-73C:\Users\Atyll\Desktop\florb_exam\dist\lufga-medium-webfont.b71a44e4.woff132668727358275303 0
+73C:\Users\Atyll\Desktop\florb_exam\dist\lufga-medium-webfont.b71a44e4.woff132668784596963674 0
 74C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\jcrop\Jcrop.gif132654395980358212 0
 89C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\helpers\temporalUndefined.js131473721030000000 0
 65C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-admin\js\common.js132654395964246221 0
@@ -2833,7 +2824,7 @@
 73C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\media-views.js132654395981405413 0
 101C:\Users\Atyll\Desktop\florb_exam\node_modules\css-declaration-sorter\node_modules\chalk\node_modules132665137102772758 1
 73C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\wp-backbone.js132654395983062209 0
-62C:\Users\Atyll\Desktop\florb_exam\dist\florbs.3025a724.css.map132668727359477180 0
+62C:\Users\Atyll\Desktop\florb_exam\dist\florbs.3025a724.css.map132668784601045522 0
 101C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\library\fn\delay.js121436361000000000 0
 94C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\mediaelement\mediaelementplayer.css132654395981555003 0
 128C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-css\node_modules\@parcel\source-map\parcel_sourcemap_node\src132668664444872025 1
@@ -3245,6 +3236,12 @@
 86C:\Users\Atyll\Desktop\florb_exam\node_modules\purgecss\node_modules\postcss\README.md121436361000000000 0
 107C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\fn\array\from.js121436361000000000 0
 92C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\SimplePie\XML\Declaration\Parser.php132654395972374903 0
+119C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-less\node_modules\less\test\plugins\visitor\index.js121436361000000000 0
+108C:\Users\Atyll\Desktop\florb_exam\node_modules\regenerate-unicode-properties\Script_Extensions\Kharoshthi.js121436361000000000 0
+85C:\Users\Atyll\Desktop\florb_exam\node_modules\needle\node_modules\debug\package.json132665157178043996 0
+70C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-admin\js\gallery.min.js132654395964445694 0
+61C:\Users\Atyll\Desktop\florb_exam\node_modules\.bin\which.cmd132665137216391584 0
+90C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\SimplePie\Decode\HTML\Entities.php132654395972215329 0
 111C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\modules\core.object.define.js121436361000000000 0
 83C:\Users\Atyll\Desktop\florb_exam\node_modules\magic-string\dist\magic-string.es.js132665160344990529 0
 99C:\Users\Atyll\Desktop\florb_exam\node_modules\htmlparser2\node_modules\domutils\lib\traversal.d.ts121436361000000000 0
@@ -3718,6 +3715,7 @@
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-minify-params132665137168214342 1
 79C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\Requests\Cookie\Jar.php132654395971537147 0
 99C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-discard-comments\node_modules\chalk\index.js121436361000000000 0
+54C:\Users\Atyll\Desktop\florb_exam\dist\login copy.html132668750604287850 0
 69C:\Users\Atyll\Desktop\florb_exam\node_modules\ajv\dist\ajv.bundle.js121436361000000000 0
 107C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-minify-selectors\node_modules\color-convert\index.js121436361000000000 0
 91C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\random_compat\byte_safe_strings.php132654395983795367 0
@@ -4431,7 +4429,7 @@
 100C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\tinymce\plugins\wpeditimage\plugin.min.js132654395982334148 0
 98C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\tinymce\plugins\wpdialogs\plugin.min.js132654395982314202 0
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\@nodelib\fs.stat\out\adapters132665160358669805 1
-59C:\Users\Atyll\Desktop\florb_exam\dist\medal-3.ddd45b75.svg132668727358888863 0
+59C:\Users\Atyll\Desktop\florb_exam\dist\medal-3.ddd45b75.svg132668784598689309 0
 65C:\Users\Atyll\Desktop\florb_exam\node_modules\request\lib\har.js121436361000000000 0
 80C:\Users\Atyll\Desktop\florb_exam\node_modules\grapheme-breaker\src\classes.trie130921262290000000 0
 75C:\Users\Atyll\Desktop\florb_exam\node_modules\hex-color-regex\CHANGELOG.md131409271740000000 0
@@ -4882,6 +4880,8 @@
 69C:\Users\Atyll\Desktop\florb_exam\node_modules\lodash\_lazyReverse.js121436361000000000 0
 79C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\jquery\ui\spinner.js132654395981205937 0
 128C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-minify-selectors\node_modules\chalk\node_modules\supports-color\readme.md131663821590000000 0
+85C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\js\jcrop\jquery.Jcrop.min.css132654395980368181 0
+97C:\Users\Atyll\Desktop\florb_exam\node_modules\svgo\node_modules\util.promisify\implementation.js121436361000000000 0
 107C:\Users\Atyll\Desktop\florb_exam\node_modules\define-property\node_modules\is-data-descriptor\package.json131539916260000000 0
 100C:\Users\Atyll\Desktop\florb_exam\node_modules\jsprim\node_modules\json-schema\draft-01\hyper-schema129340000440000000 0
 80C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\images\media\default.png132654395976892820 0
@@ -5347,7 +5347,7 @@
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\ws\lib\buffer-util.js121436361000000000 0
 85C:\Users\Atyll\Desktop\florb_exam\node_modules\static-module\node_modules\esprima\bin132665160352376172 1
 105C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-modules-values\node_modules\chalk\types\index.d.ts121436361000000000 0
-60C:\Users\Atyll\Desktop\florb_exam\dist\login.77583b8c.js.map132668727359576921 0
+60C:\Users\Atyll\Desktop\florb_exam\dist\login.77583b8c.js.map132668784601274897 0
 101C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-colormin\node_modules\postcss\lib\stringify.js121436361000000000 0
 73C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\images\wpspin.gif132654395977311704 0
 73C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-includes\images\xit-2x.gif132654395977321672 0
@@ -6224,7 +6224,7 @@
 70C:\Users\Atyll\Desktop\florb_exam\node_modules\snapdragon-node\LICENSE131197857700000000 0
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\to-regex\package.json132665137170328672 0
 90C:\Users\Atyll\Desktop\florb_exam\node_modules\is-descriptor\node_modules\kind-of\index.js131523517230000000 0
-62C:\Users\Atyll\Desktop\florb_exam\dist\webshop.7b03b732.js.map132668727359467214 0
+62C:\Users\Atyll\Desktop\florb_exam\dist\webshop.7b03b732.js.map132668784600975698 0
 88C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-content\themes\twentytwentyone\header.php132654395970559757 0
 81C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-content\themes\twentytwentyone\inc132654395970629581 1
 110C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-normalize-positions\node_modules\color-convert\index.js121436361000000000 0
@@ -6365,7 +6365,7 @@
 79C:\Users\Atyll\Desktop\florb_exam\node_modules\levn\node_modules\prelude-ls\lib132668664428707778 1
 111C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-content\themes\twentytwentyone\assets\sass\05-blocks\blocks.scss132654395968629802 0
 73C:\Users\Atyll\Desktop\florb_exam\node_modules\to-fast-properties\license131414904450000000 0
-57C:\Users\Atyll\Desktop\florb_exam\dist\style.4a20161c.css132668727359267736 0
+57C:\Users\Atyll\Desktop\florb_exam\dist\style.4a20161c.css132668784600187806 0
 91C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\modules\es.array.unscopables.flat.js121436361000000000 0
 58C:\Users\Atyll\Desktop\florb_exam\node_modules\esutils\lib132665122041441763 1
 87C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-minify-params\node_modules\chalk132665137194765931 1
@@ -6606,7 +6606,7 @@
 58C:\Users\Atyll\Desktop\florb_exam\node_modules\htmlparser2132665122098049738 1
 115C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-content\themes\twentytwentyone\assets\css\custom-color-overrides.css132654395968111195 0
 95C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-content\themes\twentytwentyone\assets\css\ie.css132654395968141114 0
-57C:\Users\Atyll\Desktop\florb_exam\dist\level.9aa57950.svg132668727358888863 0
+57C:\Users\Atyll\Desktop\florb_exam\dist\level.9aa57950.svg132668784598689309 0
 82C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-admin\css\colors\sunrise\colors.css132654395961852628 0
 65C:\Users\Atyll\Desktop\florb_exam\node_modules\gotrue-js\coverage132668667375846214 1
 106C:\Users\Atyll\Desktop\florb_exam\node_modules\stream-browserify\node_modules\readable-stream\package.json132665160430249577 0
@@ -7644,7 +7644,7 @@
 69C:\Users\Atyll\Desktop\florb_exam\node_modules\node-forge\lib\util.js121436361000000000 0
 83C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-admin\includes\class-ftp-sockets.php132654395963268842 0
 111C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\modules\es6.string.anchor.js121436361000000000 0
-57C:\Users\Atyll\Desktop\florb_exam\dist\florbs.6d44b1c4.js132668727359287688 0
+57C:\Users\Atyll\Desktop\florb_exam\dist\florbs.6d44b1c4.js132668784600257618 0
 72C:\Users\Atyll\Desktop\florb_exam\node_modules\psl\browserstack-logo.svg121436361000000000 0
 99C:\Users\Atyll\Desktop\florb_exam\wordpress\wp-admin\includes\class-language-pack-upgrader-skin.php132654395963288796 0
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss\lib\list.d.ts121436361000000000 0
@@ -8348,7 +8348,7 @@
 59C:\Users\Atyll\Desktop\florb_exam\node_modules\once\once.js131176695710000000 0
 109C:\Users\Atyll\Desktop\florb_exam\node_modules\cssnano-util-raw-cache\node_modules\postcss\lib\stringifier.js121436361000000000 0
 119C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\fn\string\from-code-point.js121436361000000000 0
-50C:\Users\Atyll\Desktop\florb_exam\dist\florbs.html132668733823828053 0
+50C:\Users\Atyll\Desktop\florb_exam\dist\florbs.html132668784600187806 0
 137C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-html\node_modules\posthtml-parser\coverage\lcov-report\posthtml-parser132665137003125809 1
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\regions\KE.js121436361000000000 0
 107C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\mercury.js121436361000000000 0
@@ -8415,7 +8415,7 @@
 93C:\Users\Atyll\Desktop\florb_exam\node_modules\less\test\browser\runner-relative-urls-spec.js121436361000000000 0
 59C:\Users\Atyll\Desktop\florb_exam\node_modules\bcrypt-pbkdf132665137170238922 1
 106C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\modules\es6.weak-map.js121436361000000000 0
-57C:\Users\Atyll\Desktop\florb_exam\dist\florb.fcf56e98.svg132668727358544579 0
+57C:\Users\Atyll\Desktop\florb_exam\dist\florb.fcf56e98.svg132668784597861277 0
 63C:\Users\Atyll\Desktop\florb_exam\node_modules\tough-cookie\lib132665137018093809 1
 101C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-colormin\node_modules\postcss\lib\postcss.d.ts121436361000000000 0
 53C:\Users\Atyll\Desktop\florb_exam\node_modules\big.js132665137209164799 1
@@ -9165,7 +9165,7 @@
 98C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\modules\_task.js121436361000000000 0
 75C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\stable\array\sort.js121436361000000000 0
 56C:\Users\Atyll\Desktop\florb_exam\node_modules\relateurl132665137182712251 1
-65C:\Users\Atyll\Desktop\florb_exam\dist\women_webshop.2abd7567.png132668727359008444 0
+65C:\Users\Atyll\Desktop\florb_exam\dist\women_webshop.2abd7567.png132668784598699285 0
 100C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-modules-values\node_modules\has-flag\index.js131593941750000000 0
 119C:\Users\Atyll\Desktop\florb_exam\node_modules\uncss\node_modules\postcss-selector-parser\dist\__tests__\combinators.js121436361000000000 0
 72C:\Users\Atyll\Desktop\florb_exam\node_modules\remove-trailing-separator132665160431685748 1
@@ -9792,7 +9792,7 @@
 80C:\Users\Atyll\Desktop\florb_exam\node_modules\less\lib\less\functions\number.js121436361000000000 0
 115C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-normalize-whitespace\node_modules\postcss\lib\lazy-result.js121436361000000000 0
 92C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\README.md121436361000000000 0
-79C:\Users\Atyll\Desktop\florb_exam\dist\lufga-lightitalic-webfont.54c1f41b.woff2132668727358534613 0
+79C:\Users\Atyll\Desktop\florb_exam\dist\lufga-lightitalic-webfont.54c1f41b.woff2132668784597532142 0
 77C:\Users\Atyll\Desktop\florb_exam\node_modules\icss-replace-symbols\README.md131398809810000000 0
 85C:\Users\Atyll\Desktop\florb_exam\node_modules\uri-js\dist\esnext\schemes\http.js.map121436361000000000 0
 115C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\fn\array\virtual\fill.js121436361000000000 0
@@ -10117,6 +10117,7 @@
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\modules\_collection.js121436361000000000 0
 120C:\Users\Atyll\Desktop\florb_exam\node_modules\uncss\node_modules\postcss-selector-parser\dist\selectors\constructors.js121436361000000000 0
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\es7\string.js121436361000000000 0
+54C:\Users\Atyll\Desktop\florb_exam\dist\games copy.html132668750573959271 0
 90C:\Users\Atyll\Desktop\florb_exam\node_modules\@nodelib\fs.stat\src\providers\sync.spec.ts121436361000000000 0
 87C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\symbol\pattern-match.js121436361000000000 0
 76C:\Users\Atyll\Desktop\florb_exam\node_modules\unbox-primitive\test\index.js121436361000000000 0
@@ -10158,7 +10159,7 @@
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\less\lib\less-node\index.js.map121436361000000000 0
 116C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-babel\node_modules\@parcel\source-map\src\wasm.js121436361000000000 0
 71C:\Users\Atyll\Desktop\florb_exam\node_modules\path-browserify\index.js121436361000000000 0
-76C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extrabold-webfont.4ab3b7d8.woff132668727358285281 0
+76C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extrabold-webfont.4ab3b7d8.woff132668784596764204 0
 87C:\Users\Atyll\Desktop\florb_exam\node_modules\uncss\node_modules\postcss\lib\parser.js121436361000000000 0
 93C:\Users\Atyll\Desktop\florb_exam\node_modules\uncss\node_modules\postcss\lib\previous-map.js121436361000000000 0
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss\lib\node.d.ts121436361000000000 0
@@ -10414,7 +10415,7 @@
 105C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-reduce-initial\node_modules\postcss\lib\warning.js121436361000000000 0
 100C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-minify-font-values\node_modules\color-convert132665137195513943 1
 80C:\Users\Atyll\Desktop\florb_exam\node_modules\tough-cookie\lib\pubsuffix-psl.js121436361000000000 0
-79C:\Users\Atyll\Desktop\florb_exam\dist\lufga-mediumitalic-webfont.6bf467e1.woff132668727358275303 0
+79C:\Users\Atyll\Desktop\florb_exam\dist\lufga-mediumitalic-webfont.6bf467e1.woff132668784596973634 0
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\packager-css\node_modules\@parcel\source-map\dist132668664424962595 1
 109C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-reduce-initial\node_modules\postcss\lib\declaration.js121436361000000000 0
 74C:\Users\Atyll\Desktop\florb_exam\node_modules\tough-cookie\lib\version.js121436361000000000 0
@@ -11089,7 +11090,7 @@
 87C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\helper-function-name\lib\index.js121012626000000000 0
 90C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\number\virtual\to-fixed.js121436361000000000 0
 100C:\Users\Atyll\Desktop\florb_exam\node_modules\svgo\node_modules\css-tree\lib\common\adopt-buffer.js121436361000000000 0
-53C:\Users\Atyll\Desktop\florb_exam\dist\dashboard.html132668733823828053 0
+53C:\Users\Atyll\Desktop\florb_exam\dist\dashboard.html132668784600307483 0
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\jsdom\lib\jsdom\living\generated\SVGBoundingBoxOptions.js121436361000000000 0
 124C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\core\node_modules\@parcel\source-map\parcel_sourcemap_node\src\lib.rs121436361000000000 0
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\svgo\node_modules\css-tree\lib\common\OffsetToLocation.js121436361000000000 0
@@ -11646,6 +11647,7 @@
 70C:\Users\Atyll\Desktop\florb_exam\node_modules\shebang-command\license131190036810000000 0
 70C:\Users\Atyll\Desktop\florb_exam\node_modules\static-module\test\vars132665160372535421 1
 69C:\Users\Atyll\Desktop\florb_exam\node_modules\nanomatch\package.json132665137165990273 0
+73C:\Users\Atyll\Desktop\florb_exam\node_modules\static-module\test\vars.js121436361000000000 0
 82C:\Users\Atyll\Desktop\florb_exam\node_modules\static-module\test\varmod\source.js121436361000000000 0
 108C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-normalize-whitespace\node_modules\postcss\lib\root.js121436361000000000 0
 76C:\Users\Atyll\Desktop\florb_exam\node_modules\is-number-object\CHANGELOG.md121436361000000000 0
@@ -14628,7 +14630,7 @@
 121C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-normalize-whitespace\node_modules\postcss-value-parser\lib\walk.js121436361000000000 0
 79C:\Users\Atyll\Desktop\florb_exam\node_modules\es-abstract\2019\IteratorNext.js121436361000000000 0
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-normalize-whitespace\node_modules\postcss\LICENSE121436361000000000 0
-78C:\Users\Atyll\Desktop\florb_exam\dist\lufga-lightitalic-webfont.1b8c3cc1.woff132668727358275303 0
+78C:\Users\Atyll\Desktop\florb_exam\dist\lufga-lightitalic-webfont.1b8c3cc1.woff132668784596893857 0
 109C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-normalize-whitespace\node_modules\postcss\package.json132665137175860577 0
 106C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-normalize-whitespace\node_modules\postcss\README.md121436361000000000 0
 74C:\Users\Atyll\Desktop\florb_exam\node_modules\native-request\test\post.js121436361000000000 0
@@ -15619,7 +15621,7 @@
 67C:\Users\Atyll\Desktop\florb_exam\node_modules\minimist\test\num.js121436361000000000 0
 87C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\set\is-disjoint-from.js121436361000000000 0
 120C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-modules-local-by-default\node_modules\supports-color\package.json132665137192601337 0
-64C:\Users\Atyll\Desktop\florb_exam\dist\dashboard.5f01b7b2.js.map132668727359497131 0
+64C:\Users\Atyll\Desktop\florb_exam\dist\dashboard.5f01b7b2.js.map132668784601334735 0
 117C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-modules-local-by-default\node_modules\supports-color\readme.md131663821590000000 0
 103C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\es7\error.js121436361000000000 0
 76C:\Users\Atyll\Desktop\florb_exam\node_modules\object-inspect\example\all.js121436361000000000 0
@@ -15949,7 +15951,7 @@
 109C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\modules\es7.map.to-json.js121436361000000000 0
 85C:\Users\Atyll\Desktop\florb_exam\node_modules\es-abstract\2019\SameValueNonNumber.js121436361000000000 0
 109C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-minify-selectors\node_modules\postcss\lib\stringify.js121436361000000000 0
-74C:\Users\Atyll\Desktop\florb_exam\dist\lufga-italic-webfont.52fefbd7.woff2132668727358524628 0
+74C:\Users\Atyll\Desktop\florb_exam\dist\lufga-italic-webfont.52fefbd7.woff2132668784597532142 0
 76C:\Users\Atyll\Desktop\florb_exam\node_modules\@nodelib\fs.scandir\README.md121436361000000000 0
 118C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-minify-selectors\node_modules\postcss\lib\terminal-highlight.js121436361000000000 0
 73C:\Users\Atyll\Desktop\florb_exam\node_modules\lodash\fp\toPlainObject.js121436361000000000 0
@@ -16802,7 +16804,7 @@
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-discard-empty\node_modules\supports-color\license121436361000000000 0
 62C:\Users\Atyll\Desktop\florb_exam\node_modules\etag\HISTORY.md131497434290000000 0
 109C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-discard-empty\node_modules\supports-color\package.json132665137196232022 0
-58C:\Users\Atyll\Desktop\florb_exam\dist\baf.554e30e3.js.map132668727359477180 0
+58C:\Users\Atyll\Desktop\florb_exam\dist\baf.554e30e3.js.map132668784601115326 0
 102C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-discard-empty\node_modules\postcss\CHANGELOG.md121436361000000000 0
 94C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-discard-empty\node_modules\postcss\docs132665137038860124 1
 93C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-discard-empty\node_modules\postcss\lib132665137039080241 1
@@ -16917,6 +16919,7 @@
 66C:\Users\Atyll\Desktop\florb_exam\node_modules\lodash\wrapperAt.js121436361000000000 0
 83C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-discard-duplicates\README.md121436361000000000 0
 74C:\Users\Atyll\Desktop\florb_exam\node_modules\path-is-inside\package.json132665137198426148 0
+52C:\Users\Atyll\Desktop\florb_exam\dist\baf copy.html132668750573959271 0
 115C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-less\node_modules\less\lib\less\constants.js.map121436361000000000 0
 98C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\fn\math\index.js121436361000000000 0
 98C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss-discard-duplicates\node_modules\ansi-styles132665137197568429 1
@@ -17493,7 +17496,7 @@
 71C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss\lib\warn-once.js121436361000000000 0
 67C:\Users\Atyll\Desktop\florb_exam\node_modules\is-directory\LICENSE130714632600000000 0
 69C:\Users\Atyll\Desktop\florb_exam\node_modules\postcss\lib\warning.js121436361000000000 0
-56C:\Users\Atyll\Desktop\florb_exam\dist\lava.590597c2.png132668727358898734 0
+56C:\Users\Atyll\Desktop\florb_exam\dist\lava.590597c2.png132668784598170442 0
 109C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\library\fn\array\entries.js121436361000000000 0
 79C:\Users\Atyll\Desktop\florb_exam\node_modules\posix-character-classes\index.js131371367800000000 0
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\posix-character-classes\LICENSE131159607150000000 0
@@ -17688,7 +17691,7 @@
 69C:\Users\Atyll\Desktop\florb_exam\node_modules\node-forge\lib\jsbn.js121436361000000000 0
 74C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\src\visitors132665160381177158 1
 75C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\src\worker.js121436361000000000 0
-56C:\Users\Atyll\Desktop\florb_exam\dist\games.c157bb3b.js132668727359437297 0
+56C:\Users\Atyll\Desktop\florb_exam\dist\games.c157bb3b.js132668784600955749 0
 90C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\src\visitors\dependencies.js121436361000000000 0
 72C:\Users\Atyll\Desktop\florb_exam\node_modules\miller-rabin\package.json132665137202511138 0
 85C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\src\visitors\globals.js121436361000000000 0
@@ -17715,7 +17718,7 @@
 111C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\fn\number\max-safe-integer.js121436361000000000 0
 89C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\src\utils\parseCSSImport.js121436361000000000 0
 84C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\src\utils\pipeSpawn.js121436361000000000 0
-59C:\Users\Atyll\Desktop\florb_exam\dist\medal-1.c1abd15f.svg132668727358888863 0
+59C:\Users\Atyll\Desktop\florb_exam\dist\medal-1.c1abd15f.svg132668784598699285 0
 110C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\fn\object\values.js121436361000000000 0
 87C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\src\utils\prettifyTime.js121436361000000000 0
 87C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\src\utils\PromiseQueue.js121436361000000000 0
@@ -17723,7 +17726,7 @@
 86C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\src\utils\syncPromise.js121436361000000000 0
 126C:\Users\Atyll\Desktop\florb_exam\node_modules\node-libs-browser\node_modules\assert\node_modules\util\test\browser\inspect.js130320258670000000 0
 102C:\Users\Atyll\Desktop\florb_exam\node_modules\jsdom\lib\jsdom\living\generated\HTMLTemplateElement.js121436361000000000 0
-57C:\Users\Atyll\Desktop\florb_exam\dist\login.fcf469ed.css132668727359287688 0
+57C:\Users\Atyll\Desktop\florb_exam\dist\login.fcf469ed.css132668784600287529 0
 82C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\src\transforms\babel132665160379197311 1
 108C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\fn\weak-map\of.js121436361000000000 0
 87C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\src\transforms\postcss.js121436361000000000 0
@@ -18383,7 +18386,7 @@
 123C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\modules\es6.typed.uint8-clamped-array.js121436361000000000 0
 106C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\modules\es6.weak-set.js121436361000000000 0
 112C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\modules\es7.array.flat-map.js121436361000000000 0
-59C:\Users\Atyll\Desktop\florb_exam\dist\baf.60839654.css.map132668727359586908 0
+59C:\Users\Atyll\Desktop\florb_exam\dist\baf.60839654.css.map132668784601404551 0
 102C:\Users\Atyll\Desktop\florb_exam\node_modules\concat-stream\node_modules\readable-stream\transform.js121436361000000000 0
 102C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\modules\es7.asap.js121436361000000000 0
 112C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\modules\es7.error.is-error.js121436361000000000 0
@@ -18862,7 +18865,7 @@
 112C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\modules\_object-dp.js121436361000000000 0
 113C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\modules\_object-dps.js121436361000000000 0
 120C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\modules\_object-forced-pam.js121436361000000000 0
-78C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extralight-webfont.e3dd2c93.woff2132668727358524628 0
+78C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extralight-webfont.e3dd2c93.woff2132668784597522174 0
 74C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\types\lib\converters132668664436736538 1
 69C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\events\LICENSE121436361000000000 0
 114C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\library\modules\_object-gopd.js121436361000000000 0
@@ -19294,7 +19297,7 @@
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\less\lib\less\plugin-manager.js121436361000000000 0
 103C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\optimizer-terser\node_modules\@parcel\source-map132668664491818223 1
 96C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\fn\promise.js121436361000000000 0
-59C:\Users\Atyll\Desktop\florb_exam\dist\webshop.0ef9d114.css132668727359277724 0
+59C:\Users\Atyll\Desktop\florb_exam\dist\webshop.0ef9d114.css132668784600197781 0
 89C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\fn\set132665160397185282 1
 102C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\fn\set-immediate.js121436361000000000 0
 101C:\Users\Atyll\Desktop\florb_exam\node_modules\parcel-bundler\node_modules\core-js\fn\set-interval.js121436361000000000 0
@@ -20566,7 +20569,7 @@
 77C:\Users\Atyll\Desktop\florb_exam\node_modules\less\lib\less\tree\call.js.map121436361000000000 0
 103C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js-compat\node_modules\semver\functions\rcompare.js121436361000000000 0
 85C:\Users\Atyll\Desktop\florb_exam\node_modules\minimalistic-crypto-utils\package.json132665137201856983 0
-75C:\Users\Atyll\Desktop\florb_exam\dist\lufga-regular-webfont.01c31b1b.woff2132668727358534613 0
+75C:\Users\Atyll\Desktop\florb_exam\dist\lufga-regular-webfont.01c31b1b.woff2132668784597542125 0
 77C:\Users\Atyll\Desktop\florb_exam\node_modules\minimalistic-crypto-utils\test132665137061426592 1
 85C:\Users\Atyll\Desktop\florb_exam\node_modules\minimalistic-crypto-utils\lib\utils.js131322720100000000 0
 61C:\Users\Atyll\Desktop\florb_exam\node_modules\is-obj\license121436361000000000 0
@@ -21155,7 +21158,7 @@
 73C:\Users\Atyll\Desktop\florb_exam\node_modules\lodash\_listCacheDelete.js121436361000000000 0
 103C:\Users\Atyll\Desktop\florb_exam\node_modules\jsdom\lib\jsdom\living\generated\EventListenerOptions.js121436361000000000 0
 70C:\Users\Atyll\Desktop\florb_exam\node_modules\lodash\_listCacheHas.js121436361000000000 0
-78C:\Users\Atyll\Desktop\florb_exam\dist\lufga-bolditalic-webfont.86d82363.woff2132668727358524628 0
+78C:\Users\Atyll\Desktop\florb_exam\dist\lufga-bolditalic-webfont.86d82363.woff2132668784597442385 0
 66C:\Users\Atyll\Desktop\florb_exam\node_modules\lodash\_MapCache.js121436361000000000 0
 113C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\fn\array\virtual\copy-within.js121436361000000000 0
 71C:\Users\Atyll\Desktop\florb_exam\node_modules\lodash\_mapCacheClear.js121436361000000000 0
@@ -21657,7 +21660,7 @@
 82C:\Users\Atyll\Desktop\florb_exam\node_modules\less\lib\less\tree\operation.js.map121436361000000000 0
 74C:\Users\Atyll\Desktop\florb_exam\node_modules\less\lib\less\tree\paren.js121436361000000000 0
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\less\lib\less\tree\paren.js.map121436361000000000 0
-49C:\Users\Atyll\Desktop\florb_exam\dist\games.html132668733823847999 0
+49C:\Users\Atyll\Desktop\florb_exam\dist\games.html132668784600217727 0
 75C:\Users\Atyll\Desktop\florb_exam\node_modules\less\lib\less\tree\quoted.js121436361000000000 0
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\lisp.js121436361000000000 0
 79C:\Users\Atyll\Desktop\florb_exam\node_modules\less\lib\less\tree\quoted.js.map121436361000000000 0
@@ -21706,6 +21709,7 @@
 96C:\Users\Atyll\Desktop\florb_exam\node_modules\less\lib\less\environment\file-manager-api.js.map121436361000000000 0
 62C:\Users\Atyll\Desktop\florb_exam\fonts\lufga-medium-demo.html132654397159042666 0
 79C:\Users\Atyll\Desktop\florb_exam\node_modules\less\lib\less\data\colors.js.map121436361000000000 0
+56C:\Users\Atyll\Desktop\florb_exam\dist\profile copy.html132668750604267906 0
 62C:\Users\Atyll\Desktop\florb_exam\node_modules\kind-of\LICENSE121436361000000000 0
 69C:\Users\Atyll\Desktop\florb_exam\node_modules\jsprim\CONTRIBUTING.md131461639290000000 0
 130C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-babel\node_modules\@parcel\source-map\parcel_sourcemap_node\src132668664444882005 1
@@ -22128,7 +22132,7 @@
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\is-typedarray\test.js130461234390000000 0
 75C:\Users\Atyll\Desktop\florb_exam\node_modules\is-typed-array\.editorconfig121436361000000000 0
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\is-boolean-object\.eslintignore121436361000000000 0
-63C:\Users\Atyll\Desktop\florb_exam\dist\parent-side.c4d38ee5.jpg132668727358514654 0
+63C:\Users\Atyll\Desktop\florb_exam\dist\parent-side.c4d38ee5.jpg132668784597023504 0
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\is-typed-array\.nycrc121436361000000000 0
 93C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\helpers\sliced-to-array-loose.js131473721030000000 0
 74C:\Users\Atyll\Desktop\florb_exam\node_modules\is-typed-array\CHANGELOG.md121436361000000000 0
@@ -24345,7 +24349,7 @@
 103C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\dts.js121436361000000000 0
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\dust.js121436361000000000 0
 106C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\elixir.js121436361000000000 0
-49C:\Users\Atyll\Desktop\florb_exam\dist\index.html132668733823838024 0
+49C:\Users\Atyll\Desktop\florb_exam\dist\index.html132668784600187806 0
 103C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\erb.js121436361000000000 0
 86C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\async-iterator\drop.js121436361000000000 0
 106C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\erlang.js121436361000000000 0
@@ -24364,7 +24368,7 @@
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\http.js121436361000000000 0
 103C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\ini.js121436361000000000 0
 106C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\irpf90.js121436361000000000 0
-77C:\Users\Atyll\Desktop\florb_exam\dist\lufga-bolditalic-webfont.779b02ce.woff132668727358275303 0
+77C:\Users\Atyll\Desktop\florb_exam\dist\lufga-bolditalic-webfont.779b02ce.woff132668784596764204 0
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\isbl.js121436361000000000 0
 104C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\java.js121436361000000000 0
 110C:\Users\Atyll\Desktop\florb_exam\node_modules\emphasize\node_modules\highlight.js\lib\languages\javascript.js121436361000000000 0
@@ -24454,6 +24458,7 @@
 69C:\Users\Atyll\Desktop\florb_exam\node_modules\emojis-list\LICENSE.md121436361000000000 0
 65C:\Users\Atyll\Desktop\florb_exam\node_modules\emoji-regex\es2015132665137065520763 1
 69C:\Users\Atyll\Desktop\florb_exam\node_modules\emoji-regex\index.d.ts121436361000000000 0
+54C:\Users\Atyll\Desktop\florb_exam\dist\index copy.html132668750573959271 0
 74C:\Users\Atyll\Desktop\florb_exam\node_modules\emoji-regex\LICENSE-MIT.txt121436361000000000 0
 71C:\Users\Atyll\Desktop\florb_exam\node_modules\emoji-regex\package.json132665137204839802 0
 88C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\stable\number\max-safe-integer.js121436361000000000 0
@@ -24461,7 +24466,7 @@
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\@types\node\wasi.d.ts132663744980000000 0
 73C:\Users\Atyll\Desktop\florb_exam\node_modules\emoji-regex\es2015\text.js121436361000000000 0
 59C:\Users\Atyll\Desktop\florb_exam\node_modules\elliptic\lib132665137062274334 1
-77C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extrabold-webfont.f7c859ba.woff2132668727358534613 0
+77C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extrabold-webfont.f7c859ba.woff2132668784597442385 0
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\elliptic\node_modules132665137108165623 1
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\elliptic\package.json132665137201847015 0
 65C:\Users\Atyll\Desktop\florb_exam\node_modules\elliptic\README.md121436361000000000 0
@@ -24786,7 +24791,7 @@
 108C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\resolver-default\node_modules\micromatch\lib\utils.js132668664437185329 0
 95C:\Users\Atyll\Desktop\florb_exam\node_modules\deasync\node_modules\node-addon-api\appveyor.yml121436361000000000 0
 95C:\Users\Atyll\Desktop\florb_exam\node_modules\deasync\node_modules\node-addon-api\CHANGELOG.md121436361000000000 0
-74C:\Users\Atyll\Desktop\florb_exam\dist\lufga-medium-webfont.b6a026f6.woff2132668727358534613 0
+74C:\Users\Atyll\Desktop\florb_exam\dist\lufga-medium-webfont.b6a026f6.woff2132668784597542125 0
 112C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\library\modules\_math-expm1.js121436361000000000 0
 101C:\Users\Atyll\Desktop\florb_exam\node_modules\deasync\node_modules\node-addon-api\CODE_OF_CONDUCT.md121436361000000000 0
 86C:\Users\Atyll\Desktop\florb_exam\node_modules\deasync\node_modules\node-addon-api\doc132665160373926816 1
@@ -24962,7 +24967,7 @@
 59C:\Users\Atyll\Desktop\florb_exam\node_modules\cssstyle\lib132665122056852813 1
 71C:\Users\Atyll\Desktop\florb_exam\node_modules\cssstyle\MIT-LICENSE.txt121436361000000000 0
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\cssstyle\package.json121436361000000000 0
-73C:\Users\Atyll\Desktop\florb_exam\dist\lufga-italic-webfont.fc351b87.woff132668727358275303 0
+73C:\Users\Atyll\Desktop\florb_exam\dist\lufga-italic-webfont.fc351b87.woff132668784596893857 0
 93C:\Users\Atyll\Desktop\florb_exam\node_modules\cssstyle\scripts\download_latest_properties.js121436361000000000 0
 98C:\Users\Atyll\Desktop\florb_exam\node_modules\cssstyle\scripts\generate_implemented_properties.js121436361000000000 0
 81C:\Users\Atyll\Desktop\florb_exam\node_modules\cssstyle\lib\allExtraProperties.js121436361000000000 0
@@ -25308,7 +25313,7 @@
 89C:\Users\Atyll\Desktop\florb_exam\node_modules\cssnano\node_modules\has-flag\package.json132665137205777314 0
 86C:\Users\Atyll\Desktop\florb_exam\node_modules\cssnano\node_modules\has-flag\readme.md131593942790000000 0
 93C:\Users\Atyll\Desktop\florb_exam\node_modules\cssnano\node_modules\color-name\.eslintrc.json131174093250000000 0
-55C:\Users\Atyll\Desktop\florb_exam\dist\baf.60839654.css132668727359327584 0
+55C:\Users\Atyll\Desktop\florb_exam\dist\baf.60839654.css132668784600536872 0
 89C:\Users\Atyll\Desktop\florb_exam\node_modules\cssnano\node_modules\color-name\.npmignore130800019150000000 0
 87C:\Users\Atyll\Desktop\florb_exam\node_modules\cssnano\node_modules\color-name\index.js131446304070000000 0
 86C:\Users\Atyll\Desktop\florb_exam\node_modules\cssnano\node_modules\color-name\LICENSE130953959930000000 0
@@ -25505,7 +25510,7 @@
 66C:\Users\Atyll\Desktop\florb_exam\node_modules\css-select\index.js121436361000000000 0
 61C:\Users\Atyll\Desktop\florb_exam\node_modules\css-select\lib132665137060243178 1
 65C:\Users\Atyll\Desktop\florb_exam\node_modules\css-select\LICENSE121436361000000000 0
-61C:\Users\Atyll\Desktop\florb_exam\dist\florbs.b68e9f2d.js.map132668727359497131 0
+61C:\Users\Atyll\Desktop\florb_exam\dist\florbs.b68e9f2d.js.map132668784601244981 0
 67C:\Users\Atyll\Desktop\florb_exam\node_modules\css-select\README.md121436361000000000 0
 75C:\Users\Atyll\Desktop\florb_exam\node_modules\css-select\lib\attributes.js121436361000000000 0
 72C:\Users\Atyll\Desktop\florb_exam\node_modules\css-select\lib\compile.js121436361000000000 0
@@ -26059,7 +26064,7 @@
 86C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\proposals\string-code-points.js121436361000000000 0
 84C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\proposals\string-match-all.js121436361000000000 0
 84C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\modules\es.aggregate-error.js121436361000000000 0
-61C:\Users\Atyll\Desktop\florb_exam\dist\dashboard.3ec29ab7.css132668727359287688 0
+61C:\Users\Atyll\Desktop\florb_exam\dist\dashboard.3ec29ab7.css132668784600197781 0
 89C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\modules\es.array-buffer.is-view.js121436361000000000 0
 98C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\plugin-transform-property-literals\README.md121012626000000000 0
 113C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-html\node_modules\domhandler\lib\node.d.ts.map121436361000000000 0
@@ -26521,7 +26526,7 @@
 114C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-less\node_modules\less\lib\less\tree\comment.js121436361000000000 0
 86C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\string\virtual\link.js121436361000000000 0
 91C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\string\virtual\match-all.js121436361000000000 0
-54C:\Users\Atyll\Desktop\florb_exam\dist\baf.554e30e3.js132668727359287688 0
+54C:\Users\Atyll\Desktop\florb_exam\dist\baf.554e30e3.js132668784600297518 0
 88C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\string\virtual\repeat.js121436361000000000 0
 87C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\string\virtual\small.js121436361000000000 0
 88C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\string\virtual\strike.js121436361000000000 0
@@ -26549,6 +26554,7 @@
 90C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\reflect\define-property.js121436361000000000 0
 90C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\reflect\delete-property.js121436361000000000 0
 92C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\reflect\get-metadata-keys.js121436361000000000 0
+56C:\Users\Atyll\Desktop\florb_exam\dist\webshop copy.html132668750623842018 0
 87C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\reflect\get-metadata.js121436361000000000 0
 91C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\reflect\get-own-metadata.js121436361000000000 0
 91C:\Users\Atyll\Desktop\florb_exam\node_modules\core-js\features\reflect\get-prototype-of.js121436361000000000 0
@@ -27290,7 +27296,7 @@
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\regions\MK.js121436361000000000 0
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\regions\MM.js121436361000000000 0
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\regions\MN.js121436361000000000 0
-60C:\Users\Atyll\Desktop\florb_exam\dist\grumpa-5.85c9b0ba.png132668727358674225 0
+60C:\Users\Atyll\Desktop\florb_exam\dist\grumpa-5.85c9b0ba.png132668784597043451 0
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\regions\MQ.js121436361000000000 0
 78C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\regions\MU.js121436361000000000 0
 79C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\resolver-default\LICENSE121436361000000000 0
@@ -27374,7 +27380,7 @@
 66C:\Users\Atyll\Desktop\florb_exam\node_modules\big.js\CHANGELOG.md121436361000000000 0
 96C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\features\background-img-opts.js121436361000000000 0
 100C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\features\background-position-x-y.js121436361000000000 0
-59C:\Users\Atyll\Desktop\florb_exam\dist\weeha-5.cee7c8cb.png132668727358793912 0
+59C:\Users\Atyll\Desktop\florb_exam\dist\weeha-5.cee7c8cb.png132668784597073377 0
 106C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\features\background-repeat-round-space.js121436361000000000 0
 93C:\Users\Atyll\Desktop\florb_exam\node_modules\caniuse-lite\data\features\beforeafterprint.js121436361000000000 0
 83C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\source-map\dist\wasm.js.flow121436361000000000 0
@@ -27954,7 +27960,7 @@
 89C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\modules132665160399718716 1
 94C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\package.json132665160438616564 0
 96C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\postinstall.js121436361000000000 0
-64C:\Users\Atyll\Desktop\florb_exam\dist\plastic-wrap.56854ea3.jpg132668727358524628 0
+64C:\Users\Atyll\Desktop\florb_exam\dist\plastic-wrap.56854ea3.jpg132668784597043451 0
 91C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\README.md121436361000000000 0
 89C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\shim.js121436361000000000 0
 85C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\web132665160398885831 1
@@ -28695,7 +28701,7 @@
 110C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\fn\object\define-property.js121436361000000000 0
 101C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\fn\object\freeze.js121436361000000000 0
 122C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\fn\object\get-own-property-descriptor.js121436361000000000 0
-61C:\Users\Atyll\Desktop\florb_exam\dist\style.4a20161c.css.map132668727359467214 0
+61C:\Users\Atyll\Desktop\florb_exam\dist\style.4a20161c.css.map132668784600965721 0
 123C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\fn\object\get-own-property-descriptors.js121436361000000000 0
 119C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\fn\object\get-own-property-symbols.js121436361000000000 0
 111C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\node_modules\core-js\fn\object\get-prototype-of.js121436361000000000 0
@@ -28914,7 +28920,7 @@
 88C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\object\is-frozen.js131473721010000000 0
 88C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\object\is-sealed.js131473721010000000 0
 83C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\object\keys.js131473721010000000 0
-51C:\Users\Atyll\Desktop\florb_exam\dist\webshop.html132668733823847999 0
+51C:\Users\Atyll\Desktop\florb_exam\dist\webshop.html132668784600197781 0
 97C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\object\prevent-extensions.js131473721010000000 0
 83C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\object\seal.js131473721010000000 0
 95C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\object\set-prototype-of.js131473721010000000 0
@@ -28958,7 +28964,7 @@
 83C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\array\slice.js131473721010000000 0
 75C:\Users\Atyll\Desktop\florb_exam\node_modules\@types\node\ts3.6\index.d.ts132663744980000000 0
 84C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\array\splice.js131473721010000000 0
-57C:\Users\Atyll\Desktop\florb_exam\dist\games.2023421a.css132668727359277724 0
+57C:\Users\Atyll\Desktop\florb_exam\dist\games.2023421a.css132668784600207761 0
 85C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-runtime\core-js\array\unshift.js131473721010000000 0
 88C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-plugin-polyfill-regenerator\LICENSE119600064000000000 0
 93C:\Users\Atyll\Desktop\florb_exam\node_modules\babel-plugin-polyfill-regenerator\package.json132665160430149844 0
@@ -29500,7 +29506,7 @@
 122C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-posthtml\node_modules\posthtml-parser\coverage\base.css121436361000000000 0
 68C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\codeframe\src132668667001304305 1
 127C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-posthtml\node_modules\posthtml-parser\coverage\coverage.json121436361000000000 0
-59C:\Users\Atyll\Desktop\florb_exam\dist\medal-2.d4e5a661.svg132668727358883673 0
+59C:\Users\Atyll\Desktop\florb_exam\dist\medal-2.d4e5a661.svg132668784598689309 0
 125C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-posthtml\node_modules\posthtml-parser\coverage\lcov-report132665137021507416 1
 67C:\Users\Atyll\Desktop\florb_exam\node_modules\.bin\regjsparser.ps1132665160441827968 0
 123C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\transformer-posthtml\node_modules\posthtml-parser\coverage\lcov.info121436361000000000 0
@@ -30182,7 +30188,7 @@
 81C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\packager-js\lib\helpers.js121436361000000000 0
 95C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\packager-js\lib\ScopeHoistingPackager.js121436361000000000 0
 76C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\packager-html\LICENSE121436361000000000 0
-73C:\Users\Atyll\Desktop\florb_exam\dist\lufga-light-webfont.ae08e9cb.woff2132668727358534613 0
+73C:\Users\Atyll\Desktop\florb_exam\dist\lufga-light-webfont.ae08e9cb.woff2132668784597532142 0
 81C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\packager-html\package.json132668667042068001 0
 80C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\packager-css\package.json132668667042068001 0
 71C:\Users\Atyll\Desktop\florb_exam\node_modules\@parcel\packager-css\src132668667000755774 1
@@ -30616,7 +30622,7 @@
 86C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\plugin-syntax-class-static-block132665160425178026 1
 82C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\plugin-syntax-dynamic-import132665160425168062 1
 89C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\plugin-syntax-export-namespace-from132665160425187998 1
-77C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extralight-webfont.411946d5.woff132668727358265331 0
+77C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extralight-webfont.411946d5.woff132668784596863936 0
 72C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\plugin-syntax-flow132665121972161242 1
 85C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\plugin-syntax-optional-chaining132665160425267786 1
 43C:\Users\Atyll\Desktop\florb_exam\.cache\41132665161088811411 1
@@ -30819,7 +30825,7 @@
 81C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\preset-modules\package.json132665160426753828 0
 114C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\preset-modules\src\plugins\transform-edge-default-parameters132665160358659816 1
 101C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\preset-modules\src\plugins\transform-jsx-spread132665160362704224 1
-65C:\Users\Atyll\Desktop\florb_exam\dist\florb-is-lava.4a9a1b87.png132668727358584473 0
+65C:\Users\Atyll\Desktop\florb_exam\dist\florb-is-lava.4a9a1b87.png132668784598050761 0
 111C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\preset-modules\src\plugins\transform-safari-for-shadowing132665160365663545 1
 114C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\preset-modules\src\plugins\transform-tagged-template-caching132665160367368987 1
 122C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\preset-modules\src\plugins\transform-safari-block-shadowing\index.js121436361000000000 0
@@ -30936,7 +30942,7 @@
 97C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\plugin-transform-block-scoping\package.json132668664490008794 0
 94C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\plugin-transform-block-scoping\README.md121012626000000000 0
 101C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\plugin-transform-block-scoped-functions\LICENSE121012626000000000 0
-69C:\Users\Atyll\Desktop\florb_exam\dist\florb-placeholder.3cb2dd93.png132668727358414927 0
+69C:\Users\Atyll\Desktop\florb_exam\dist\florb-placeholder.3cb2dd93.png132668784596973634 0
 99C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\plugin-transform-arrow-functions\package.json132665160423035819 0
 96C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\plugin-transform-arrow-functions\README.md121012626000000000 0
 96C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\plugin-syntax-top-level-await\package.json132665160423035819 0
@@ -31070,7 +31076,7 @@
 95C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\helper-optimise-call-expression\README.md121012626000000000 0
 91C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\helper-module-transforms\package.json132665137170505722 0
 88C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\helper-module-transforms\README.md121012626000000000 0
-59C:\Users\Atyll\Desktop\florb_exam\dist\florb-4.c91f878b.svg132668727358888863 0
+59C:\Users\Atyll\Desktop\florb_exam\dist\florb-4.c91f878b.svg132668784598679350 0
 101C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\helper-module-transforms\lib\get-module-name.js121012626000000000 0
 91C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\helper-module-transforms\lib\index.js121012626000000000 0
 77C:\Users\Atyll\Desktop\florb_exam\images\jason-hafso-YypTXBPF5S4-unsplash.jpg132654395961294119 0
@@ -31168,7 +31174,7 @@
 85C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\core\node_modules\ms\license.md121436361000000000 0
 84C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\core\node_modules\ms\readme.md121436361000000000 0
 82C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\core\node_modules\json5\dist132665137063999714 1
-61C:\Users\Atyll\Desktop\florb_exam\dist\florbs.6d44b1c4.js.map132668727359477180 0
+61C:\Users\Atyll\Desktop\florb_exam\dist\florbs.6d44b1c4.js.map132668784601055498 0
 81C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\core\node_modules\json5\lib132665137064892449 1
 88C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\core\node_modules\json5\lib\cli.js121436361000000000 0
 92C:\Users\Atyll\Desktop\florb_exam\node_modules\@babel\core\node_modules\json5\lib\parse.d.ts121436361000000000 0
@@ -31273,7 +31279,7 @@
 57C:\Users\Atyll\Desktop\florb_exam\node_modules\.bin\which132665137216391584 0
 55C:\Users\Atyll\Desktop\florb_exam\images\arrow-down.svg132668659466188757 0
 51C:\Users\Atyll\Desktop\florb_exam\images\brow-1.svg132668659466198725 0
-54C:\Users\Atyll\Desktop\florb_exam\images\build-a-florb132654397159292005 1
+54C:\Users\Atyll\Desktop\florb_exam\images\build-a-florb132668752538015562 1
 51C:\Users\Atyll\Desktop\florb_exam\images\card-3.jpg132654395961084671 0
 51C:\Users\Atyll\Desktop\florb_exam\images\card-4.jpg132654395961244255 0
 43C:\Users\Atyll\Desktop\florb_exam\.cache\e7132665161099809506 1
@@ -31293,7 +31299,7 @@
 57C:\Users\Atyll\Desktop\florb_exam\images\florb-scroll.svg132668659466358289 0
 50C:\Users\Atyll\Desktop\florb_exam\images\florb.svg132654397159361813 0
 51C:\Users\Atyll\Desktop\florb_exam\images\game-2.png132668659466378237 0
-46C:\Users\Atyll\Desktop\florb_exam\images\games132668695692537627 1
+46C:\Users\Atyll\Desktop\florb_exam\images\games132668752538195077 1
 55C:\Users\Atyll\Desktop\florb_exam\images\grumpa-5 2.png132668659512937740 0
 49C:\Users\Atyll\Desktop\florb_exam\images\lava.png132668659512977651 0
 49C:\Users\Atyll\Desktop\florb_exam\images\oals.png132668659466448051 0
@@ -31303,7 +31309,7 @@
 54C:\Users\Atyll\Desktop\florb_exam\images\quazi-3 2.png132668659513097308 0
 52C:\Users\Atyll\Desktop\florb_exam\images\quazi-3.png132654397159471536 0
 52C:\Users\Atyll\Desktop\florb_exam\images\tummy-1.png132654397159541340 0
-48C:\Users\Atyll\Desktop\florb_exam\images\webshop132668659513521248 1
+48C:\Users\Atyll\Desktop\florb_exam\images\webshop132668752538424474 1
 54C:\Users\Atyll\Desktop\florb_exam\images\weeha-5 2.png132668659513601037 0
 54C:\Users\Atyll\Desktop\florb_exam\images\yakiyum-4.png132654397159591213 0
 65C:\Users\Atyll\Desktop\florb_exam\images\webshop\plastic-wrap.jpg132668659513356610 0
@@ -31336,76 +31342,79 @@
 72C:\Users\Atyll\Desktop\florb_exam\fonts\lufga-mediumitalic-webfont.woff2132654397159092542 0
 67C:\Users\Atyll\Desktop\florb_exam\fonts\lufga-regular-webfont.woff2132654397159122454 0
 62C:\Users\Atyll\Desktop\florb_exam\dist\arrow-down.4712766e.svg132668733729257564 0
-62C:\Users\Atyll\Desktop\florb_exam\dist\arrow-down.87d4b374.svg132668727358335135 0
-60C:\Users\Atyll\Desktop\florb_exam\dist\arrow-up.14baeef6.svg132668727358534613 0
+62C:\Users\Atyll\Desktop\florb_exam\dist\arrow-down.87d4b374.svg132668784596973634 0
+60C:\Users\Atyll\Desktop\florb_exam\dist\arrow-up.14baeef6.svg132668784597861277 0
 58C:\Users\Atyll\Desktop\florb_exam\dist\baf.35fda710.js.map132668733824366609 0
 71C:\Users\Atyll\Desktop\florb_exam\dist\lufga-bold-webfont.d7d1be4b.woff132668733715785814 0
-54C:\Users\Atyll\Desktop\florb_exam\dist\baf.38e76d16.js132668727359417351 0
-58C:\Users\Atyll\Desktop\florb_exam\dist\baf.38e76d16.js.map132668727359666674 0
+54C:\Users\Atyll\Desktop\florb_exam\dist\baf.38e76d16.js132668784600746315 0
+58C:\Users\Atyll\Desktop\florb_exam\dist\baf.38e76d16.js.map132668784601594052 0
 54C:\Users\Atyll\Desktop\florb_exam\dist\baf.c157bb3b.js132668673265686803 0
 54C:\Users\Atyll\Desktop\florb_exam\dist\baf.d2f23070.js132668733823887886 0
-47C:\Users\Atyll\Desktop\florb_exam\dist\baf.html132668733823828053 0
-59C:\Users\Atyll\Desktop\florb_exam\dist\clayman.f014fe86.png132668727358654292 0
+47C:\Users\Atyll\Desktop\florb_exam\dist\baf.html132668784600477027 0
+59C:\Users\Atyll\Desktop\florb_exam\dist\clayman.f014fe86.png132668784598160469 0
 61C:\Users\Atyll\Desktop\florb_exam\dist\compendium.6d44b1c4.js132668689154983843 0
 65C:\Users\Atyll\Desktop\florb_exam\dist\compendium.6d44b1c4.js.map132668689155223191 0
 54C:\Users\Atyll\Desktop\florb_exam\dist\compendium.html132668689154983843 0
-65C:\Users\Atyll\Desktop\florb_exam\dist\dashboard.3ec29ab7.css.map132668727359507118 0
+58C:\Users\Atyll\Desktop\florb_exam\dist\dashboard copy.html132668750573959271 0
+65C:\Users\Atyll\Desktop\florb_exam\dist\dashboard.3ec29ab7.css.map132668784600965721 0
 65C:\Users\Atyll\Desktop\florb_exam\dist\dashboard.5c1b74c1.css.map132668733824207027 0
-60C:\Users\Atyll\Desktop\florb_exam\dist\dashboard.5f01b7b2.js132668727359287688 0
-58C:\Users\Atyll\Desktop\florb_exam\dist\fabric.146ab712.jpg132668727358888863 0
+60C:\Users\Atyll\Desktop\florb_exam\dist\dashboard.5f01b7b2.js132668784600297518 0
+58C:\Users\Atyll\Desktop\florb_exam\dist\fabric.146ab712.jpg132668784598529780 0
 58C:\Users\Atyll\Desktop\florb_exam\dist\fabric.14807476.jpg132668733717162133 0
-59C:\Users\Atyll\Desktop\florb_exam\dist\florb-1.11b80821.svg132668727358883673 0
-59C:\Users\Atyll\Desktop\florb_exam\dist\florb-2.4dc9c0c8.svg132668727358883673 0
-59C:\Users\Atyll\Desktop\florb_exam\dist\florb-3.a723ff3c.svg132668727358883673 0
+59C:\Users\Atyll\Desktop\florb_exam\dist\florb-1.11b80821.svg132668784598365055 0
+59C:\Users\Atyll\Desktop\florb_exam\dist\florb-2.4dc9c0c8.svg132668784598679350 0
+59C:\Users\Atyll\Desktop\florb_exam\dist\florb-3.a723ff3c.svg132668784598689309 0
 69C:\Users\Atyll\Desktop\florb_exam\dist\florb-placeholder.a6c3726c.png132668733729147852 0
-64C:\Users\Atyll\Desktop\florb_exam\dist\florb-scroll.31903339.svg132668727358275303 0
+64C:\Users\Atyll\Desktop\florb_exam\dist\florb-scroll.31903339.svg132668784596973634 0
 64C:\Users\Atyll\Desktop\florb_exam\dist\florb-scroll.70d92efd.svg132668733715745932 0
+55C:\Users\Atyll\Desktop\florb_exam\dist\florbs copy.html132668750573959271 0
 57C:\Users\Atyll\Desktop\florb_exam\dist\florbs.4f52575a.js132668733823867932 0
 61C:\Users\Atyll\Desktop\florb_exam\dist\florbs.6efdaafc.js.map132668733824207027 0
-57C:\Users\Atyll\Desktop\florb_exam\dist\florbs.b68e9f2d.js132668727359287688 0
-61C:\Users\Atyll\Desktop\florb_exam\dist\games.2023421a.css.map132668727359477180 0
+57C:\Users\Atyll\Desktop\florb_exam\dist\florbs.b68e9f2d.js132668784600277568 0
+61C:\Users\Atyll\Desktop\florb_exam\dist\games.2023421a.css.map132668784600975698 0
 60C:\Users\Atyll\Desktop\florb_exam\dist\games.38e76d16.js.map132668695258397912 0
 56C:\Users\Atyll\Desktop\florb_exam\dist\games.554e30e3.js132668672282844155 0
 60C:\Users\Atyll\Desktop\florb_exam\dist\games.554e30e3.js.map132668672283243085 0
 60C:\Users\Atyll\Desktop\florb_exam\dist\games.58f1d80b.js.map132668733824326709 0
 56C:\Users\Atyll\Desktop\florb_exam\dist\games.9c155122.js132668733823867932 0
 60C:\Users\Atyll\Desktop\florb_exam\dist\games.9c155122.js.map132668733824207027 0
-60C:\Users\Atyll\Desktop\florb_exam\dist\games.c157bb3b.js.map132668727359636758 0
-56C:\Users\Atyll\Desktop\florb_exam\dist\games.e2a1de74.js132668727359287688 0
-60C:\Users\Atyll\Desktop\florb_exam\dist\games.e2a1de74.js.map132668727359477180 0
+60C:\Users\Atyll\Desktop\florb_exam\dist\games.c157bb3b.js.map132668784601534199 0
+56C:\Users\Atyll\Desktop\florb_exam\dist\games.e2a1de74.js132668784600237666 0
+60C:\Users\Atyll\Desktop\florb_exam\dist\games.e2a1de74.js.map132668784601045522 0
 61C:\Users\Atyll\Desktop\florb_exam\dist\games.e98b9574.css.map132668733824207027 0
-63C:\Users\Atyll\Desktop\florb_exam\dist\green_florb.9c19435b.png132668727358554558 0
+63C:\Users\Atyll\Desktop\florb_exam\dist\green_florb.9c19435b.png132668784597851296 0
 60C:\Users\Atyll\Desktop\florb_exam\dist\grumpa-5.54d76c87.png132668733729417136 0
-61C:\Users\Atyll\Desktop\florb_exam\dist\kids-side.6cf7cacb.jpg132668727358674225 0
-56C:\Users\Atyll\Desktop\florb_exam\dist\login.77583b8c.js132668727359287688 0
+61C:\Users\Atyll\Desktop\florb_exam\dist\kids-side.6cf7cacb.jpg132668784598060738 0
+56C:\Users\Atyll\Desktop\florb_exam\dist\login.77583b8c.js132668784600287529 0
 57C:\Users\Atyll\Desktop\florb_exam\dist\login.8ef58aeb.css132668733823877916 0
-61C:\Users\Atyll\Desktop\florb_exam\dist\login.fcf469ed.css.map132668727359477180 0
-49C:\Users\Atyll\Desktop\florb_exam\dist\login.html132668733823877916 0
-72C:\Users\Atyll\Desktop\florb_exam\dist\lufga-bold-webfont.622a4227.woff2132668727358524628 0
-71C:\Users\Atyll\Desktop\florb_exam\dist\lufga-bold-webfont.f3317c6f.woff132668727358265331 0
+61C:\Users\Atyll\Desktop\florb_exam\dist\login.fcf469ed.css.map132668784601065463 0
+49C:\Users\Atyll\Desktop\florb_exam\dist\login.html132668784600277568 0
+72C:\Users\Atyll\Desktop\florb_exam\dist\lufga-bold-webfont.622a4227.woff2132668784597272847 0
+71C:\Users\Atyll\Desktop\florb_exam\dist\lufga-bold-webfont.f3317c6f.woff132668784596764204 0
 77C:\Users\Atyll\Desktop\florb_exam\dist\lufga-bolditalic-webfont.7834df7b.woff132668733715785814 0
-83C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extrabolditalic-webfont.9ca6b3a3.woff2132668727358524628 0
-82C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extrabolditalic-webfont.fc2e6d8d.woff132668727358265331 0
-83C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extralightitalic-webfont.0e819fd1.woff132668727358265331 0
-84C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extralightitalic-webfont.736a76f9.woff2132668727358524628 0
+83C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extrabolditalic-webfont.9ca6b3a3.woff2132668784597522174 0
+82C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extrabolditalic-webfont.fc2e6d8d.woff132668784596843981 0
+83C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extralightitalic-webfont.0e819fd1.woff132668784596843981 0
+84C:\Users\Atyll\Desktop\florb_exam\dist\lufga-extralightitalic-webfont.736a76f9.woff2132668784597522174 0
 73C:\Users\Atyll\Desktop\florb_exam\dist\lufga-italic-webfont.cb3fb358.woff132668733715745932 0
-72C:\Users\Atyll\Desktop\florb_exam\dist\lufga-light-webfont.faf8a79b.woff132668727358275303 0
-80C:\Users\Atyll\Desktop\florb_exam\dist\lufga-mediumitalic-webfont.6cbf8b77.woff2132668727358534613 0
+72C:\Users\Atyll\Desktop\florb_exam\dist\lufga-light-webfont.faf8a79b.woff132668784596963674 0
+80C:\Users\Atyll\Desktop\florb_exam\dist\lufga-mediumitalic-webfont.6cbf8b77.woff2132668784597532142 0
 74C:\Users\Atyll\Desktop\florb_exam\dist\lufga-regular-webfont.2ea4712a.woff132668733729247590 0
-56C:\Users\Atyll\Desktop\florb_exam\dist\oals.4e480490.svg132668727359098194 0
+56C:\Users\Atyll\Desktop\florb_exam\dist\oals.4e480490.svg132668784598898747 0
 56C:\Users\Atyll\Desktop\florb_exam\dist\oals.8321a030.svg132668733729028181 0
-51C:\Users\Atyll\Desktop\florb_exam\dist\profile.html132668733823877916 0
-57C:\Users\Atyll\Desktop\florb_exam\dist\quazi.25543c22.svg132668727358938629 0
+51C:\Users\Atyll\Desktop\florb_exam\dist\profile.html132668784600287529 0
+57C:\Users\Atyll\Desktop\florb_exam\dist\quazi.25543c22.svg132668784598060738 0
 57C:\Users\Atyll\Desktop\florb_exam\dist\style.5a0da0f2.css132668733823828053 0
-57C:\Users\Atyll\Desktop\florb_exam\dist\vegan.76ab479d.jpg132668727358883673 0
-63C:\Users\Atyll\Desktop\florb_exam\dist\webshop.0ef9d114.css.map132668727359467214 0
+57C:\Users\Atyll\Desktop\florb_exam\dist\vegan.76ab479d.jpg132668784597113259 0
+63C:\Users\Atyll\Desktop\florb_exam\dist\webshop.0ef9d114.css.map132668784600975698 0
 58C:\Users\Atyll\Desktop\florb_exam\dist\webshop.818340cf.js132668733823847999 0
 62C:\Users\Atyll\Desktop\florb_exam\dist\webshop.818340cf.js.map132668733824207027 0
-63C:\Users\Atyll\Desktop\florb_exam\dist\webshop_img.12cf2b59.jpg132668727358634332 0
-55C:\Users\Atyll\Desktop\florb_exam\dist\yeah.d9bdedd2.js132668727359287688 0
-59C:\Users\Atyll\Desktop\florb_exam\dist\yeah.d9bdedd2.js.map132668727359497131 0
+63C:\Users\Atyll\Desktop\florb_exam\dist\webshop_img.12cf2b59.jpg132668784597831349 0
+53C:\Users\Atyll\Desktop\florb_exam\dist\yeah copy.html132668750623842018 0
+55C:\Users\Atyll\Desktop\florb_exam\dist\yeah.d9bdedd2.js132668784600297518 0
+59C:\Users\Atyll\Desktop\florb_exam\dist\yeah.d9bdedd2.js.map132668784601344711 0
 55C:\Users\Atyll\Desktop\florb_exam\dist\yeah.e19d94d1.js132668733823897860 0
-48C:\Users\Atyll\Desktop\florb_exam\dist\yeah.html132668733823897860 0
+48C:\Users\Atyll\Desktop\florb_exam\dist\yeah.html132668784600297518 0
 43C:\Users\Atyll\Desktop\florb_exam\.cache\01132665161055420681 1
 43C:\Users\Atyll\Desktop\florb_exam\.cache\05132665161055450599 1
 43C:\Users\Atyll\Desktop\florb_exam\.cache\07132665161068535099 1
