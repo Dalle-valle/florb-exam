@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="1211d594e0e3315d1eaecc89ea159205">
+
+  <link rel="stylesheet" href="3e831fa8706816ae97e9335a268881eb">
+
+  <link href="406e3e703639a4daa79498b58987d52b" rel="stylesheet">
+  <link rel="stylesheet/less" type="text/css" href="7001169b00c0c87ae19460ee0649d2fa">
+  <script src="82c8b48043435a539db186fc697176e8" type="text/javascript"></script>
+
+  <title>Florbs | Builder</title>
+</head>
+
+<body>
+  <div class="mobile-builder">
+    <h2 class="current-edit">Skin Tone</h2>
+    <div class="face-wrapper">
+      <svg class="face mobile-face" height="100" width="100"></svg>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s2"><a class="active" href="#eyes">Color</a></li>
+          <li class="tab col s2"><a href="#test2">Eyes</a></li>
+          <li class="tab col s2"><a href="#test3">Pupils</a></li>
+          <li class="tab col s2"><a href="#test4">Brows</a></li>
+          <li class="tab col s2"><a href="#test5">Mouth</a></li>
+          <li class="tab col s2"><a href="#test6">Teeth</a></li>
+        </ul>
+      </div>
+      <div id="eyes" class="col s12">
+        <div class="mobile-colors">
+          <div class="mobile-row">
+            <div class="color color-1"></div>
+            <div class="color color-2"></div>
+            <div class="color color-3"></div>
+            <div class="color color-4"></div>
+            <div class="color color-5"></div>
+          </div>
+          <div class="mobile-row">
+            <div class="color color-6"></div>
+            <div class="color color-7"></div>
+            <div class="color color-8"></div>
+            <div class="color color-9"></div>
+            <div class="color color-10"></div>
+          </div>
+        </div>
+      </div>
+      <div id="test2" class="col s12">
+        <div class="eyes">
+          <svg class="draggable trackable" width="50" height="50" viewbox="0 0 149 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse class="culprit-1" rx="75.5" ry="74.5" transform="matrix(1.31134e-07 1 1 -1.31134e-07 74.5 75.5)" fill="red"></ellipse>
+          </svg>
+          <svg class="draggable trackable" width="50" height="50" viewbox="0 0 149 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse class="culprit-2" rx="75.5" ry="74.5" transform="matrix(1.31134e-07 1 1 -1.31134e-07 74.5 75.5)" fill="red"></ellipse>
+          </svg>
+        </div>
+      </div>
+      <div id="test3" class="col s12">Test 3</div>
+      <div id="test4" class="col s12">Test 4</div>
+      <div id="test5" class="col s12">Test 5</div>
+      <div id="test6" class="col s12">Test 6</div>
+    </div>
+    <div class="bottom-nav">
+      <a href="a777e36dcb3ea3b196846b99a5c0dc31">
+        <div class="menu-link link-1">
+          <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D"></circle>
+            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white"></circle>
+            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white"></circle>
+            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331"></circle>
+            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331"></circle>
+          </svg>
+          <a class="special-link-1" href="99c3ab577525f18dfc1f52cb4f9da390">Florbs</a>
+        </div>
+      </a>
+      <a href="e3c7b344bdf588000cfd24b487ee6f5c">
+        <div class="menu-link link-2">
+          <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+            <circle cx="39" cy="39" r="21" fill="#F6ACF8"></circle>
+            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white"></circle>
+            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white"></circle>
+            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331"></circle>
+            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331"></circle>
+          </svg>
+          <a class="special-link-2" href="#">Games</a>
+        </div>
+      </a>
+      <a href="ce11a863ec023f6af4829106e5da55e1">
+        <div class="menu-link link-3">
+          <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA"></circle>
+            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white"></circle>
+            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white"></circle>
+            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331"></circle>
+            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331"></circle>
+          </svg>
+          <a class="special-link-3" href="#">Builder</a>
+        </div>
+      </a>
+      <a href="9912466b6770ddbdcbe41757125232c0">
+        <div class="menu-link link-4">
+          <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+            <circle cx="39" cy="39" r="21" fill="#4AA67B"></circle>
+            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white"></circle>
+            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white"></circle>
+            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331"></circle>
+            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331"></circle>
+          </svg>
+          <a class="special-link-4" href="#">Profile</a>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="desktop-builder">
+    <div class="row">
+      <div class="col l1">
+        <div class="sidebar-left">
+          <div class="icon icon-1"><a href="ce11a863ec023f6af4829106e5da55e1">B-a-F</a></div>
+          <div class="icon icon-2">icon</div>
+          <div class="icon icon-3">icon</div>
+          <div class="icon icon-4">icon</div>
+          <div class="icon icon-5">icon</div>
+        </div>
+      </div>
+      <div class="col l1">
+        <div class="color-picker">
+          <span>Face Color</span>
+          <div class="color color-1"></div>
+          <div class="color color-2"></div>
+          <div class="color color-3"></div>
+          <div class="color color-4"></div>
+          <div class="color color-5"></div>
+          <div class="color color-6"></div>
+          <div class="color color-7"></div>
+          <div class="color color-8"></div>
+          <div class="color color-9"></div>
+        </div>
+      </div>
+      <div class="col l7">
+        <div class="mid-content">
+          <h1>Build-a-Florb</h1>
+          <div class="face specialface"></div>
+
+          <div class="toolbox">
+            <div class="eyes">
+              <div class="eyes-set-1">
+                <svg class="draggable trackable" width="75" height="75" viewbox="0 0 149 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse rx="75.5" ry="74.5" transform="matrix(1.31134e-07 1 1 -1.31134e-07 74.5 75.5)" fill="white"></ellipse>
+                </svg>
+                <svg class="draggable trackable" width="75" height="75" viewbox="0 0 149 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse rx="75.5" ry="74.5" transform="matrix(1.31134e-07 1 1 -1.31134e-07 74.5 75.5)" fill="white"></ellipse>
+                </svg>
+              </div>
+            </div>
+            <div class="pupils">
+              <div class="pupils-set-1">
+                <svg class="draggable trackable" width="16" height="16" viewbox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30.9009" cy="30.9009" r="30.9009" fill="black"></circle>
+                </svg>
+                <svg class="draggable trackable" width="16" height="16" viewbox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30.9009" cy="30.9009" r="30.9009" fill="black"></circle>
+                </svg>
+              </div>
+              <div class="pupils-set-2">
+                <svg class="draggable trackable" width="29" height="29" viewbox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30.9009" cy="30.9009" r="30.9009" fill="black"></circle>
+                </svg>
+                <svg class="draggable trackable" width="29" height="29" viewbox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30.9009" cy="30.9009" r="30.9009" fill="black"></circle>
+                </svg>
+              </div>
+              <div class="brows">
+                <div class="brows-set-1">
+                  <svg class="draggable trackable" width="62" height="23" viewbox="0 0 62 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.58813 0L61.7476 18.7634L60.6153 22.9894L-5.56707e-05 9.65926L2.58813 0Z" fill="#676767"></path>
+                  </svg>
+                  <svg class="draggable trackable" width="63" height="23" viewbox="0 0 63 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M59.8875 0L0.727979 18.7634L1.86031 22.9894L62.4756 9.65926L59.8875 0Z" fill="#676767"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="mouth">
+                <div class="mouth-set-1">
+                  <svg class="draggable trackable" width="75" height="56" viewbox="0 0 75 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="37.6006" cy="27.5639" rx="33.5" ry="21.5" transform="rotate(-11.1077 37.6006 27.5639)" fill="#676767"></ellipse>
+                  </svg>
+                </div>
+                <div class="mouth-set-2">
+                  <svg class="draggable trackable" width="51" height="8" viewbox="0 0 51 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M51 6.51349C51 9.39134 41.0452 4.55945 26.6821 4.55945C12.3191 4.55945 0 10.0427 0 7.16484C0 4.287 12.3191 0 26.6821 0C41.0452 0 51 3.63565 51 6.51349Z" fill="#676767"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-wrapper" style="c7e2bbe58cdd7a81a0980ec489c36b0e">
+            <button class="button" data-type="eyes">Eyes</button>
+            <button class="button" data-type="pupils">Pupils</button>
+            <button class="button" data-type="brows">Brows</button>
+            <button class="button" data-type="mouth">Mouth</button>
+            <button class="button" data-type="teeth">Teeth</button>
+          </div>
+        </div>
+      </div>
+      <div class="col l3">
+        <div class="sidebar-form">
+          <form action="">
+            <label for="florb-name">Florb Name</label>
+            <input type="text" name="florb-name">
+            <label for="florb-story">Florb Story</label>
+            <input type="text" name="florb-story">
+            <button class="reset-button" type="button">Reset</button>
+            <button class="save-button" type="button">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="ebf98ae3563aa1a0f7111e50ba24cf39">
+    <img class="logo" src="09aa76d83c4e88efe3a96074281d31cb">
+  </a>
+  <script src="a9e53d6ac189d23a360d130ee416abed"></script>
+  
+  <script src="69f5e056a2a52d82b1b56bd77a8cd1fb"></script>
+
+  <script src="5ee7223ebf23109a8b589c4a0258e49a"></script>
+  <script data-parcel-key="e6d02a213f059c077183669f0933c658">
+    const tabs = document.querySelectorAll(".tabs");
+    for (tab of tabs) {
+      var instance = M.Tabs.init(tab);
+    }
+  </script>
+</body>
+
+</html>

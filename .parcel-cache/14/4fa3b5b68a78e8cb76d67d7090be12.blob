@@ -1,0 +1,38 @@
+document.addEventListener("DOMContentLoaded", $4c290d3a8d1bb13d625192d149c4f17f$var$initCaro);
+function $4c290d3a8d1bb13d625192d149c4f17f$var$initCaro() {
+    setTimeout(()=>{
+        var elems = document.querySelectorAll(".carousel");
+        var elem = document.querySelector(".carousel");
+        var options = {
+            numVisible: 1,
+            fullWidth: true
+        };
+        var instances = M.Carousel.init(elems, options);
+        var instance = M.Carousel.getInstance(elem);
+        console.log({
+            elems: elems
+        });
+        document.querySelector(".arrow-next").addEventListener("click", nextCaroItem);
+        document.querySelector(".arrow-prev").addEventListener("click", prevCaroItem);
+        function nextCaroItem() {
+            console.log("yo");
+            instance.next(1);
+            setTimeout($4c290d3a8d1bb13d625192d149c4f17f$var$setBackground, 200);
+        }
+        function prevCaroItem() {
+            console.log("yo");
+            instance.prev(1);
+            setTimeout($4c290d3a8d1bb13d625192d149c4f17f$var$setBackground, 200);
+        }
+        $4c290d3a8d1bb13d625192d149c4f17f$var$setBackground();
+    }, 500);
+}
+function $4c290d3a8d1bb13d625192d149c4f17f$var$setBackground() {
+    console.log(document.querySelectorAll(".carousel-item").length);
+    const caroItems = document.querySelectorAll(".carousel-item");
+    for(let i = 0; i < caroItems.length; i++)if (caroItems[i].classList.contains("active")) {
+        console.log(caroItems[i]);
+        console.log(document.querySelector(`.background-img${i + 1}`));
+        document.querySelector(`.background-img${i + 1}`).classList.remove("hide");
+    } else document.querySelector(`.background-img${i + 1}`).classList.add("hide");
+}

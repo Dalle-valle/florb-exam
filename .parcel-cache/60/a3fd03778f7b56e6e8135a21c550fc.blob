@@ -1,0 +1,68 @@
+const $b38e5238f88c4bbfff7c6472e14d93b4$var$faceRect = document.querySelector(".face").getBoundingClientRect();
+const $b38e5238f88c4bbfff7c6472e14d93b4$var$colors = document.querySelectorAll(".color");
+const $b38e5238f88c4bbfff7c6472e14d93b4$var$face = document.querySelector(".specialface");
+const $b38e5238f88c4bbfff7c6472e14d93b4$var$mobileFace = document.querySelector(".mobile-face");
+const $b38e5238f88c4bbfff7c6472e14d93b4$var$cx = $b38e5238f88c4bbfff7c6472e14d93b4$var$faceRect.x + $b38e5238f88c4bbfff7c6472e14d93b4$var$faceRect.width / 2;
+const $b38e5238f88c4bbfff7c6472e14d93b4$var$cy = $b38e5238f88c4bbfff7c6472e14d93b4$var$faceRect.y + $b38e5238f88c4bbfff7c6472e14d93b4$var$faceRect.height / 2;
+const $b38e5238f88c4bbfff7c6472e14d93b4$var$coords = document.querySelector(".trackable");
+let $b38e5238f88c4bbfff7c6472e14d93b4$var$inuse = document.querySelector(".inuse");
+var $b38e5238f88c4bbfff7c6472e14d93b4$var$elem = document.querySelector(".draggable");
+var $b38e5238f88c4bbfff7c6472e14d93b4$var$draggie = new Draggabilly($b38e5238f88c4bbfff7c6472e14d93b4$var$elem, {
+});
+var $b38e5238f88c4bbfff7c6472e14d93b4$var$draggableElems = document.querySelectorAll(".draggable");
+var $b38e5238f88c4bbfff7c6472e14d93b4$var$draggies = [];
+for(var $b38e5238f88c4bbfff7c6472e14d93b4$var$i = 0; $b38e5238f88c4bbfff7c6472e14d93b4$var$i < $b38e5238f88c4bbfff7c6472e14d93b4$var$draggableElems.length; $b38e5238f88c4bbfff7c6472e14d93b4$var$i++){
+    var $b38e5238f88c4bbfff7c6472e14d93b4$var$draggableElem = $b38e5238f88c4bbfff7c6472e14d93b4$var$draggableElems[$b38e5238f88c4bbfff7c6472e14d93b4$var$i];
+    var $b38e5238f88c4bbfff7c6472e14d93b4$var$draggie = new Draggabilly($b38e5238f88c4bbfff7c6472e14d93b4$var$draggableElem, {
+    });
+    $b38e5238f88c4bbfff7c6472e14d93b4$var$draggies.push($b38e5238f88c4bbfff7c6472e14d93b4$var$draggie);
+}
+$b38e5238f88c4bbfff7c6472e14d93b4$var$draggies.forEach((item)=>{
+    item.on("dragEnd", function(event, pointer) {
+        const rect = event.target.getBoundingClientRect();
+        const dx = rect.x + rect.width / 2;
+        const dy = rect.y + rect.height / 2;
+        const dist = Math.hypot($b38e5238f88c4bbfff7c6472e14d93b4$var$cx - dx, $b38e5238f88c4bbfff7c6472e14d93b4$var$cy - dy);
+        console.log(dist);
+        console.log(rect);
+        if (dist < 400) {
+            event.target.parentElement.classList.add("inuse");
+            document.querySelector(".mobile-face").appendChild(event.target);
+            console.log(rect);
+        } else event.target.parentElement.classList.remove("inuse");
+    });
+});
+for (let color of $b38e5238f88c4bbfff7c6472e14d93b4$var$colors){
+    color.addEventListener("click", $b38e5238f88c4bbfff7c6472e14d93b4$var$getColor);
+    function $b38e5238f88c4bbfff7c6472e14d93b4$var$getColor() {
+        let currentColor = window.getComputedStyle(color)["background-color"];
+        console.log(currentColor);
+        $b38e5238f88c4bbfff7c6472e14d93b4$var$face.style.backgroundColor = currentColor;
+        $b38e5238f88c4bbfff7c6472e14d93b4$var$mobileFace.style.backgroundColor = currentColor;
+    }
+}
+if (document.title === "Florbs | Dashboard") {
+    document.querySelector(".link-1").classList.add("selected");
+    document.querySelector(".outer-1").classList.remove("hide");
+    document.querySelector(".special-link-1").style.transform = "translateY(30px)";
+    document.querySelector(".bottom-nav").classList.add("nav-1");
+} else if (document.title === "Florbs | Games") {
+    document.querySelector(".link-2").classList.add("selected");
+    document.querySelector(".outer-2").classList.remove("hide");
+    document.querySelector(".special-link-2").style.transform = "translateY(30px)";
+    document.querySelector(".bottom-nav").classList.add("nav-2");
+} else if (document.title === "Florbs | Builder") {
+    document.querySelector(".link-3").classList.add("selected");
+    document.querySelector(".outer-3").classList.remove("hide");
+    document.querySelector(".special-link-3").style.transform = "translateY(30px)";
+    document.querySelector(".bottom-nav").classList.add("nav-3");
+} else if (document.title === "Florbs | Profile") {
+    document.querySelector(".link-4").classList.add("selected");
+    document.querySelector(".outer-4").classList.remove("hide");
+    document.querySelector(".special-link-4").style.transform = "translateY(30px)";
+    document.querySelector(".bottom-nav").classList.add("nav-4");
+}
+document.querySelector(".reset-button").addEventListener("click", $b38e5238f88c4bbfff7c6472e14d93b4$var$resetThis);
+function $b38e5238f88c4bbfff7c6472e14d93b4$var$resetThis() {
+    location.reload();
+}

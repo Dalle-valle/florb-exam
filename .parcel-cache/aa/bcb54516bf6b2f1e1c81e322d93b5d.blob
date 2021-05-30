@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="b806d0993a76b53ac48cae2f9e9bd560">
+  <link rel="stylesheet" href="ce50cb75ca6cbdc0290b99102f5ceda6">
+  <link href="829cd78231689191fe9a804f688b4309" rel="stylesheet">
+  <link rel="stylesheet/less" type="text/css" href="6ed8cbea0f4b28cc8f42a9eff186589c">
+  <title>Florbs | Landing</title>
+</head>
+
+<body class="bodyclass">
+  <div class="testwrapper">
+    <div class="drag-item draggable"></div>
+  </div>
+
+  <footer class=""></footer>
+
+  <script src="abcb00cbe7b5c74b7daa4f04d221ae69"></script>
+  <script src="2f14990bd460e0ca369e1886eee62e95" data-parcel-key="269edf3fd29c01ae6bd9f7b4df62bc56">
+  </script>
+  <script src="a2870e06872b68f0e39dcbfbf8e0661c"></script>
+
+  <script data-parcel-key="c8c693bdefef1945a809828242d85063">
+    var elem = document.querySelector(".draggable");
+    var draggie = new Draggabilly(elem, {});
+
+    var draggableElems = document.querySelectorAll(".draggable");
+
+    var draggies = [];
+
+    for (var i = 0; i < draggableElems.length; i++) {
+      var draggableElem = draggableElems[i];
+      var draggie = new Draggabilly(draggableElem, {});
+      draggies.push(draggie);
+    }
+  </script>
+  <script src="eb85e346decf991e1f39d35faa978c72"></script>
+</body>
+
+</html>

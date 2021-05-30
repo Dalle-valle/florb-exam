@@ -1,0 +1,51 @@
+import   "6ab541d3da24610b68234565bc595648:gotrue-js";
+let $6ab541d3da24610b68234565bc595648$var$user;
+let $6ab541d3da24610b68234565bc595648$var$user2;
+let $6ab541d3da24610b68234565bc595648$var$loggedIn = false;
+$6ab541d3da24610b68234565bc595648$var$checkUser();
+function $6ab541d3da24610b68234565bc595648$var$checkUser() {
+    let auth = new $6ab541d3da24610b68234565bc595648$import$7732e9777b1929e2$9099ad97b570f7c({
+        APIUrl: "https://serene-clarke-d069ee.netlify.app/.netlify/identity",
+        setCookie: true
+    });
+    $6ab541d3da24610b68234565bc595648$var$user = auth.currentUser();
+    console.log($6ab541d3da24610b68234565bc595648$var$user);
+    $6ab541d3da24610b68234565bc595648$var$setUser();
+    $6ab541d3da24610b68234565bc595648$var$setSidebar();
+}
+function $6ab541d3da24610b68234565bc595648$var$setUser() {
+    if ($6ab541d3da24610b68234565bc595648$var$user === null) {
+        console.log("naa dude");
+        $6ab541d3da24610b68234565bc595648$var$loggedIn = false;
+    }
+    if ($6ab541d3da24610b68234565bc595648$var$user !== null) {
+        $6ab541d3da24610b68234565bc595648$var$loggedIn = true;
+        console.log($6ab541d3da24610b68234565bc595648$var$user);
+        document.querySelector(".username").innerHTML = $6ab541d3da24610b68234565bc595648$var$user.user_metadata.data.full_name;
+    }
+    // document.querySelector(".username").innerHTML =
+    //   user.user_metadata.data.full_name;
+    document.querySelector(".logout").addEventListener("click", $6ab541d3da24610b68234565bc595648$var$handleLogout);
+}
+function $6ab541d3da24610b68234565bc595648$var$handleLogout() {
+    $6ab541d3da24610b68234565bc595648$var$user.logout().then((response)=>{
+        location.reload();
+        $6ab541d3da24610b68234565bc595648$var$loggedIn = false;
+        console.log("User logged out");
+    }).catch((error)=>{
+        console.log("Failed to logout user: %o", error);
+        throw error;
+    });
+    $6ab541d3da24610b68234565bc595648$var$setSidebar();
+}
+function $6ab541d3da24610b68234565bc595648$var$setSidebar() {
+    console.log("setSide");
+    if ($6ab541d3da24610b68234565bc595648$var$loggedIn === true) {
+        document.querySelector(".sidebar-logged-out").classList.add("hide");
+        document.querySelector(".sidebar-logged-in").classList.remove("hide");
+    }
+    if ($6ab541d3da24610b68234565bc595648$var$loggedIn === false) {
+        document.querySelector(".sidebar-logged-out").classList.remove("hide");
+        document.querySelector(".sidebar-logged-in").classList.add("hide");
+    }
+}

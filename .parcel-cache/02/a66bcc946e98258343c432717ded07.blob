@@ -1,0 +1,11 @@
+var $4553ae8b6d28e4ed64df4d52c60fc50f$var$elem = document.querySelector(".draggable");
+var $4553ae8b6d28e4ed64df4d52c60fc50f$var$draggie = new Draggabilly($4553ae8b6d28e4ed64df4d52c60fc50f$var$elem, {
+});
+var $4553ae8b6d28e4ed64df4d52c60fc50f$var$draggableElems = document.querySelectorAll(".draggable");
+var $4553ae8b6d28e4ed64df4d52c60fc50f$var$draggies = [];
+for(var $4553ae8b6d28e4ed64df4d52c60fc50f$var$i = 0; $4553ae8b6d28e4ed64df4d52c60fc50f$var$i < $4553ae8b6d28e4ed64df4d52c60fc50f$var$draggableElems.length; $4553ae8b6d28e4ed64df4d52c60fc50f$var$i++){
+    var $4553ae8b6d28e4ed64df4d52c60fc50f$var$draggableElem = $4553ae8b6d28e4ed64df4d52c60fc50f$var$draggableElems[$4553ae8b6d28e4ed64df4d52c60fc50f$var$i];
+    var $4553ae8b6d28e4ed64df4d52c60fc50f$var$draggie = new Draggabilly($4553ae8b6d28e4ed64df4d52c60fc50f$var$draggableElem, {
+    });
+    $4553ae8b6d28e4ed64df4d52c60fc50f$var$draggies.push($4553ae8b6d28e4ed64df4d52c60fc50f$var$draggie);
+}

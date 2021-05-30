@@ -410,6 +410,7 @@ function showFlorbs() {
         clone.querySelector(".florb-img").alt = florb.title.rendered;
         clone.querySelector(".florb-phrase").textContent = florb.phrase;
         clone.querySelector("article").setAttribute("id", `florb-${florb.number}`);
+        clone.querySelector(".florb-desc").textContent = florb.story;
         container.appendChild(clone);
     });
 }
