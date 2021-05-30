@@ -7,7 +7,7 @@ let loggedIn = false;
 checkUser();
 function checkUser() {
   let auth = new GoTrue({
-    APIUrl: "https://confident-hoover-cccfcc.netlify.app/.netlify/identity",
+    APIUrl: "https://serene-clarke-d069ee.netlify.app/.netlify/identity",
     setCookie: true,
   });
   user = auth.currentUser();

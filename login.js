@@ -46,7 +46,7 @@ function toggleBackForgot() {}
 //Instantiate the GoTrue auth client + GoTrue functions
 
 let auth = new GoTrue({
-  APIUrl: "https://confident-hoover-cccfcc.netlify.app/.netlify/identity",
+  APIUrl: "https://serene-clarke-d069ee.netlify.app/.netlify/identity",
   setCookie: true,
 });
 document
