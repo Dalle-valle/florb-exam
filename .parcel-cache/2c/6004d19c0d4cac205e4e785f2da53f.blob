@@ -1,0 +1,40 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _gotrueJs = require("gotrue-js");
+var _gotrueJsDefault = parcelHelpers.interopDefault(_gotrueJs);
+let user;
+let user2;
+let loggedIn;
+if (localStorage.getItem("user") === null) {
+    console.log("naa dude");
+    setSidebar();
+}
+if (localStorage.getItem("user") !== null) {
+    user = JSON.parse(localStorage.getItem("user"));
+    console.log(user);
+    setUser();
+    setSidebar();
+}
+function setUser() {
+    let auth = new _gotrueJsDefault.default({
+        APIUrl: "https://confident-hoover-cccfcc.netlify.app/.netlify/identity",
+        setCookie: true
+    });
+    user2 = auth.currentUser();
+    loggedIn = true;
+    console.log(user.user_metadata.data.full_name, user2.user_metadata.data.full_name);
+    document.querySelector(".username").innerHTML = user.user_metadata.data.full_name;
+    document.querySelector(".logout").addEventListener("click", handleLogout);
+}
+function handleLogout() {
+    user2.logout().then((response)=>{
+        location.reload();
+        loggedIn = false;
+        console.log("User logged out");
+    }).catch((error)=>{
+        console.log("Failed to logout user: %o", error);
+        throw error;
+    });
+}
+function setSidebar() {
+    if (loggedIn === true) document.querySelector(".sidebar-logged-out").classList.add("hide");
+}

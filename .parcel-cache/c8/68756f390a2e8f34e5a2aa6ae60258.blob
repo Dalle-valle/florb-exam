@@ -1,0 +1,18 @@
+let user;
+if (localStorage.getItem("user") === null) console.log("naa dude");
+if (localStorage.getItem("user") !== null) {
+    user = JSON.parse(localStorage.getItem("user"));
+    console.log(user);
+    setUser();
+}
+function setUser() {
+    document.querySelector(".username").innerHTML = user.user_metadata.data.full_name;
+    document.querySelector(".logout").addEventListener("click", handleLogout);
+}
+function handleLogout() {
+    user.logout().then((response)=>console.log("User logged out")
+    ).catch((error)=>{
+        console.log("Failed to logout user: %o", error);
+        throw error;
+    });
+}

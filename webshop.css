@@ -36,7 +36,9 @@ p {
   height: 100vh;
   position: relative;
   margin-bottom: 100px;
+
 }
+
 
 .header-image {
   background-image: url("images/webshop/webshop_img.jpg");
@@ -74,19 +76,21 @@ p {
   max-width: 302px;
 }
 
+
+
 .header-text h1,
 .header-text p {
   margin: 0;
 }
 
-.webshop-content {
-}
+.webshop-content {}
 
 .webshop-element {
   display: flex;
   flex-direction: column;
   margin-bottom: 140px !important;
   padding: 50px !important;
+
 }
 
 .webshop-intro {
@@ -103,8 +107,9 @@ p {
   justify-content: center;
 }
 
-.image-con img {
-}
+.image-con img {}
+
+
 
 .materials-img {
   border-radius: 50%;
@@ -119,10 +124,11 @@ p {
   width: calc(100% + 100px) !important;
   margin-left: -50px;
   transition: translateX;
+
 }
 
 .materials-texts {
-  height: 600px;
+  height: 600px
 }
 
 .carousel-con {
@@ -147,8 +153,10 @@ p {
   border-radius: 50%;
   width: 188px;
   height: 188px;
-  border: 2px solid black;
+  border: 2px solid black
 }
+
+
 
 .image-text {
   position: relative;
@@ -166,6 +174,7 @@ p {
 
 .image-text-content {
   padding: 50px;
+
 }
 
 .webshop-icons {
@@ -194,7 +203,7 @@ p {
 }
 
 .webshop-icon p {
-  color: #000000;
+  color: #000000
 }
 
 .pack {
@@ -204,6 +213,8 @@ p {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 0 !important;
+
+
 }
 
 .pack-image {
@@ -229,10 +240,10 @@ p {
 }
 
 .pack button {
-  width: 200px;
-  background: #b58171;
-  color: #fcfafb;
-  border-radius: 10px;
+  border: none;
+  background-color: #C4C4C4;
+  Width: 223px;
+  Height: 67px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -265,6 +276,7 @@ p {
   .header-image {
     position: relative;
     width: 50%;
+
   }
 
   .header-text {
@@ -283,6 +295,7 @@ p {
     display: Flex;
     flex-direction: column;
     justify-content: center;
+
   }
 
   .webshop-intro p {
@@ -311,11 +324,13 @@ p {
     display: block;
     width: auto !important;
     margin-left: auto;
+
   }
 
   .image-text {
     display: flex;
     flex-direction: row;
+
   }
 
   .image-text:nth-child(2) {
@@ -330,6 +345,7 @@ p {
     justify-content: center;
     margin-top: -50px;
   }
+
 
   .image-text-title {
     position: relative;
@@ -347,7 +363,8 @@ p {
     flex-direction: row;
   }
 
-  div.pack:nth-child(7) {
+  div.pack:nth-child(7),
+  div.l6:nth-child(4) {
     flex-direction: row-reverse !important;
   }
 
@@ -363,6 +380,7 @@ p {
     flex-direction: column;
     justify-content: center;
     margin: 0 50px;
+
   }
 
   .pack-text p {
@@ -373,5 +391,6 @@ p {
   .pack-title {
     width: 100%;
     width: 620px;
+
   }
 }

@@ -1,0 +1,9 @@
+let user;
+if (localStorage.getItem("user") === null) console.log("naa dude");
+if (localStorage.getItem("user") !== null) {
+    const user1 = JSON.parse(localStorage.getItem("user"));
+    console.log(user1);
+    setUser();
+}
+function setUser() {
+}

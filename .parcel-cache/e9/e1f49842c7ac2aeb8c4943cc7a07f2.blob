@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+
+  <link rel="stylesheet" href="/dashboard.HASH_REF_0f18368c199c00d37571f7db3ec29ab7.css">
+  <link rel="stylesheet" href="/webshop.HASH_REF_3faf7ef4e06d7f986248f69f0ef9d114.css">
+  <title>Florbs | Webshop</title>
+</head>
+
+<body>
+  <div class="webshop-splash">
+    <div class="header-text">
+      <h1>Florbs</h1>
+      <p>
+        lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+        Lorem carlos sit dolor he musto earno en millionio. o dolor sit danny
+        er met epsum sit morta gryda.
+      </p>
+    </div>
+    <div class="header-image"></div>
+  </div>
+  <div class="row webshop-content">
+    <div class="col l6 s12 m6 webshop-element image-con">
+      <img class="green-florb" src="/green_florb.HASH_REF_94fcf823d619adae0efbc9379c19435b.png">
+    </div>
+    <div class="col l6 s12 m6 webshop-element webshop-intro">
+      <div class="intro-text">
+        <h2>Florbs</h2>
+        <p>
+          lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+          Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+          danny er met epsum sit morta gryda.
+        </p>
+      </div>
+    </div>
+    <div class="col s12 m12 hide-on-large-only webshop-element carousel-con">
+
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="/vegan.HASH_REF_44ceccf942fd6e260e7b2e5876ab479d.jpg">
+          <div class="materials-text">
+            <h3>Vegan</h3>
+            <p>
+              lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+              Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+              danny er met epsum sit morta gryda.
+            </p>
+          </div>
+        </a>
+        <a class="carousel-item" href="#two!"><img src="/fabric.HASH_REF_73c825caf555e53f187b7e2a146ab712.jpg">
+          <div class="materials-text">
+            <h3>Produced in Denmark</h3>
+            <p>
+              lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+              Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+              danny er met epsum sit morta gryda.
+            </p>
+          </div>
+        </a>
+        <a class="carousel-item" href="#three!"><img src="/plastic-wrap.HASH_REF_7b99090e31358181f5557acc56854ea3.jpg">
+          <div class="materials-text">
+            <h3>PVC free</h3>
+
+            <p>
+              lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+              Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+              danny er met epsum sit morta gryda.
+            </p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+    <div class="col l3 s12 m6 push-l1 hide-on-med-and-down webshop-element">
+      <img class="materials-img" src="/vegan.HASH_REF_44ceccf942fd6e260e7b2e5876ab479d.jpg">
+      <div class="materials-text">
+        <h3>Vegan</h3>
+        <p>
+          lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+          Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+          danny er met epsum sit morta gryda.
+        </p>
+      </div>
+    </div>
+    <div class="col l4 hide-on-med-and-down webshop-element">
+      <img class="materials-img" src="/fabric.HASH_REF_73c825caf555e53f187b7e2a146ab712.jpg">
+      <div class="materials-text">
+        <h3>Produced in Denmark</h3>
+        <p>
+          lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+          Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+          danny er met epsum sit morta gryda.
+        </p>
+      </div>
+    </div>
+    <div class="col l3 hide-on-med-and-down webshop-element">
+      <img class="materials-img" src="/plastic-wrap.HASH_REF_7b99090e31358181f5557acc56854ea3.jpg">
+      <div class="materials-text">
+        <h3>PVC free</h3>
+        <p>
+          lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+          Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+          danny er met epsum sit morta gryda.
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="col l6 s12 m4 webshop-element image-text">
+    <img src="/women_webshop.HASH_REF_3c9ab0a922fa43e7d020c06a2abd7567.png">
+    <div class="image-text-content">
+
+      <h3 class="image-text-title">Experience</h3>
+      <div class="image-text-text">
+        <h4>Proven through years of expirience in fitness</h4>
+
+        <p class="image-text-p">lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza. Lorem carlos
+          sit dolor he musto earno en millionio. o dolor sit danny er met epsum sit morta gryda.</p>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="col l6 s12 m4 webshop-element image-text">
+    <img src="/women_webshop.HASH_REF_3c9ab0a922fa43e7d020c06a2abd7567.png">
+    <div class="image-text-content">
+
+      <h3 class="image-text-title">Activities</h3>
+      <div class="image-text-text">
+        <h4>Activities for your kids</h4>
+
+        <p class="image-text-p">lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza. Lorem carlos
+          sit dolor he musto earno en millionio. o dolor sit danny er met epsum sit morta gryda.</p>
+
+      </div>
+    </div>
+
+
+
+  </div>
+  <div class="webshop-icons">
+    <div class="webshop-icon">Ikoner</div>
+    <div class="webshop-icon">Ikoner</div>
+    <div class="webshop-icon">Ikoner</div>
+    <div class="webshop-icon">Ikoner</div>
+    <div class="webshop-icon">Ikoner</div>
+    <div class="webshop-icon">Ikoner</div>
+  </div>
+
+
+
+  <div class="col l6 s12 m4 webshop-element pack">
+    <!-- <img src="images/webshop/webshop_img.jpg" /> -->
+    <div class="pack-image"></div>
+
+    <div class="pack-text">
+      <h3 class="pack-title">Mega
+        Pack</h3>
+      <p>lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza. Lorem carlos
+        sit dolor he musto earno en millionio. o dolor sit danny er met epsum sit morta gryda.</p>
+      <button>buy it pls</button>
+    </div>
+  </div>
+
+  <div class="col l6 s12 m4 webshop-element pack">
+    <div class="pack-image"></div>
+
+    <div class="pack-text">
+      <h3 class="pack-title">Starter
+        Pack</h3>
+      <p>lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza. Lorem carlos
+        sit dolor he musto earno en millionio. o dolor sit danny er met epsum sit morta gryda.</p>
+      <button>buy it pls</button>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type=" text/javascript" src="/webshop.HASH_REF_20c1bf1aec26446cc5751c8b7b03b732.js"></script>
+
+</body>
+
+</html>

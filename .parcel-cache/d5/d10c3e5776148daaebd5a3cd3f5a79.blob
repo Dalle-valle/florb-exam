@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="3bbeaabd8497ac98b09b8016e1c4e253">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="7e680423386597721d2adc1b9677e7e1">
+
+  <!-- Compiled and minified JavaScript -->
+
+  <link rel="stylesheet" href="f3b83ab981df28546b333d99d3229515">
+  <link rel="stylesheet" href="b6b5f9dd37044930667d358cdd27153c">
+  <title>Florbs | Webshop</title>
+</head>
+
+<body>
+  <div class="webshop-splash">
+    <div class="header-text">
+      <h1>Florbs</h1>
+      <p>
+        lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+        Lorem carlos sit dolor he musto earno en millionio. o dolor sit danny
+        er met epsum sit morta gryda.
+      </p>
+    </div>
+    <div class="header-image"></div>
+  </div>
+  <div class="row webshop-content">
+    <div class="col l6 s12 m6 webshop-element image-con">
+      <img class="green-florb" src="94984f83ce5c6e21cec3593a7eb81c68">
+    </div>
+    <div class="col l6 s12 m6 webshop-element webshop-intro">
+      <div class="intro-text">
+        <h2>Florbs</h2>
+        <p>
+          lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+          Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+          danny er met epsum sit morta gryda.
+        </p>
+      </div>
+    </div>
+    <div class="col s12 m12 hide-on-large-only webshop-element carousel-con">
+
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="a1fc26a98b1d189430cf6cf4f9423abf">
+          <div class="materials-text">
+            <h3>Vegan</h3>
+            <p>
+              lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+              Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+              danny er met epsum sit morta gryda.
+            </p>
+          </div>
+        </a>
+        <a class="carousel-item" href="#two!"><img src="ee94fd30cf5be99b14fd2bf4ea1c21d6">
+          <div class="materials-text">
+            <h3>Produced in Denmark</h3>
+            <p>
+              lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+              Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+              danny er met epsum sit morta gryda.
+            </p>
+          </div>
+        </a>
+        <a class="carousel-item" href="#three!"><img src="143ada28c89504b730f0331b447d296b">
+          <div class="materials-text">
+            <h3>PVC free</h3>
+
+            <p>
+              lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+              Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+              danny er met epsum sit morta gryda.
+            </p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+    <div class="col l3 s12 m6 push-l1">
+      <img class="materials-img" src="a1fc26a98b1d189430cf6cf4f9423abf">
+      <div class="materials-text">
+        <h3>Vegan</h3>
+        <p>
+          lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+          Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+          danny er met epsum sit morta gryda.
+        </p>
+      </div>
+    </div>
+    <div class="col l4 hide-on-med-and-down webshop-element">
+      <img class="materials-img" src="ee94fd30cf5be99b14fd2bf4ea1c21d6">
+      <div class="materials-text">
+        <h3>Produced in Denmark</h3>
+        <p>
+          lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+          Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+          danny er met epsum sit morta gryda.
+        </p>
+      </div>
+    </div>
+    <div class="col l3 hide-on-med-and-down webshop-element">
+      <img class="materials-img" src="143ada28c89504b730f0331b447d296b">
+      <div class="materials-text">
+        <h3>PVC free</h3>
+        <p>
+          lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza.
+          Lorem carlos sit dolor he musto earno en millionio. o dolor sit
+          danny er met epsum sit morta gryda.
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="col l6 s12 m4 webshop-element image-text">
+    <img src="f5ac16ea9a815051ca43c89ea27bf81e">
+    <div class="image-text-content">
+
+      <h3 class="image-text-title">Experience</h3>
+      <div class="image-text-text">
+        <h4>Proven through years of expirience in fitness</h4>
+
+        <p class="image-text-p">lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza. Lorem carlos
+          sit dolor he musto earno en millionio. o dolor sit danny er met epsum sit morta gryda.</p>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="col l6 s12 m4 webshop-element image-text">
+    <img src="f5ac16ea9a815051ca43c89ea27bf81e">
+    <div class="image-text-content">
+
+      <h3 class="image-text-title">Activities</h3>
+      <div class="image-text-text">
+        <h4>Activities for your kids</h4>
+
+        <p class="image-text-p">lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza. Lorem carlos
+          sit dolor he musto earno en millionio. o dolor sit danny er met epsum sit morta gryda.</p>
+
+      </div>
+    </div>
+
+
+
+  </div>
+  <div class="webshop-icons">
+    <div class="webshop-icon">Ikoner</div>
+    <div class="webshop-icon">Ikoner</div>
+    <div class="webshop-icon">Ikoner</div>
+    <div class="webshop-icon">Ikoner</div>
+    <div class="webshop-icon">Ikoner</div>
+    <div class="webshop-icon">Ikoner</div>
+  </div>
+
+
+
+  <div class="col l6 s12 m4 webshop-element pack">
+    <!-- <img src="images/webshop/webshop_img.jpg" /> -->
+    <div class="pack-image"></div>
+
+    <div class="pack-text">
+      <h3 class="pack-title">Mega
+        Pack</h3>
+      <p>lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza. Lorem carlos
+        sit dolor he musto earno en millionio. o dolor sit danny er met epsum sit morta gryda.</p>
+      <button>buy it pls</button>
+    </div>
+  </div>
+
+  <div class="col l6 s12 m4 webshop-element pack">
+    <div class="pack-image"></div>
+
+    <div class="pack-text">
+      <h3 class="pack-title">Starter
+        Pack</h3>
+      <p>lorem ipsum dit dolor amet. o solo mio pepperoni le canard pizza. Lorem carlos
+        sit dolor he musto earno en millionio. o dolor sit danny er met epsum sit morta gryda.</p>
+      <button>buy it pls</button>
+    </div>
+  </div>
+  
+  <script src="6c89b814ec943637d271c1cd603610b3"></script>
+  <script type=" text/javascript" src="c431ce0aa84c15998f6948cdae23f97d"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="913eb52fa5a63e5c05fbd880591b6e7e">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="a34de4466aae3142858113bf012a303d">
+
+  <link rel="stylesheet/less" type="text/css" href="c30a4759c0fe83be406d3f2165896457">
+  <script src="0628f94c608d7cd17a7bcc343b85d959" type="text/javascript"></script>
+
+  <!-- Compiled and minified JavaScript -->
+
+  <title>Florbs | Games</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="games-background">
+      <img class="background-img1 hide" src="7b31adaa30f0852e371109b342e4491b">
+      <img class="background-img2 hide" src="a44a6c1640e12f5710828da072ee8aeb">
+      <img class="background-img3 hide" src="4f8f4dc342fa9219a88acfec964715e3">
+    </div>
+    <div class="col l1 s12 m6">
+      <div class="sidebar-left">
+        <div class="icon icon-1">icon</div>
+        <div class="icon icon-2">icon</div>
+        <div class="icon icon-3">icon</div>
+        <div class="icon icon-4">icon</div>
+        <div class="icon icon-5">icon</div>
+      </div>
+    </div>
+    <div class="col l1 s12 m6 game-element"></div>
+    <!-- <div class="col l1 s12 m6 game-element">
+            <div class="arrow-con">
+                <i class="arrow">
+                    <</i> </div> </div> <div class="col l6 s12 m6 landing-element">
+
+                        <img src="images/games/florbsketball.png" />
+                        <h1>Florbsketball</h1>
+            </div>
+            <div class="col l1 s12 m6 game-element">
+                <div class="arrow-con">
+                    <i class="arrow">
+                        ></i> </div>
+            </div>
+        </div> -->
+    <div class="col l1 arrow-con game-element">
+      <i class="arrow arrow-prev">
+        <</i> </div> <div class="col l6 carousel game-element game-caro">
+          <a class="carousel-item" href="#one!"><img src="7ba88a2c7f65977f81184c6f40c28d54"></a>
+
+          <a class="carousel-item" href="#two!"><img src="2ecf0be90aaf4465b2dae86588410cf2"></a>
+          <a class="carousel-item" href="#three!"><img src="6e5459117f5bc7b126751ddffbb0d2d5"></a>
+    </div>
+    <div class="col l1 arrow-con game-element">
+      <i class="arrow arrow-next"> ></i>
+    </div>
+    <div class="col l1 s12 m6 game-element"></div>
+    <div class="col l1 s12 m6 game-element"></div>
+  </div>
+
+  <!-- <div class="logo"><img src="images/florb.svg" alt="" /></div>
+    <div class="sidebar-left">
+      <div class="icon icon-1">icon</div>
+      <div class="icon icon-2">icon</div>
+      <div class="icon icon-3">icon</div>
+      <div class="icon icon-4">icon</div>
+      <div class="icon icon-5">icon</div>
+    </div>
+    <div class="sidebar-right"></div>
+    <main>
+      <div class="content-left">
+        <img class="placeholder" src="images/florb-placeholder.png" alt="" />
+      </div>
+      <div class="content-right"></div>
+      <div class="boxes">
+        <div class="box box-1"><a href="#"></a></div>
+        <div class="box box-2"><a href="#"></a></div>
+        <div class="box box-3"><a href="#"></a></div>
+        <div class="box box-4"><a href="#"></a></div>
+      </div>
+    </main> -->
+  <script src="f0dc7fc1f060a6b79eb568fb67ce1886"></script>
+  <script type=" text/javascript" src="1ed9dc14636ce2c119e041251cf43beb"></script>
+</body>
+
+</html>

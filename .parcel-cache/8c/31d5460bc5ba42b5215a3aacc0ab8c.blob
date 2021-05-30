@@ -1,0 +1,26 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _gotrueJs = require("gotrue-js");
+var _gotrueJsDefault = parcelHelpers.interopDefault(_gotrueJs);
+let user;
+if (localStorage.getItem("user") === null) console.log("naa dude");
+if (localStorage.getItem("user") !== null) {
+    user = JSON.parse(localStorage.getItem("user"));
+    console.log(user);
+    setUser();
+}
+function setUser() {
+    let auth = new _gotrueJsDefault.default({
+        APIUrl: "https://confident-hoover-cccfcc.netlify.app/.netlify/identity",
+        setCookie: true
+    });
+    const user1 = auth.currentUser();
+    document.querySelector(".username").innerHTML = user1.user_metadata.data.full_name;
+    document.querySelector(".logout").addEventListener("click", handleLogout);
+}
+function handleLogout() {
+    user.logout().then((response)=>console.log("User logged out")
+    ).catch((error)=>{
+        console.log("Failed to logout user: %o", error);
+        throw error;
+    });
+}
