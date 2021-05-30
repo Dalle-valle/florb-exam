@@ -1,0 +1,83 @@
+document.addEventListener("DOMContentLoaded", $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$start);
+window.addEventListener("scroll", $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$fillBar);
+const $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$endpoint = "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/florbs";
+let $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$allFlorbs;
+let $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$filter = "all";
+let $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$visibleFlorb;
+let $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$currentFlorbId;
+function $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$start() {
+    $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$getData();
+}
+async function $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$getData() {
+    const response = await fetch($bc3eb4a6fb41aa8e549ae9cac072cbaa$var$endpoint);
+    $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$allFlorbs = await response.json();
+    $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$showFlorbs();
+    document.querySelector(".a-down").addEventListener("click", $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$clickNext);
+    document.querySelector(".a-up").addEventListener("click", $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$clickPrev);
+    $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$observe1();
+}
+function $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$showFlorbs() {
+    const container = document.querySelector(".compendium");
+    const florbTemplate = document.querySelector("template");
+    container.innerHTML = "";
+    $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$allFlorbs.forEach((florb)=>{
+        let clone = florbTemplate.cloneNode(true).content;
+        clone.querySelector(".florb-name").textContent = florb.title.rendered;
+        clone.querySelector(".florb-img").innerHTML = florb.svgpath;
+        clone.querySelector(".florb-img").alt = florb.title.rendered;
+        clone.querySelector(".florb-phrase").textContent = florb.phrase;
+        clone.querySelector("article").setAttribute("id", `florb-${florb.number}`);
+        container.appendChild(clone);
+    });
+}
+function $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$observe1() {
+    const sections = document.querySelectorAll(".florbers");
+    const options = {
+        threshold: [
+            0.1,
+            0.5
+        ]
+    };
+    const callback = (entries, observer)=>{
+        entries.forEach((entry)=>{
+            const { target: target  } = entry;
+            if (entry.intersectionRatio >= 0.5) {
+                console.log(entry.intersectionRatio);
+                $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$visibleFlorb = entry.target.id;
+                $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$currentFlorbId = parseInt($bc3eb4a6fb41aa8e549ae9cac072cbaa$var$visibleFlorb.split("-")[1], 10);
+                console.log("in sight");
+                console.log($bc3eb4a6fb41aa8e549ae9cac072cbaa$var$currentFlorbId, sections.length);
+                document.querySelector(".current").innerHTML = `${$bc3eb4a6fb41aa8e549ae9cac072cbaa$var$currentFlorbId}/${sections.length}`;
+                if ($bc3eb4a6fb41aa8e549ae9cac072cbaa$var$currentFlorbId === sections.length) document.querySelector(".a-down").classList.add("disabled-arrow");
+                else if (document.querySelector(".a-down").classList.contains("disabled-arrow")) document.querySelector(".a-down").classList.remove("disabled-arrow");
+                if ($bc3eb4a6fb41aa8e549ae9cac072cbaa$var$currentFlorbId === 1) document.querySelector(".a-up").classList.add("disabled-arrow");
+                else if (document.querySelector(".a-up").classList.contains("disabled-arrow")) document.querySelector(".a-up").classList.remove("disabled-arrow");
+            } else console.log("yup");
+        });
+    };
+    const observer = new IntersectionObserver(callback, options);
+    sections.forEach((section)=>{
+        observer.observe(section);
+    });
+}
+function $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$clickNext() {
+    document.querySelector(`#florb-${$bc3eb4a6fb41aa8e549ae9cac072cbaa$var$currentFlorbId + 1}`).scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest"
+    });
+}
+function $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$clickPrev() {
+    document.querySelector(`#florb-${$bc3eb4a6fb41aa8e549ae9cac072cbaa$var$currentFlorbId - 1}`).scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest"
+    });
+}
+function $bc3eb4a6fb41aa8e549ae9cac072cbaa$var$fillBar() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = winScroll / height * 100;
+    document.querySelector(".progress-bar").style.width = scrolled + "%";
+    document.querySelector(".scroll-img").style.transform = `rotate(${scrolled * 25}deg)`;
+}

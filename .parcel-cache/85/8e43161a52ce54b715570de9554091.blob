@@ -1,0 +1,2 @@
+const $f0d22c94d1d30c4cbde5d06da59ef0a3$var$tabs = document.querySelectorAll(".tabs");
+for (tab of $f0d22c94d1d30c4cbde5d06da59ef0a3$var$tabs)var $f0d22c94d1d30c4cbde5d06da59ef0a3$var$instance = M.Tabs.init(tab);

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="d9c11bc58c82ae85fd1c38614409299c">
+  <link rel="stylesheet" href="da3e6144e20f1c67cb1e4378569c90cc">
+  <link href="d14b0c431dec5f0c8118c8e593404303" rel="stylesheet">
+  <link rel="stylesheet/less" type="text/css" href="0b908955c7423a24e6b0fe50205fee82">
+
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <title>Florbs | Profile</title>
+</head>
+
+<body>
+  <div class="prof-main desktop-flex">
+    <div class="sidebar-left">
+      <div class="icon icon-1"><a href="0cbaa9c7e777e6a644a955c72061722b">Home</a></div>
+      <div class="icon icon-2"><a href="c05d8476120523caeb6b38d17b1a65cd">Florbs</a></div>
+      <div class="icon icon-git3"><a href="55d487ce7b32f15451944a3c4d522d32">B-a-F</a></div>
+      <div class="icon icon-4"><a href="#">Games</a></div>
+      <div class="icon icon-5"><a href="#">Profile</a></div>
+    </div>
+
+    <div class="row">
+      <div class="col l4 m12 s12">
+        <div class="florb-bg">
+          <h3>Welcome Florb</h3>
+          <img class="fav-florb" src="887393cbf8dc057f12fa4395098c3f90" alt="">
+          <h4 class="fav-florb-name">lorem</h4>
+        </div>
+      </div>
+      <div class="col l4 m12 s12">
+        <div class="florb-bg">
+          <h3>Favorite Florb</h3>
+          <img class="fav-florb" src="887393cbf8dc057f12fa4395098c3f90" alt="">
+          <h4 class="fav-florb-name">lorem</h4>
+        </div>
+      </div>
+      <div class="col l4 m12 s12">
+        <div class="florb-bg">
+          <h3>Favorite Game</h3>
+          <img class="fav-game" src="c914fa84785b0fc3b05cee2af757d80f" alt="">
+          <h4 class="fav-game-name">lorem</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-nav">
+      <a href="1cc1ee3db957101f919142e7a8a7e593">
+        <div class="menu-link link-1">
+          <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D"></circle>
+            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white"></circle>
+            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white"></circle>
+            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331"></circle>
+            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331"></circle>
+          </svg>
+          <a class="special-link-1" href="c05d8476120523caeb6b38d17b1a65cd">Florbs</a>
+        </div>
+      </a>
+      <a href="105d44197704d86844c90f79612d5a8e">
+        <div class="menu-link link-2">
+          <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+            <circle cx="39" cy="39" r="21" fill="#F6ACF8"></circle>
+            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white"></circle>
+            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white"></circle>
+            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331"></circle>
+            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331"></circle>
+          </svg>
+          <a class="special-link-2" href="#">Games</a>
+        </div>
+      </a>
+      <a href="55d487ce7b32f15451944a3c4d522d32">
+        <div class="menu-link link-3">
+          <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA"></circle>
+            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white"></circle>
+            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white"></circle>
+            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331"></circle>
+            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331"></circle>
+          </svg>
+          <a class="special-link-3" href="#">Builder</a>
+        </div>
+      </a>
+      <a href="0fc09fdcd6a11d6e594679791fe9c815">
+        <div class="menu-link link-4">
+          <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+            <circle cx="39" cy="39" r="21" fill="#4AA67B"></circle>
+            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white"></circle>
+            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white"></circle>
+            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331"></circle>
+            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331"></circle>
+          </svg>
+          <a class="special-link-4" href="#">Profile</a>
+        </div>
+      </a>
+    </div>
+  </div>
+  <script src="216fd727a4a2d73b5ced896bf8e40840" data-parcel-key="14a5746c8dc85df698c414aba6ddb19b">
+  </script>
+  <script src="66d1f84341377ec1f73325880f743a4a"></script>
+
+  <script src="2b5f57f7b52642ea0a983e76d37faf89"></script>
+
+  <script data-parcel-key="937ad6c4b79e61a932c1b67d08d906f0">
+    if (document.title === "Florbs | Dashboard") {
+      document.querySelector(".link-1").classList.add("selected");
+      document.querySelector(".outer-1").classList.remove("hide");
+      document.querySelector(".special-link-1").style.transform = "translateY(30px)";
+      document.querySelector(".bottom-nav").classList.add("nav-1");
+    } else if (document.title === "Florbs | Games") {
+      document.querySelector(".link-2").classList.add("selected");
+      document.querySelector(".outer-2").classList.remove("hide");
+      document.querySelector(".special-link-2").style.transform = "translateY(30px)";
+      document.querySelector(".bottom-nav").classList.add("nav-2");
+    } else if (document.title === "Florbs | Builder") {
+      document.querySelector(".link-3").classList.add("selected");
+      document.querySelector(".outer-3").classList.remove("hide");
+      document.querySelector(".special-link-3").style.transform = "translateY(30px)";
+      document.querySelector(".bottom-nav").classList.add("nav-3");
+    } else if (document.title === "Florbs | Profile") {
+      document.querySelector(".link-4").classList.add("selected");
+      document.querySelector(".outer-4").classList.remove("hide");
+      document.querySelector(".special-link-4").style.transform = "translateY(30px)";
+      document.querySelector(".bottom-nav").classList.add("nav-4");
+    }
+  </script>
+</body>
+
+</html>

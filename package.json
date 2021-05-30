@@ -2,7 +2,6 @@
   "name": "florb_exam",
   "version": "1.0.0",
   "description": "",
-  "main": "baf 2.js",
   "dependencies": {
     "abab": "^2.0.5",
     "acorn-globals": "^4.3.4",

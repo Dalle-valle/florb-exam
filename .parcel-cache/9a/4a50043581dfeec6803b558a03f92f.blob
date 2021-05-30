@@ -1,0 +1,83 @@
+document.addEventListener("DOMContentLoaded", $8e1ffe03de35eed419fa5eaa306839fe$var$start);
+window.addEventListener("scroll", $8e1ffe03de35eed419fa5eaa306839fe$var$fillBar);
+const $8e1ffe03de35eed419fa5eaa306839fe$var$endpoint = "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/florbs";
+let $8e1ffe03de35eed419fa5eaa306839fe$var$allFlorbs;
+let $8e1ffe03de35eed419fa5eaa306839fe$var$filter = "all";
+let $8e1ffe03de35eed419fa5eaa306839fe$var$visibleFlorb;
+let $8e1ffe03de35eed419fa5eaa306839fe$var$currentFlorbId;
+function $8e1ffe03de35eed419fa5eaa306839fe$var$start() {
+    $8e1ffe03de35eed419fa5eaa306839fe$var$getData();
+}
+async function $8e1ffe03de35eed419fa5eaa306839fe$var$getData() {
+    const response = await fetch($8e1ffe03de35eed419fa5eaa306839fe$var$endpoint);
+    $8e1ffe03de35eed419fa5eaa306839fe$var$allFlorbs = await response.json();
+    $8e1ffe03de35eed419fa5eaa306839fe$var$showFlorbs();
+    document.querySelector(".a-down").addEventListener("click", $8e1ffe03de35eed419fa5eaa306839fe$var$clickNext);
+    document.querySelector(".a-up").addEventListener("click", $8e1ffe03de35eed419fa5eaa306839fe$var$clickPrev);
+    $8e1ffe03de35eed419fa5eaa306839fe$var$observe1();
+}
+function $8e1ffe03de35eed419fa5eaa306839fe$var$showFlorbs() {
+    const container = document.querySelector(".compendium");
+    const florbTemplate = document.querySelector("template");
+    container.innerHTML = "";
+    $8e1ffe03de35eed419fa5eaa306839fe$var$allFlorbs.forEach((florb)=>{
+        let clone = florbTemplate.cloneNode(true).content;
+        clone.querySelector(".florb-name").textContent = florb.title.rendered;
+        clone.querySelector(".florb-img").innerHTML = florb.svgpath;
+        clone.querySelector(".florb-img").alt = florb.title.rendered;
+        clone.querySelector(".florb-phrase").textContent = florb.phrase;
+        clone.querySelector("article").setAttribute("id", `florb-${florb.number}`);
+        container.appendChild(clone);
+    });
+}
+function $8e1ffe03de35eed419fa5eaa306839fe$var$observe1() {
+    const sections = document.querySelectorAll(".florbers");
+    const options = {
+        threshold: [
+            0.1,
+            0.5
+        ]
+    };
+    const callback = (entries, observer)=>{
+        entries.forEach((entry)=>{
+            const { target: target  } = entry;
+            if (entry.intersectionRatio >= 0.5) {
+                console.log(entry.intersectionRatio);
+                $8e1ffe03de35eed419fa5eaa306839fe$var$visibleFlorb = entry.target.id;
+                $8e1ffe03de35eed419fa5eaa306839fe$var$currentFlorbId = parseInt($8e1ffe03de35eed419fa5eaa306839fe$var$visibleFlorb.split("-")[1], 10);
+                console.log("in sight");
+                console.log($8e1ffe03de35eed419fa5eaa306839fe$var$currentFlorbId, sections.length);
+                document.querySelector(".current").innerHTML = `${$8e1ffe03de35eed419fa5eaa306839fe$var$currentFlorbId}/${sections.length}`;
+                if ($8e1ffe03de35eed419fa5eaa306839fe$var$currentFlorbId === sections.length) document.querySelector(".a-down").classList.add("disabled-arrow");
+                else if (document.querySelector(".a-down").classList.contains("disabled-arrow")) document.querySelector(".a-down").classList.remove("disabled-arrow");
+                if ($8e1ffe03de35eed419fa5eaa306839fe$var$currentFlorbId === 1) document.querySelector(".a-up").classList.add("disabled-arrow");
+                else if (document.querySelector(".a-up").classList.contains("disabled-arrow")) document.querySelector(".a-up").classList.remove("disabled-arrow");
+            } else console.log("yup");
+        });
+    };
+    const observer = new IntersectionObserver(callback, options);
+    sections.forEach((section)=>{
+        observer.observe(section);
+    });
+}
+function $8e1ffe03de35eed419fa5eaa306839fe$var$clickNext() {
+    document.querySelector(`#florb-${$8e1ffe03de35eed419fa5eaa306839fe$var$currentFlorbId + 1}`).scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest"
+    });
+}
+function $8e1ffe03de35eed419fa5eaa306839fe$var$clickPrev() {
+    document.querySelector(`#florb-${$8e1ffe03de35eed419fa5eaa306839fe$var$currentFlorbId - 1}`).scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest"
+    });
+}
+function $8e1ffe03de35eed419fa5eaa306839fe$var$fillBar() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = winScroll / height * 100;
+    document.querySelector(".progress-bar").style.width = scrolled + "%";
+    document.querySelector(".scroll-img").style.transform = `rotate(${scrolled * 25}deg)`;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="60537baf394d11c6c567246c519def2a">
+  <link rel="stylesheet" href="fcf58d44a0aa1bb1dd1e63e6952074d4">
+  <link href="fcb425413ddbf614aefa4e4df1522951" rel="stylesheet">
+  <link rel="stylesheet/less" type="text/css" href="9412de09643188706e57046cf06295b6">
+  <link rel="stylesheet" href="5d92f1b62d90fa63d2969219af8aa3c3">
+  <title>Florbs | Dashboard</title>
+</head>
+
+<body>
+  <div class="dash-mobile">
+    <div class="bottom-nav">
+      <a href="425e682ef1b003e44b7cc71ba108a2f8">
+        <div class="menu-link link-1">
+          <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D"></circle>
+            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white"></circle>
+            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white"></circle>
+            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331"></circle>
+            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331"></circle>
+          </svg>
+          <a class="special-link-1" href="83d08455247255c26d55f95422284377">Florbs</a>
+        </div>
+      </a>
+      <a href="8ff20a8bce167e6a632b4f1386e22ec3">
+        <div class="menu-link link-2">
+          <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+            <circle cx="39" cy="39" r="21" fill="#F6ACF8"></circle>
+            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white"></circle>
+            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white"></circle>
+            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331"></circle>
+            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331"></circle>
+          </svg>
+          <a class="special-link-2" href="#">Games</a>
+        </div>
+      </a>
+      <a href="83c76864305091044d914a2bc41c7b17">
+        <div class="menu-link link-3">
+          <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA"></circle>
+            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white"></circle>
+            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white"></circle>
+            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331"></circle>
+            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331"></circle>
+          </svg>
+          <a class="special-link-3" href="#">Builder</a>
+        </div>
+      </a>
+      <a href="59ab5bac915940420de42071ff549ca1">
+        <div class="menu-link link-4">
+          <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+            <circle cx="39" cy="39" r="21" fill="#4AA67B"></circle>
+            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white"></circle>
+            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white"></circle>
+            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331"></circle>
+            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331"></circle>
+          </svg>
+          <a class="special-link-4" href="#">Profile</a>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="dash-desktop">
+    <div class="row landing">
+      <div class="col l1 s12">
+        <div class="sidebar-left">
+          <div class="icon icon-1"><a href="f325b5d846322fba44f77fb2d0a3f72a">Home</a></div>
+          <div class="icon icon-2"><a href="83d08455247255c26d55f95422284377">Florbs</a></div>
+          <div class="icon icon-git3"><a href="83c76864305091044d914a2bc41c7b17">B-a-F</a></div>
+          <div class="icon icon-4"><a href="#">Games</a></div>
+          <div class="icon icon-5"><a href="#">Profile</a></div>
+        </div>
+      </div>
+      <a href="f325b5d846322fba44f77fb2d0a3f72a">
+        <img class="logo" src="fa92b72281797d13ec6662c5b291fed6">
+      </a>
+      <div class="col l5 s12 landing-element">
+        <div class="florb-wrapper">
+          <h1>Welcome to Florbs</h1>
+
+          <img class="placeholder" src="42bf8dd558953c801ba36f22d29f0f65" alt="">
+        </div>
+      </div>
+      <div class="col l3 s12 landing-element" style="c4e9d51ee5b32e6cd65b3266e0542c91">
+        <div class="box-wrapper">
+          <div class="boxes">
+            <div class="box box-1">
+              <a href="83d08455247255c26d55f95422284377">
+                <div class="menu-option">
+                  <img class="menu-img" src="d8a0a23b3449e703b8adafc408f28e36" alt="">
+                  <h3>Florbs</h3>
+                </div>
+              </a>
+            </div>
+            <div class="box box-2">
+              <a href="83c76864305091044d914a2bc41c7b17">
+                <div class="menu-option">
+                  <img class="menu-img" src="5417e3955d0b67a1bda314d5b338e974" alt="">
+                  <h3>Florb Builder</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box box-3">
+              <a href="8ff20a8bce167e6a632b4f1386e22ec3">
+                <div class="menu-option">
+                  <img class="menu-img" src="41cd8a48d68d355397b3a914efc878f9" alt="">
+                  <h3>Games</h3>
+                </div>
+              </a>
+            </div>
+            <div class="box box-4">
+              <a href="59ab5bac915940420de42071ff549ca1">
+                <div class="menu-option">
+                  <img class="menu-img" src="28598735238343a3da74a2c5c7663aab" alt="">
+                  <h3>Profile</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col l1"></div>
+
+      <div class="col l2 s12 offset-l1 landing-element">
+        <div class="sidebar-right sidebar-logged-in">
+          <div class="sidebar-content-1">
+            <div class="sidebar-text">
+              <p>Hej</p>
+              <span class="username">Oliver</span>
+            </div>
+            <img class="profile-img" src="738d475cf10232eae2935746e88e8c75">
+          </div>
+          <div class="sidebar-content-2">
+            <div>
+              <h3>Dit niveau</h3>
+              <p>50/100 <b>point</b></p>
+            </div>
+            <img src="803ad3ed6e586e2cb785507efbb07878">
+          </div>
+          <div class="sidebar-content-3">
+            <div class="medalje medalje-1">
+              <img src="52682ac7622948f1cf44b193bbb84288">
+              <p><b>0</b> førstepladser</p>
+            </div>
+            <div class="medalje medalje-2">
+              <img src="01ca21233eba18f61d0fe074c484f023">
+              <p><b>0</b> andenpladser</p>
+            </div>
+            <div class="medalje medalje-1">
+              <img src="ea774db0351679b3ab0385bf70cd0d5a">
+              <p><b>0</b> tredjepladser</p>
+            </div>
+          </div>
+          <div class="sidebar-content-4">
+            <div class="logout-con">
+              <button class="logout">Log out</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="sidebar-right sidebar-logged-out">
+          <button class="btn-large login"><a href="788e590eb39e4ce12adb3555074fe254">Log in</a> </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="78533d9ac91e1a47aa584b49600b787e" data-parcel-key="f3f11303bdf20201dce5f2c855cf181b">
+  </script>
+  <script src="e147f94fc1cf41ec53f1fd933a6b8b56"></script>
+  <script src="e3e52e53fd7b317cff9faee0f095a6dd"></script>
+  <script src="0377c7016b813e3bd9a45f1ac422afb5"></script>
+
+  <script data-parcel-key="a8e11bbbde6078242ff4ed4321fb828a">
+    if (document.title === "Florbs | Dashboard") {
+      document.querySelector(".link-1").classList.add("selected");
+      document.querySelector(".outer-1").classList.remove("hide");
+      document.querySelector(".special-link-1").style.transform = "translateY(30px)";
+      document.querySelector(".bottom-nav").classList.add("nav-1");
+    } else if (document.title === "Florbs | Games") {
+      document.querySelector(".link-2").classList.add("selected");
+      document.querySelector(".outer-2").classList.remove("hide");
+      document.querySelector(".special-link-2").style.transform = "translateY(30px)";
+      document.querySelector(".bottom-nav").classList.add("nav-2");
+    } else if (document.title === "Florbs | Builder") {
+      document.querySelector(".link-3").classList.add("selected");
+      document.querySelector(".outer-3").classList.remove("hide");
+      document.querySelector(".special-link-3").style.transform = "translateY(30px)";
+      document.querySelector(".bottom-nav").classList.add("nav-3");
+    } else if (document.title === "Florbs | Profile") {
+      document.querySelector(".link-4").classList.add("selected");
+      document.querySelector(".outer-4").classList.remove("hide");
+      document.querySelector(".special-link-4").style.transform = "translateY(30px)";
+      document.querySelector(".bottom-nav").classList.add("nav-4");
+    }
+  </script>
+</body>
+
+</html>

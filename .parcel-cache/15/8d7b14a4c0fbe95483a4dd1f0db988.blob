@@ -1,0 +1,22 @@
+const $97ed6f667032bfa1856ba0d458fe5134$var$draggedElm = document.querySelector(".drag-item");
+// First: get the current bounds
+const $97ed6f667032bfa1856ba0d458fe5134$var$first = $97ed6f667032bfa1856ba0d458fe5134$var$draggedElm.getBoundingClientRect();
+const $97ed6f667032bfa1856ba0d458fe5134$var$last = $97ed6f667032bfa1856ba0d458fe5134$var$draggedElm.getBoundingClientRect();
+const $97ed6f667032bfa1856ba0d458fe5134$var$deltaX = $97ed6f667032bfa1856ba0d458fe5134$var$first.left - $97ed6f667032bfa1856ba0d458fe5134$var$last.left;
+const $97ed6f667032bfa1856ba0d458fe5134$var$deltaY = $97ed6f667032bfa1856ba0d458fe5134$var$first.top - $97ed6f667032bfa1856ba0d458fe5134$var$last.top;
+const $97ed6f667032bfa1856ba0d458fe5134$var$deltaW = $97ed6f667032bfa1856ba0d458fe5134$var$first.width / $97ed6f667032bfa1856ba0d458fe5134$var$last.width;
+const $97ed6f667032bfa1856ba0d458fe5134$var$deltaH = $97ed6f667032bfa1856ba0d458fe5134$var$first.height / $97ed6f667032bfa1856ba0d458fe5134$var$last.height;
+$97ed6f667032bfa1856ba0d458fe5134$var$draggedElm.animate([
+    {
+        transformOrigin: "top left",
+        transform: `\n      translate(${$97ed6f667032bfa1856ba0d458fe5134$var$deltaX}px, ${$97ed6f667032bfa1856ba0d458fe5134$var$deltaY}px)\n      scale(${$97ed6f667032bfa1856ba0d458fe5134$var$deltaW}, ${$97ed6f667032bfa1856ba0d458fe5134$var$deltaH})\n    `
+    },
+    {
+        transformOrigin: "top left",
+        transform: "none"
+    }, 
+], {
+    duration: 300,
+    easing: "ease-in-out",
+    fill: "both"
+});
