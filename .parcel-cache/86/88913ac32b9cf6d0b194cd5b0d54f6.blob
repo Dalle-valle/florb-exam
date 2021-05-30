@@ -1,0 +1,4 @@
+const $6895064b909f2c73f48d2c8098f3ded4$var$tabs = document.querySelectorAll(".tabs");
+for (tab of $6895064b909f2c73f48d2c8098f3ded4$var$tabs){
+    let instance = M.Tabs.init(tab);
+}
