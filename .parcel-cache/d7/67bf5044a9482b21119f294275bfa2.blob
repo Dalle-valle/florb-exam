@@ -1,0 +1,16 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _gotrueJs = require("gotrue-js");
+var _gotrueJsDefault = parcelHelpers.interopDefault(_gotrueJs);
+let token;
+window.addEventListener("DOMContentLoaded", initListeners);
+function initListeners() {
+    document.querySelector(".confirm-btn").addEventListener("click", clickConfirm);
+    token = window.location.href.split("=")[1];
+}
+let auth = new _gotrueJsDefault.default({
+    APIUrl: "https://serene-clarke-d069ee.netlify.app/.netlify/identity",
+    setCookie: true
+});
+function clickConfirm() {
+    auth.confirm(token, true);
+}
