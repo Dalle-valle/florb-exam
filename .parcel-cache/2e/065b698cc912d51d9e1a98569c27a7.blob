@@ -1,73 +1,73 @@
 /************** Fonts  **************/
 @font-face {
   font-family: "lufgabold";
-  src: url("b2a0548fc963e4a88fe026ce2dd304bd") format("woff2"), url("39eee2e497b5b0a5a1f7fe0a476e9cc6") format("woff");
+  src: url("f3a692db555aa1017384d44000ee2d94") format("woff2"), url("b58eca60e5cf939ae56177b4687c98a8") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "lufgabold_italic";
-  src: url("e8087bf73bb87705fdf655aa0a60947f") format("woff2"), url("c27e6ee260d4d82773f82d36f64d0d78") format("woff");
+  src: url("7c29cf06dccfd1bdfa86a71de2d2ade4") format("woff2"), url("1b86bf5a0231fe8b79200b555cfcea8c") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "lufgaextrabold";
-  src: url("06ded4694b547e1e2a39fece96221544") format("woff2"), url("d6e65de577114d4afd7a7c016740f8d3") format("woff");
+  src: url("7a331492c5078d1194652716cece1166") format("woff2"), url("81cc19b3a258a9afd9a84447b5ae8f49") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "lufgaextrabold_italic";
-  src: url("81a8233886198cd268bd7f1d2a833e41") format("woff2"), url("0a2c0e26f2efff884719de53d23ea98f") format("woff");
+  src: url("ebe49ecfb23eff7446ffa9aab37e82dd") format("woff2"), url("f0185ea4428a7ad4520aa086de8171a2") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "lufgaextralight";
-  src: url("62f6c868c649a1a0ee32788b1296e7a7") format("woff2"), url("d671d9a894b2a372296ba0865ccfd8cc") format("woff");
+  src: url("67a268bc9206484e9d8712cdb65a3015") format("woff2"), url("8ba456bf0e293c7c65dabd29e3d3ca72") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "lufgaextralight_italic";
-  src: url("b7997c94c3f1d4eecbde2bb6a758403c") format("woff2"), url("2d092a58e929ab1aa757baf1ec038c72") format("woff");
+  src: url("44ab5dd68ebae8258dcb45ddf6a40521") format("woff2"), url("3d47d53d2549039d3c1e94acae2d23e4") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "lufgaitalic";
-  src: url("0a5acd5ce741f945ad94ef9cb0896c8c") format("woff2"), url("f9faf1488f02f586932cfb0a1481ee3c") format("woff");
+  src: url("60bd90fd00967d3364b4f8d3b8017d62") format("woff2"), url("547ee5d274f1bac9cb88949a7133349b") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "lufgalight";
-  src: url("518253cb30ea9f2d3392b163f3479256") format("woff2"), url("98498c3eba1649b2d6cb21be88c9630b") format("woff");
+  src: url("e32fdca678b669c2e854e46847becf70") format("woff2"), url("5119035c5db6aa0bedd7c5a96b2a3013") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "lufgalight_italic";
-  src: url("8750e85eafd4fd6fb39d94cab4ae2e8d") format("woff2"), url("2fd42404d1f898b2a5f8cef151bc2027") format("woff");
+  src: url("12ed7606609e1131d89bbed439b9740f") format("woff2"), url("2a673c878830b8d98e8fccf2289cf919") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "lufgamedium";
-  src: url("149db444974b9a95184b8c959ea7c55b") format("woff2"), url("7e4134c1e2c2dbca7f91fec0608d16bd") format("woff");
+  src: url("038145f02ad22a61e4dde0f7fd3e4c8e") format("woff2"), url("c772c0ef7b8f6a60bf150d01b3d3d028") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "lufgamedium_italic";
-  src: url("b7d2ce7d575c888be51cb89d06ced52d") format("woff2"), url("3d576f499e339174f7987a2a1ce47da5") format("woff");
+  src: url("2fe0911af56fd6436716fd85be92fdeb") format("woff2"), url("3e11f05a7846157489983a9327af37aa") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "lufgaregular";
-  src: url("87ec11baac9b9925a550d501c4c02682") format("woff2"), url("b0bb190e924fe329907c67d83413d253") format("woff");
+  src: url("f1ba10060960d793fd0517398135c211") format("woff2"), url("aa00d32c8cdb7c1f9698ebd62182d044") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -554,7 +554,7 @@ h1 {
   width: 100%;
   background-color: #f3edd3;
   transition: width 1s;
-  background-image: url(61476a58686529bce024288d5a03af39);
+  background-image: url(3f117250bf2b3cd5c5d1b6bd7e355c43);
   background-size: cover;
 }
 .landing-left h2 {
@@ -571,7 +571,7 @@ h1 {
   background-color: white;
   width: 100%;
   transition: width 1s;
-  background-image: url(fa90076fae846511d9ef89694ee865d0);
+  background-image: url(68d215d53897bd8963d00625a4a07ad7);
   background-size: cover;
 }
 .landing-right:hover,
@@ -679,7 +679,7 @@ svg {
   margin-bottom: 100px;
 }
 .webshop .header-image {
-  background-image: url("7e0eb2685b198d674d011d1d7bca37cd");
+  background-image: url("e67b0c50d9f3302d9ac5de5daaaf0dc2");
   background-repeat: no-repeat;
   background-size: auto;
   width: 100%;
@@ -820,7 +820,7 @@ svg {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("7e0eb2685b198d674d011d1d7bca37cd");
+  background-image: url("e67b0c50d9f3302d9ac5de5daaaf0dc2");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 60%;

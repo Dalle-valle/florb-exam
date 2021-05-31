@@ -1,3 +1,4 @@
+import "regenerator-runtime/runtime";
 document.addEventListener("DOMContentLoaded", start);
 window.addEventListener("scroll", fillBar);
 
@@ -23,16 +24,26 @@ function showFlorbs() {
   const container = document.querySelector(".compendium");
   const florbTemplate = document.querySelector("template");
   container.innerHTML = "";
+  document.querySelector(".desc-text-head").textContent = "World of Florbs";
+  document.querySelector(".desc-text-1").textContent =
+    "Beneath the floorboards of every children’s room, the Florbs monsters live their lives. This place is known as Foundation. Foundation is where the Florbs gain their powers so they can teach the children all the new moves. ";
+  document.querySelector(".desc-text-2").textContent =
+    "The Florbs might tickle your toes, because they are wacky monsters, so make sure you don’t stand still on them for too long. You should especially be on the lookout for Tummy as he is always hungry for a little toe.";
+  document.querySelector(".desc-text-3").textContent =
+    "Each of the Flobs have their own personality and they all have their own special moves that they love to do. Backie for example, can only go backwards, he has never learned to go forwards so maybe you can teach him how to?";
   allFlorbs.forEach((florb) => {
     let clone = florbTemplate.cloneNode(true).content;
     clone.querySelector(".florb-name").textContent = florb.title.rendered;
     clone.querySelector(".florb-img").innerHTML = florb.svgpath;
     clone.querySelector(".florb-img").alt = florb.title.rendered;
     clone.querySelector(".florb-phrase").textContent = florb.phrase;
+    clone.querySelector(".florb-desc").textContent = florb.story;
     clone.querySelector("article").setAttribute("id", `florb-${florb.number}`);
     container.appendChild(clone);
   });
+  document.querySelector(".contain").setAttribute("id", `florb-${0}`);
 }
+
 function observe1() {
   const sections = document.querySelectorAll(".florbers");
   const options = {
@@ -45,15 +56,23 @@ function observe1() {
       if (entry.intersectionRatio >= 0.5) {
         console.log(entry.intersectionRatio);
         visibleFlorb = entry.target.id;
+        console.log(entry.target);
         currentFlorbId = parseInt(visibleFlorb.split("-")[1], 10);
 
         console.log("in sight");
         console.log(currentFlorbId, sections.length);
-        document.querySelector(
-          ".current"
-        ).innerHTML = `${currentFlorbId}/${sections.length}`;
+        document.querySelector(".current").innerHTML = `${currentFlorbId}/${
+          sections.length - 1
+        }`;
 
-        if (currentFlorbId === sections.length) {
+        if (currentFlorbId === 0) {
+          document.querySelector(".florb-index").classList.add("hide");
+        } else if (
+          document.querySelector(".florb-index").classList.contains("hide")
+        ) {
+          document.querySelector(".florb-index").classList.remove("hide");
+        }
+        if (currentFlorbId === sections.length - 1) {
           document.querySelector(".a-down").classList.add("disabled-arrow");
         } else if (
           document.querySelector(".a-down").classList.contains("disabled-arrow")
