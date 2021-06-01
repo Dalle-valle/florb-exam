@@ -76,21 +76,21 @@
     <div class="row landing">
       <div class="col l1 s12">
         <div class="sidebar-left">
-          <div class="icon icon-1"><a href="index.html">Home</a></div>
-          <div class="icon icon-2"><a href="florbs.html">Florbs</a></div>
-          <div class="icon icon-git3"><a href="baf.html">B-a-F</a></div>
-          <div class="icon icon-4"><a href="#">Games</a></div>
-          <div class="icon icon-5"><a href="#">Profile</a></div>
+          <div class="icon"><a class="tooltipped" data-position="right" data-tooltip="See all Florbs"  href="florbs.html"><img src="images/comp-icon.svg" alt="to florbs"></a></div>
+          <div class="icon"><a class="tooltipped" data-position="right" data-tooltip="Build Florb"  href="baf.html"><img src="images/builder-icon.svg" alt="to build"></a></div>
+          <div class="icon"><a class="tooltipped" data-position="right" data-tooltip="See all Games"  href="games.html"><img src="images/games-icon.svg" alt="to games"></a></div>
+
         </div>
       </div>
       <a href="index.html">
         <img class="logo" src="images/florb.svg" />
+        <div class="logo"><a class="tooltipped" data-position="right" data-tooltip="Back to Front Page"  href="index.html"><img src="images/florb.svg" alt="to front page"></a></div>
       </a>
       <div class="col l5 s12 landing-element">
         <div class="florb-wrapper">
           <h1>Welcome to Florbs</h1>
 
-          <img class="placeholder" src="images/florb-placeholder.png" alt="" />
+          <img class="placeholder" src="images/florb-chars/weeha.svg" alt="" />
         </div>
       </div>
       <div class="col l3 s12 landing-element" style="color: green">
@@ -208,6 +208,18 @@
       document.querySelector(".bottom-nav").classList.add("nav-4");
     }
   </script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    let elems = document.querySelectorAll('.tooltipped')
+    for (tool of elems){
+      let instances = M.Tooltip.init(elems);
+    };
+   
+  });
+  </script>
+
+
+
 </body>
 
 </html>

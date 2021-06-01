@@ -1,6 +1,6 @@
 import "regenerator-runtime/runtime";
 document.addEventListener("DOMContentLoaded", start);
-window.addEventListener("scroll", fillBar);
+// window.addEventListener("scroll", fillBar);
 
 const endpoint = "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/florbs";
 let allFlorbs;
@@ -24,7 +24,7 @@ function showFlorbs() {
   const container = document.querySelector(".compendium");
   const florbTemplate = document.querySelector("template");
   container.innerHTML = "";
-  document.querySelector(".desc-text-head").textContent = "World of Florbs";
+  document.querySelector(".desc-text-head").textContent = "Welcome to the World of Florbs";
   document.querySelector(".desc-text-1").textContent =
     "Beneath the floorboards of every children’s room, the Florbs monsters live their lives. This place is known as Foundation. Foundation is where the Florbs gain their powers so they can teach the children all the new moves. ";
   document.querySelector(".desc-text-2").textContent =
@@ -35,7 +35,6 @@ function showFlorbs() {
     let clone = florbTemplate.cloneNode(true).content;
     clone.querySelector(".florb-name").textContent = florb.title.rendered;
     clone.querySelector(".florb-img").innerHTML = florb.svgpath;
-    clone.querySelector(".florb-img").alt = florb.title.rendered;
     clone.querySelector(".florb-phrase").textContent = florb.phrase;
     clone.querySelector(".florb-desc").textContent = florb.story;
     clone.querySelector("article").setAttribute("id", `florb-${florb.number}`);
@@ -61,29 +60,21 @@ function observe1() {
 
         console.log("in sight");
         console.log(currentFlorbId, sections.length);
-        document.querySelector(".current").innerHTML = `${currentFlorbId}/${
-          sections.length - 1
-        }`;
+        document.querySelector(".current").innerHTML = `${currentFlorbId}/${sections.length - 1}`;
 
         if (currentFlorbId === 0) {
           document.querySelector(".florb-index").classList.add("hide");
-        } else if (
-          document.querySelector(".florb-index").classList.contains("hide")
-        ) {
+        } else if (document.querySelector(".florb-index").classList.contains("hide")) {
           document.querySelector(".florb-index").classList.remove("hide");
         }
         if (currentFlorbId === sections.length - 1) {
           document.querySelector(".a-down").classList.add("disabled-arrow");
-        } else if (
-          document.querySelector(".a-down").classList.contains("disabled-arrow")
-        ) {
+        } else if (document.querySelector(".a-down").classList.contains("disabled-arrow")) {
           document.querySelector(".a-down").classList.remove("disabled-arrow");
         }
         if (currentFlorbId === 1) {
           document.querySelector(".a-up").classList.add("disabled-arrow");
-        } else if (
-          document.querySelector(".a-up").classList.contains("disabled-arrow")
-        ) {
+        } else if (document.querySelector(".a-up").classList.contains("disabled-arrow")) {
           document.querySelector(".a-up").classList.remove("disabled-arrow");
         }
       } else {
@@ -98,26 +89,18 @@ function observe1() {
   });
 }
 function clickNext() {
-  document
-    .querySelector(`#florb-${currentFlorbId + 1}`)
-    .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  document.querySelector(`#florb-${currentFlorbId + 1}`).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
 
 function clickPrev() {
-  document
-    .querySelector(`#florb-${currentFlorbId - 1}`)
-    .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  document.querySelector(`#florb-${currentFlorbId - 1}`).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
 
-function fillBar() {
-  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  let height =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  let scrolled = (winScroll / height) * 100;
+// function fillBar() {
+//   let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+//   let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+//   let scrolled = (winScroll / height) * 100;
 
-  document.querySelector(".progress-bar").style.width = scrolled + "%";
-  document.querySelector(".scroll-img").style.transform = `rotate(${
-    scrolled * 25
-  }deg)`;
-}
+//   document.querySelector(".progress-bar").style.width = scrolled + "%";
+//   document.querySelector(".scroll-img").style.transform = `rotate(${scrolled * 25}deg)`;
+// }

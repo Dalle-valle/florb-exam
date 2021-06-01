@@ -163,7 +163,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel *.html",
+    "start": "parcel index.html",
     "build": "parcel build *.html"
   },
   "repository": {
