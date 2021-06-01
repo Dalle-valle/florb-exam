@@ -448,9 +448,6 @@ h1 {
 .florb .florb-phrase::after {
   content: '"';
 }
-.comp {
-  scroll-behavior: smooth;
-}
 .florbers.contain {
   display: block;
 }
@@ -461,46 +458,21 @@ h1 {
 .favorite p {
   line-height: 5px;
 }
+.florb-desc:last-of-type {
+  margin-bottom: 150px;
+}
 .heart {
   width: 40px;
   padding: 5px;
 }
 .compendium {
   height: 100vh;
-  overflow: scroll;
-  scroll-snap-type: y mandatory;
-}
-.florbers {
-  height: 100vh;
-  scroll-snap-align: start;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 .florber-snap {
   height: 100vh;
 }
-.florb-index {
+.mid-it {
   display: none;
-  position: fixed;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  background: transparent;
-  top: 0;
-  right: 20px;
-}
-.florb-index span {
-  font-family: var(--light-font);
-  font-weight: 300;
-  font-size: 3em;
-  margin: 10px 0;
-}
-.florb-index img {
-  cursor: pointer;
 }
 .mid-content {
   height: 100vh;
@@ -987,6 +959,28 @@ svg {
   .dash-mobile {
     display: none;
   }
+  .mid-it {
+    display: flex;
+    justify-content: center;
+  }
+  .florbers {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .compendium-con {
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+  }
+  .comp {
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow: hidden;
+  }
   .dash-desktop {
     display: block;
   }
@@ -996,6 +990,27 @@ svg {
   .face {
     width: 350px;
     height: 350px;
+  }
+  .florb-index {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    background: transparent;
+    top: 0;
+    right: 20px;
+  }
+  .florb-index span {
+    font-family: var(--light-font);
+    font-weight: 300;
+    font-size: 3em;
+    margin: 10px 0;
+  }
+  .florb-index img {
+    cursor: pointer;
   }
   .button {
     width: 200px;
@@ -1012,6 +1027,9 @@ svg {
   .desktop-flex .florb-bg {
     height: 600px;
     width: 100%;
+  }
+  .desc-intro {
+    font-size: 18px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1121,7 +1139,6 @@ svg {
 }
 .desc-intro p {
   font-family: var(--primary-font);
-  font-size: 18px;
   max-width: 60ch;
   margin-left: 15px;
 }
