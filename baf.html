@@ -15,7 +15,124 @@
 </head>
 
 <body>
-  <div class="mobile-builder">
+  <div class="builder-con mobile-builder">
+    <h3>Build-a-Florb</h3>
+    <svg id="svg-con" class="svg-con" width="100%" height="100%" viewBox="0 0 100 100" z-index="-2"
+      xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:svgjs="http://svgjs.com/svgjs">
+
+      <svg id="face-svg" class="face-svg" x="0" y="0" width="100%" height="100%" viewBox="0 0 100 100" z-index="100"
+        xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:svgjs="http://svgjs.com/svgjs">
+        <circle id="face-circle" cx="50" cy="35" r="35" stroke="black" stroke-width="0" fill="lightblue" />
+
+
+      </svg>
+      <g id="eyes" class="eyes tool">
+
+
+        <circle class="drag color5" r="5" cx="20" cy="110" type="eyes"></circle>
+        <circle class="drag color6" r="5" cx="74" cy="110" type="eyes"></circle>
+        <circle class="drag color7" r="5" cx="60" cy="110" type="eyes"></circle>
+        <circle class="drag color8" r="5" cx="80" cy="110" fill="red" type="eyes"></circle>
+      </g>
+
+      <g id="colors" class="colors tool active">
+        <circle class="drag color1" r="5" cx="20" cy="110" type="colors"></circle>
+        <circle class="drag color2" r="5" cx="40" cy="110" type="colors"></circle>
+        <circle class="drag color3" r="5" cx="60" cy="110" type="colors"></circle>
+        <circle class="drag color4" r="5" cx="80" cy="110" type="colors"></circle>
+      </g>
+      <g id="pupils" class="colors tool active">
+        <circle class="drag color1" r="5" cx="20" cy="110" type="pupils"></circle>
+        <circle class="drag color2" r="5" cx="40" cy="110" type="pupils"></circle>
+
+      </g>
+      <g id="brows" class="colors tool active">
+        <circle class="drag color2" r="5" cx="40" cy="110" type="brows"></circle>
+
+      </g>
+      <g id="mouth" class="colors tool active">
+
+        <circle class="drag color3" r="5" cx="60" cy="110" type="mouth"></circle>
+      </g>
+      <g id="teeth" class="colors tool active">
+
+        <circle class="drag color4" r="5" cx="80" cy="110" type="teeth"></circle>
+      </g>
+
+    </svg>
+
+
+    <div class="row tools">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s2"><a class="active" href="#colors">Color</a></li>
+          <li class="tab col s2"><a href="#eyes">Eyes</a></li>
+          <li class="tab col s2"><a href="#pupils">Pupils</a></li>
+          <li class="tab col s2"><a href="#brows">Brows</a></li>
+          <li class="tab col s2"><a href="#mouth">Mouth</a></li>
+          <li class="tab col s2"><a href="#teeth">Teeth</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="bottom-nav">
+    <a href="dashboard.html">
+      <div class="menu-link link-1">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
+        </svg>
+        <a class="special-link-1" href="florbs.html">Florbs</a>
+      </div>
+    </a>
+    <a href="games.html">
+      <div class="menu-link link-2">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle cx="39" cy="39" r="21" fill="#F6ACF8" />
+          <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
+          <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
+          <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
+          <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
+        </svg>
+        <a class="special-link-2" href="#">Games</a>
+      </div>
+    </a>
+    <a href="baf.html">
+      <div class="menu-link link-3">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
+        </svg>
+        <a class="special-link-3" href="#">Builder</a>
+      </div>
+    </a>
+    <a href="profile.html">
+      <div class="menu-link link-4">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle cx="39" cy="39" r="21" fill="#4AA67B" />
+          <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
+          <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
+          <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
+          <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
+        </svg>
+        <a class="special-link-4" href="#">Profile</a>
+      </div>
+    </a>
+  </div>
+  <!-- <div class="mobile-builder">
     <h2 class="current-edit">Skin Tone</h2>
     <div class="face-wrapper">
       <svg class="face mobile-face" height="100" width="100"></svg>
@@ -51,15 +168,9 @@
       </div>
       <div id="test2" class="col s12">
         <div class="eyes">
-          <svg class="draggable trackable" width="50" height="50" viewBox="0 0 149 151" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <ellipse class="culprit-1" rx="75.5" ry="74.5" transform="matrix(1.31134e-07 1 1 -1.31134e-07 74.5 75.5)"
-              fill="red" />
-          </svg>
-          <svg class="draggable trackable" width="50" height="50" viewBox="0 0 149 151" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <ellipse class="culprit-2" rx="75.5" ry="74.5" transform="matrix(1.31134e-07 1 1 -1.31134e-07 74.5 75.5)"
-              fill="red" />
+          <svg class="" width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse class="draggable trackable culprit-1" rx="10" ry="10" cx="10" cy="10" fill="red" />
+            <ellipse class="draggable trackable culprit-2" rx="10" ry="10" cx="50" cy="50" fill="red" />
           </svg>
         </div>
       </div>
@@ -68,61 +179,8 @@
       <div id="test5" class="col s12">Test 5</div>
       <div id="test6" class="col s12">Test 6</div>
     </div>
-    <div class="bottom-nav">
-      <a href="dashboard.html">
-        <div class="menu-link link-1">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
-          </svg>
-          <a class="special-link-1" href="florbs.html">Florbs</a>
-        </div>
-      </a>
-      <a href="games.html">
-        <div class="menu-link link-2">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle cx="39" cy="39" r="21" fill="#F6ACF8" />
-            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
-            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
-            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
-            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
-          </svg>
-          <a class="special-link-2" href="#">Games</a>
-        </div>
-      </a>
-      <a href="baf.html">
-        <div class="menu-link link-3">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
-          </svg>
-          <a class="special-link-3" href="#">Builder</a>
-        </div>
-      </a>
-      <a href="profile.html">
-        <div class="menu-link link-4">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle cx="39" cy="39" r="21" fill="#4AA67B" />
-            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
-            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
-            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
-            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
-          </svg>
-          <a class="special-link-4" href="#">Profile</a>
-        </div>
-      </a>
-    </div>
-  </div>
+  </div> -->
+  <button class="save-button">Save Florb!</button>
 
   <div class="desktop-builder">
     <div class="row">

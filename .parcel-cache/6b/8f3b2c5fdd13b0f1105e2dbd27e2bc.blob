@@ -1,0 +1,4 @@
+const tabs = document.querySelectorAll(".tabs");
+    for (tab of tabs) {
+      var instance = M.Tabs.init(tab);
+    }

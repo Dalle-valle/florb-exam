@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="0277ecf54ea37153cd8a28262d46f1fc">
+    <link rel="stylesheet" href="dad2240abc9f60cb98bddeb26039f8c3">
+    <link href="98d91f88f08a2e3c7a262d1c1f395320" rel="stylesheet">
+    <link href="dc5b75529669461c628847208bd8bf83" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="81bf8a2c26fab9c552c112dd2756a0c6">
+
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Florbs | Created Florbs</title>
+</head>
+
+<body class="">
+
+    <div class="created-florbs"></div>
+
+    <div class="sidebar-left">
+        <div class="icon icon-1"><a href="b1a6ea70716da77a448c8e5e6f4d4d5f">Home</a></div>
+        <div class="icon icon-2"><a href="9e987b500c1e4e180a4e0703f569bf3c">Florbs</a></div>
+        <div class="icon icon-3"><a href="e481a846fe5c0b05cf14150df8cf3434">B-a-F</a></div>
+        <div class="icon icon-4"><a href="#">Games</a></div>
+        <div class="icon icon-5"><a href="#">Profile</a></div>
+    </div>
+
+    <template>
+        <div class="sectionwrapper">
+            <section class="florber-snap">
+                <article class="florb florbers" id="">
+                    <div class="article-item">
+                        <div class="florb-img"></div>
+                    </div>
+                    <div class="article-item">
+                        <h2 class="florb-name"></h2>
+                        <p class="florb-phrase"></p>
+                        <p class="florb-desc"></p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </template>
+
+    <div class="florb-index">
+        <img class="a-up" src="08fd065102d82b219705daac53a1548a" alt="">
+        <span class="current">1/10</span>
+        <img class="a-down" src="bcfc2e7abd3d9ee24fe99aaeb58c8617" alt="">
+    </div>
+
+    <a href="b1a6ea70716da77a448c8e5e6f4d4d5f">
+        <img class="logo" src="86d6dbce72b93a7b522976690012afa0">
+    </a>
+
+    <div class="bottom-nav">
+        <a href="b1a6ea70716da77a448c8e5e6f4d4d5f">
+            <div class="menu-link link-1">
+                <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+                    <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D"></circle>
+                    <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white"></circle>
+                    <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white"></circle>
+                    <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331"></circle>
+                    <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331"></circle>
+                </svg>
+                <a class="special-link-1" href="9e987b500c1e4e180a4e0703f569bf3c">Florbs</a>
+            </div>
+        </a>
+        <a href="22c8de262a22099a610eac691ba0d5dd">
+            <div class="menu-link link-2">
+                <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+                    <circle cx="39" cy="39" r="21" fill="#F6ACF8"></circle>
+                    <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white"></circle>
+                    <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white"></circle>
+                    <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331"></circle>
+                    <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331"></circle>
+                </svg>
+                <a class="special-link-2" href="#">Games</a>
+            </div>
+        </a>
+        <a href="">
+            <div class="menu-link link-3">
+                <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+                    <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA"></circle>
+                    <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white"></circle>
+                    <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white"></circle>
+                    <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331"></circle>
+                    <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331"></circle>
+                </svg>
+                <a class="special-link-3" href="#">Builder</a>
+            </div>
+        </a>
+        <a href="#">
+            <div class="menu-link link-4">
+                <svg width="77" height="77" viewbox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white"></circle>
+                    <circle cx="39" cy="39" r="21" fill="#4AA67B"></circle>
+                    <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white"></circle>
+                    <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white"></circle>
+                    <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331"></circle>
+                    <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331"></circle>
+                </svg>
+                <a class="special-link-4" href="#">Profile</a>
+            </div>
+        </a>
+    </div>
+
+    <a href="b1a6ea70716da77a448c8e5e6f4d4d5f">
+        <img class="logo" src="86d6dbce72b93a7b522976690012afa0">
+    </a>
+
+    <script src="901dad45cf86a1947a66968045e154f5"></script>
+    <script src="e90651b5a5fa1db4aea786d642a25931"></script>
+    <script src="bd724192b2342e0a130c952af2954b45"></script>
+
+    <script type="text/javascript" src="0c9b261eb2bba2614018487ac9a1c7e0"></script>
+    <script data-parcel-key="743dbf965a39def9382c949530eae77d">
+        const tabs = document.querySelectorAll(".tabs");
+        for (tab of tabs) {
+            let instance = M.Tabs.init(tab);
+        }
+    </script>
+</body>
+
+</html>

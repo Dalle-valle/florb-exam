@@ -1,3 +1,60 @@
+import { gsap } from "gsap";
+import { Draggable } from "gsap/Draggable";
+
+import GoTrue from "gotrue-js";
+let user;
+
+gsap.registerPlugin(Draggable);
+
+checkUser();
+function checkUser() {
+  let auth = new GoTrue({
+    APIUrl: "https://serene-clarke-d069ee.netlify.app/.netlify/identity",
+    setCookie: true,
+  });
+  user = auth.currentUser();
+  console.log(user);
+  setButton();
+}
+function setButton() {
+  if (user === null) {
+    document.querySelector(".save-button").innerHTML = "Log in";
+    loggedIn = false;
+  }
+  if (user !== null) {
+    loggedIn = true;
+
+    console.log(user);
+    document.querySelector(".save-button").innerHTML = "Save Florb!";
+    document.querySelector(".save-button").addEventListener("click", saveFlorb);
+  }
+}
+function saveFlorb() {
+  const s = new XMLSerializer();
+  const str = s.serializeToString(document.querySelector(".face-svg"));
+  console.log(str);
+  console.log(user.user_metadata.florbs.length);
+  console.log([...user.user_metadata.florbs]);
+
+  if (user.user_metadata.florbs.length === 0) {
+    user
+      .update({
+        data: {
+          florbs: [str],
+        },
+      })
+      .then((user) => console.log(user));
+  } else {
+    user
+      .update({
+        data: {
+          florbs: [...user.user_metadata.florbs, str],
+        },
+      })
+      .then((user) => console.log(user));
+  }
+}
+
 const faceRect = document.querySelector(".face").getBoundingClientRect();
 const colors = document.querySelectorAll(".color");
 const face = document.querySelector(".specialface");
@@ -12,30 +69,62 @@ var draggie = new Draggabilly(elem, {});
 var draggableElems = document.querySelectorAll(".draggable");
 
 var draggies = [];
-
-for (var i = 0; i < draggableElems.length; i++) {
-  var draggableElem = draggableElems[i];
-  var draggie = new Draggabilly(draggableElem, {});
-  draggies.push(draggie);
-}
-draggies.forEach((item) => {
-  item.on("dragEnd", function (event, pointer) {
-    const rect = event.target.getBoundingClientRect();
-    const dx = rect.x + rect.width / 2;
-    const dy = rect.y + rect.height / 2;
-    const dist = Math.hypot(cx - dx, cy - dy);
-    console.log(dist);
-    console.log(rect);
-
-    if (dist < 400) {
-      event.target.parentElement.classList.add("inuse");
-      document.querySelector(".mobile-face").appendChild(event.target);
-      console.log(rect);
-    } else {
-      event.target.parentElement.classList.remove("inuse");
+Draggable.create(".drag", {
+  bounds: document.getElementById("svg-con"),
+  inertia: true,
+  onDragStart: function () {
+    console.log("clicked");
+    this.target.classList.add("inuse");
+  },
+  onDragEnd: function () {
+    console.log("drag ended");
+    console.log(this.target);
+    this.target.classList.add("inuse");
+    if (this.hitTest("#face-circle", "50%")) {
+      console.log(this);
+      document.querySelector("#face-svg").appendChild(this.target);
+    } else if (this.target.parentNode.id === "face-svg") {
+      console.log(
+        document.querySelector(`#${this.target.getAttribute("type")}`)
+      );
+      document
+        .querySelector(`#${this.target.getAttribute("type")}`)
+        .appendChild(this.target);
     }
-  });
+  },
 });
+
+// for (var i = 0; i < draggableElems.length; i++) {
+//   var draggableElem = draggableElems[i];
+//   var draggie = new Draggabilly(draggableElem, {});
+//   draggies.push(draggie);
+// }
+// draggies.forEach((item) => {
+//   item.on("dragEnd", function (event, pointer) {
+//     const faceBounding = document
+//       .querySelector(".mobile-face")
+//       .getBoundingClientRect();
+
+//     const targetBounding = event.target.getBoundingClientRect();
+
+//     const rect = event.target.getBoundingClientRect();
+
+//     const dx = rect.x + rect.width / 2;
+//     const dy = rect.y + rect.height / 2;
+//     const dist = Math.hypot(cx - dx, cy - dy);
+
+//     console.log(faceBounding);
+//     console.log(targetBounding);
+
+//     if (faceBounding.width / 2 + targetBounding.width / 4 > dist) {
+//       console.log("fuck");
+//       //event.target.parentElement.classList.add("inuse");
+//       document.querySelector(".mobile-face").appendChild(event.target);
+//     } else {
+//       // event.target.parentElement.classList.remove("inuse");
+//     }
+//   });
+// });
 
 for (let color of colors) {
   color.addEventListener("click", getColor);
