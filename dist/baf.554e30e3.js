@@ -413,28 +413,38 @@ function setButton() {
 function saveFlorb() {
     const s = new XMLSerializer();
     const str = s.serializeToString(document.querySelector(".face-svg"));
-    console.log(str);
-    console.log(user.user_metadata.florbs.length);
-    console.log([
-        ...user.user_metadata.florbs
-    ]);
-    if (user.user_metadata.florbs.length === 0) user.update({
-        data: {
-            florbs: [
-                str
-            ]
-        }
-    }).then((user1)=>console.log(user1)
-    );
-    else user.update({
-        data: {
-            florbs: [
-                ...user.user_metadata.florbs,
-                str
-            ]
-        }
-    }).then((user1)=>console.log(user1)
-    );
+    console.log(document.querySelector("form[name='florb-name']").elements.name.value);
+    const test = true;
+    const florbName = document.querySelector("form[name='florb-name']").elements.name.value;
+    console.log(florbName);
+    if (florbName === "") document.querySelector(".error-message").innerHTML = "Name your Florb!";
+    else {
+        const createdFlorbs = user.user_metadata.florbs;
+        if (!checkFlorbExists(florbName, createdFlorbs)) {
+            console.log("it doesnt");
+            const newFlorb = {
+                name: florbName,
+                svg: str
+            };
+            if (user.user_metadata.florbs.length === 0) user.update({
+                data: {
+                    florbs: [
+                        newFlorb
+                    ]
+                }
+            }).then((user1)=>console.log(user1)
+            );
+            else user.update({
+                data: {
+                    florbs: [
+                        ...user.user_metadata.florbs,
+                        newFlorb
+                    ]
+                }
+            }).then((user1)=>console.log(user1)
+            );
+        } else console.log("it dosedofasd");
+    }
 }
 const faceRect = document.querySelector(".face").getBoundingClientRect();
 const colors = document.querySelectorAll(".color");
@@ -469,6 +479,14 @@ _draggable.Draggable.create(".drag", {
         }
     }
 });
+function checkFlorbExists(florbName, createdFlorbs) {
+    let florbCheck = false;
+    createdFlorbs.forEach((florb)=>{
+        if (florb.name.toLowerCase() === florbName.toLowerCase()) florbCheck = true;
+    });
+    console.log(florbCheck);
+    return florbCheck;
+}
 // for (var i = 0; i < draggableElems.length; i++) {
 //   var draggableElem = draggableElems[i];
 //   var draggie = new Draggabilly(draggableElem, {});

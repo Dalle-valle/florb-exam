@@ -22,12 +22,31 @@ function setFlorbs() {
   const container = document.querySelector(".created-florbs");
   const florbTemplate = document.querySelector("template");
   const florbArray = user.user_metadata.florbs;
+  container.innerHTML = "";
 
-  florbArray.forEach((florb) => {
-    console.log(florb);
+  for (let i = 0; i < florbArray.length; i++) {
     let clone = florbTemplate.cloneNode(true).content;
-    clone.querySelector(".florb-img").innerHTML = florb;
+    clone.querySelector(".created-florb").id = `${i}`;
+    clone.querySelector(".florbs-name").innerHTML = florbArray[i].name;
+    clone.querySelector(".florb-img").innerHTML = florbArray[i].svg;
 
     container.appendChild(clone);
+  }
+
+  document.querySelectorAll(".delete").forEach((button) => {
+    button.addEventListener("click", deleteFlorb);
   });
+}
+function deleteFlorb() {
+  const florbId = this.parentNode.parentNode.id;
+  const florbArray = user.user_metadata.florbs;
+  florbArray.splice(florbId, 1);
+  user
+    .update({
+      data: {
+        florbs: florbArray,
+      },
+    })
+    .then((user) => console.log(user));
+  setFlorbs();
 }
