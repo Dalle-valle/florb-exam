@@ -85,15 +85,11 @@ var draggableElems = document.querySelectorAll(".draggable");
 var draggies = [];
 Draggable.create(".drag", {
   bounds: document.getElementById("svg-con"),
-  inertia: true,
   onDragStart: function () {
-    console.log("clicked");
     this.target.classList.add("inuse");
   },
   onDragEnd: function () {
-    console.log("drag ended");
-    console.log(this.target);
-    this.target.classList.add("inuse");
+    this.target.classList.remove("inuse");
     if (this.hitTest("#face-circle", "50%")) {
       console.log(this);
       document.querySelector("#face-svg").appendChild(this.target);
@@ -117,39 +113,6 @@ function checkFlorbExists(florbName, createdFlorbs) {
   console.log(florbCheck);
   return florbCheck;
 }
-
-// for (var i = 0; i < draggableElems.length; i++) {
-//   var draggableElem = draggableElems[i];
-//   var draggie = new Draggabilly(draggableElem, {});
-//   draggies.push(draggie);
-// }
-// draggies.forEach((item) => {
-//   item.on("dragEnd", function (event, pointer) {
-//     const faceBounding = document
-//       .querySelector(".mobile-face")
-//       .getBoundingClientRect();
-
-//     const targetBounding = event.target.getBoundingClientRect();
-
-//     const rect = event.target.getBoundingClientRect();
-
-//     const dx = rect.x + rect.width / 2;
-//     const dy = rect.y + rect.height / 2;
-//     const dist = Math.hypot(cx - dx, cy - dy);
-
-//     console.log(faceBounding);
-//     console.log(targetBounding);
-
-//     if (faceBounding.width / 2 + targetBounding.width / 4 > dist) {
-//       console.log("fuck");
-//       //event.target.parentElement.classList.add("inuse");
-//       document.querySelector(".mobile-face").appendChild(event.target);
-//     } else {
-//       // event.target.parentElement.classList.remove("inuse");
-//     }
-//   });
-// });
-
 for (let color of colors) {
   color.addEventListener("click", getColor);
 
