@@ -1,1 +1,95 @@
-<!DOCTYPE html><html lang="en"><head><title>florbs gotruey</title><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Mono" rel="stylesheet"><link rel="stylesheet" href="/materialize.min.18decf3a.css"><link href="/style2.d81f37e9.css" rel="stylesheet"></head><body class="sign-up"> <div class="container"> <div class="row"> <div class="col l8 m8 push-l2 push-m2 s12"> <h1> Sign up for <span><img class="welcome-logo" src="/florb-comp-logo.98a303d6.svg" alt=""></span> </h1> <div class="options"> <div class="login-switch option selected"> <h4>Existing User</h4> <p>Ya yeet</p> </div> <div class="create-switch option"> <h4>Create User</h4> <p>summa</p> </div> </div> <form name="signup" class="hide signup"> <label>name <input type="name" name="name" required> </label> <label>Email <input type="email" name="email" required> </label> <label>Password <input type="password" name="password" required> </label> <label>Repeat password <input type="password" name="password2" required> </label> <button type="submit">Sign me up!</button> <div class="message"></div> </form> <form name="login" class="login"> <label for="email">Email <input type="email" name="email" required> </label> <div class="password-title"> <label>Password </label> <p class="forgot-btn">Forgot password?</p> </div> <input type="password" name="password" required> <button type="submit">Log in</button> <div class="message"></div> </form> <form name="recover-pass" class="hide recover-pass"> <div class="forgot-title"> <label>Email </label> <p class="forgot-back-btn">Back</p> </div> <input type="email" name="email" required> <button type="submit">Submit</button> <div class="message"></div> </form> </div> </div> </div> <script src="/materialize.min.e2527e09.js"></script> <script src="/login.10c90fb7.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>florbs gotruey</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="/materialize.min.da1493d7.css">
+    <link href="/style2.1d1aa704.css" rel="stylesheet">
+  </head>
+
+  <body class="sign-up">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m8 l8 push-l2 push-m2">
+          <h1>
+            Sign up for
+            <span>
+              <img class="welcome-logo" src="/florb-comp-logo.31b1a74d.svg" alt="">
+            </span>
+          </h1>
+
+          <form name="login" class="login">
+            <div class="login-prefix">
+              <label for="email"></label>
+              <span><img src="/input-1.fce10966.svg" alt=""></span>
+              <input id="florbmail" type="email" name="email" required="" placeholder="Florb Mail">
+            </div>
+            <div class="login-prefix">
+              <label for="password"></label>
+              <span><img src="/input-2.fbb9346b.svg" alt=""></span>
+              <input id="florbword" type="password" name="password" required="" placeholder="Florbword">
+            </div>
+            <div class="password-title">
+              <button class="forgot-btn">Forgot florbword?</button>
+            </div>
+            <div class="but-wrapper">
+              <button class="submit-form" type="submit"><img src="/play.5efe8b5a.svg" alt=""></button>
+            </div>
+            <div class="message"></div>
+          </form>
+          <form name="recover-pass" class="recover-pass hide">
+            <div class="forgot-title">
+              <label for="email2">Email </label>
+              <p class="forgot-back-btn">Back</p>
+            </div>
+            <input type="email" name="email2" required="">
+
+            <button type="submit">Submit</button>
+
+            <div class="message"></div>
+          </form>
+          <form name="signup" class="signup hide">
+            <div class="login-prefix">
+              <span><img class="" src="/input-3.33bd69dd.svg" alt=""></span>
+              <label for="name2"></label>
+              <input id="new-name" type="text" name="name2" required="" placeholder="Name">
+            </div>
+            <div class="login-prefix">
+              <span><img src="/input-4.84771f94.svg" alt=""></span>
+              <label for="email"></label>
+              <input id="new-mail" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="login-prefix">
+              <span><img class="" src="/input-2.fbb9346b.svg" alt=""></span>
+              <label for="password"></label>
+              <input id="pw-1" type="password" name="password" required="" placeholder="Password">
+            </div>
+            <div class="login-prefix">
+              <span><img class="" src="/input-2.fbb9346b.svg" alt=""></span>
+              <label for="password2"></label>
+              <input id="pw-2" type="password" name="password2" required="" placeholder="Repeat password">
+            </div>
+            <div class="but-wrapper-2">
+              <button class="sign-me-up" type="submit">Sign me up!</button>
+            </div>
+            <div class="message"></div>
+          </form>
+        </div>
+      </div>
+      <div class="options">
+        <div class="option login-switch selected">
+          <h4>Already a user? Sign in <span class="sign-span">here</span></h4>
+        </div>
+        <div class="option create-switch">
+          <button class="new-user">Create New User</button>
+        </div>
+      </div>
+    </div>
+    <script src="/materialize.min.849e6b31.js"></script>
+    <script src="/login.5087793e.js"></script>
+  </body>
+</html>

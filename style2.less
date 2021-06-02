@@ -1067,6 +1067,11 @@ svg {
 }
 
 @media only screen and (min-width: 768px) {
+  .sign-up {
+    h1 {
+      font-size: 4rem !important;
+    }
+  }
   .dash-mobile {
     display: none;
   }
@@ -1269,6 +1274,9 @@ svg {
   h1 {
     font-family: var(--bold-font);
     color: #fb7f7d;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
   }
   h4 {
     font-family: var(--primary-font);
@@ -1279,11 +1287,126 @@ svg {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    margin-top: -20px;
   }
   .option.selected {
     animation-name: unset;
     animation-duration: unset;
     animation-fill-mode: unset;
-    border: 2px solid green;
+  }
+
+  .welcome-logo {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+  input {
+    display: flex;
+    appearance: none !important;
+    height: 50px !important;
+    box-shadow: 0px 6px 16px 8px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 25px !important;
+    text-indent: 65px !important;
+    margin: 40px 40px 40px 0 !important;
+    width: 100%;
+  }
+  #florbmail {
+    margin-top: 0 !important;
+    border: 2px solid #fbc666 !important;
+  }
+  #florbword {
+    border: 2px solid #b8d7cc !important;
+    margin-bottom: 0 !important;
+  }
+
+  #new-name {
+    margin-top: 0 !important;
+    border: 2px solid #fbc666 !important;
+  }
+  #new-mail {
+    border: 2px solid #fb7f7d !important;
+  }
+
+  #pw-1 {
+    border: 2px solid #b8d7cc !important;
+  }
+  #pw-2 {
+    border: 2px solid #b8d7cc !important;
+    margin-bottom: 0 !important;
+  }
+  #florbmail:focus,
+  #florbword:focus {
+    outline: none !important;
+    border-color: #9ecaed !important;
+    box-shadow: 0 0 10px #9ecaed !important;
+  }
+
+  .login-prefix {
+    position: relative;
+  }
+  .login-prefix span {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .sign-me-up {
+    margin: 10px 0 10px 0;
+    height: 40px;
+    background-color: #4aa67b;
+    border: none;
+    color: white;
+    font-family: var(--primary-font);
+    border-radius: 10px;
+  }
+  .but-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .but-wrapper-2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .submit-form {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #4aa67b;
+    border: none;
+    cursor: pointer;
+    img {
+      width: 50%;
+    }
+  }
+  .forgot-btn {
+    margin: 15px 0 30px 0;
+    cursor: pointer;
+    width: 150px;
+    border: none;
+    background: transparent;
+    font-family: var(--primary-font);
+  }
+  .sign-span {
+    text-decoration: underline;
+    color: #4aa67b;
+    cursor: pointer;
+  }
+  .password-title {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .new-user {
+    font-family: var(--primary-font);
+    color: #4aa67b;
+    background: #ffffff;
+    box-shadow: 0px 6px 16px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 20px;
   }
 }

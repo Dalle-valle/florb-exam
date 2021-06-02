@@ -983,6 +983,9 @@ svg {
   background: #f4efef !important;
 }
 @media only screen and (min-width: 768px) {
+  .sign-up h1 {
+    font-size: 4rem !important;
+  }
   .dash-mobile {
     display: none;
   }
@@ -1176,6 +1179,9 @@ svg {
 .sign-up h1 {
   font-family: var(--bold-font);
   color: #fb7f7d;
+  font-size: 30px;
+  text-align: center;
+  display: inline-block;
 }
 .sign-up h4 {
   font-family: var(--primary-font);
@@ -1185,12 +1191,123 @@ svg {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  margin-top: -20px;
 }
 .sign-up .option.selected {
   animation-name: unset;
   animation-duration: unset;
   animation-fill-mode: unset;
-  border: 2px solid green;
+}
+.sign-up .welcome-logo {
+  width: 100%;
+}
+.sign-up form {
+  width: 100%;
+}
+.sign-up input {
+  display: flex;
+  appearance: none !important;
+  height: 50px !important;
+  box-shadow: 0px 6px 16px 8px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 25px !important;
+  text-indent: 65px !important;
+  margin: 40px 40px 40px 0 !important;
+  width: 100%;
+}
+.sign-up #florbmail {
+  margin-top: 0 !important;
+  border: 2px solid #fbc666 !important;
+}
+.sign-up #florbword {
+  border: 2px solid #b8d7cc !important;
+  margin-bottom: 0 !important;
+}
+.sign-up #new-name {
+  margin-top: 0 !important;
+  border: 2px solid #fbc666 !important;
+}
+.sign-up #new-mail {
+  border: 2px solid #fb7f7d !important;
+}
+.sign-up #pw-1 {
+  border: 2px solid #b8d7cc !important;
+}
+.sign-up #pw-2 {
+  border: 2px solid #b8d7cc !important;
+  margin-bottom: 0 !important;
+}
+.sign-up #florbmail:focus,
+.sign-up #florbword:focus {
+  outline: none !important;
+  border-color: #9ecaed !important;
+  box-shadow: 0 0 10px #9ecaed !important;
+}
+.sign-up .login-prefix {
+  position: relative;
+}
+.sign-up .login-prefix span {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sign-up .sign-me-up {
+  margin: 10px 0 10px 0;
+  height: 40px;
+  background-color: #4aa67b;
+  border: none;
+  color: white;
+  font-family: var(--primary-font);
+  border-radius: 10px;
+}
+.sign-up .but-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.sign-up .but-wrapper-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.sign-up .submit-form {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #4aa67b;
+  border: none;
+  cursor: pointer;
+}
+.sign-up .submit-form img {
+  width: 50%;
+}
+.sign-up .forgot-btn {
+  margin: 15px 0 30px 0;
+  cursor: pointer;
+  width: 150px;
+  border: none;
+  background: transparent;
+  font-family: var(--primary-font);
+}
+.sign-up .sign-span {
+  text-decoration: underline;
+  color: #4aa67b;
+  cursor: pointer;
+}
+.sign-up .password-title {
+  display: flex;
+  justify-content: flex-end;
+}
+.sign-up .new-user {
+  font-family: var(--primary-font);
+  color: #4aa67b;
+  background: #ffffff;
+  box-shadow: 0px 6px 16px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 
