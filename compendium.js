@@ -61,29 +61,21 @@ function observe1() {
 
         console.log("in sight");
         console.log(currentFlorbId, sections.length);
-        document.querySelector(".current").innerHTML = `${currentFlorbId}/${
-          sections.length - 1
-        }`;
+        document.querySelector(".current").innerHTML = `${currentFlorbId}/${sections.length - 1}`;
 
         if (currentFlorbId === 0) {
           document.querySelector(".florb-index").classList.add("hide");
-        } else if (
-          document.querySelector(".florb-index").classList.contains("hide")
-        ) {
+        } else if (document.querySelector(".florb-index").classList.contains("hide")) {
           document.querySelector(".florb-index").classList.remove("hide");
         }
         if (currentFlorbId === sections.length - 1) {
           document.querySelector(".a-down").classList.add("disabled-arrow");
-        } else if (
-          document.querySelector(".a-down").classList.contains("disabled-arrow")
-        ) {
+        } else if (document.querySelector(".a-down").classList.contains("disabled-arrow")) {
           document.querySelector(".a-down").classList.remove("disabled-arrow");
         }
         if (currentFlorbId === 1) {
           document.querySelector(".a-up").classList.add("disabled-arrow");
-        } else if (
-          document.querySelector(".a-up").classList.contains("disabled-arrow")
-        ) {
+        } else if (document.querySelector(".a-up").classList.contains("disabled-arrow")) {
           document.querySelector(".a-up").classList.remove("disabled-arrow");
         }
       } else {
@@ -98,26 +90,18 @@ function observe1() {
   });
 }
 function clickNext() {
-  document
-    .querySelector(`#florb-${currentFlorbId + 1}`)
-    .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  document.querySelector(`#florb-${currentFlorbId + 1}`).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
 
 function clickPrev() {
-  document
-    .querySelector(`#florb-${currentFlorbId - 1}`)
-    .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  document.querySelector(`#florb-${currentFlorbId - 1}`).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
 
 function fillBar() {
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  let height =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
+  let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   let scrolled = (winScroll / height) * 100;
 
   document.querySelector(".progress-bar").style.width = scrolled + "%";
-  document.querySelector(".scroll-img").style.transform = `rotate(${
-    scrolled * 25
-  }deg)`;
+  document.querySelector(".scroll-img").style.transform = `rotate(${scrolled * 25}deg)`;
 }
