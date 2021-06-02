@@ -23,18 +23,22 @@ function initListeners() {
 
 function toggleExisting() {
   console.log("toggleExisting");
-  document.querySelector(".login-switch").classList.add("selected");
-  document.querySelector(".create-switch").classList.remove("selected");
+  document.querySelector(".login-switch").classList.remove("selected");
+  document.querySelector(".create-switch").classList.add("selected");
   document.querySelector(".login").classList.remove("hide");
   document.querySelector(".signup").classList.add("hide");
   document.querySelector(".recover-pass").classList.add("hide");
+  document.querySelector(".title-sign-in").classList.remove("hide");
+  document.querySelector(".title-sign-up").classList.add("hide");
 }
 function toggleCreate() {
   console.log("toggleCreate");
-  document.querySelector(".login-switch").classList.remove("selected");
-  document.querySelector(".create-switch").classList.add("selected");
+  document.querySelector(".login-switch").classList.add("selected");
+  document.querySelector(".create-switch").classList.remove("selected");
   document.querySelector(".signup").classList.remove("hide");
   document.querySelector(".login").classList.add("hide");
+  document.querySelector(".title-sign-in").classList.add("hide");
+  document.querySelector(".title-sign-up").classList.remove("hide");
 }
 function toggleResetPass() {
   console.log("forgot pass");

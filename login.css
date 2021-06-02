@@ -65,11 +65,14 @@ input {
   cursor: pointer;
   padding: 10px;
   margin: 10px;
+  display: none;
 }
 
 .selected {
   border: 2px solid green;
   border-radius: 25px;
+  display: block;
+
 }
 
 .login {
@@ -77,8 +80,7 @@ input {
 }
 
 .signup,
-.login {
-}
+.login {}
 
 .password-title,
 .forgot-title {
