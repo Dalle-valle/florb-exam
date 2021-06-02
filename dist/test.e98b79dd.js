@@ -117,12 +117,27 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"style.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
+})({"test.js":[function(require,module,exports) {
+var draggedElm = document.querySelector(".drag-item"); // First: get the current bounds
 
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./fonts/lufga-bold-webfont.woff2":[["lufga-bold-webfont.59f8a94b.woff2","fonts/lufga-bold-webfont.woff2"],"fonts/lufga-bold-webfont.woff2"],"./fonts/lufga-bold-webfont.woff":[["lufga-bold-webfont.8db783e2.woff","fonts/lufga-bold-webfont.woff"],"fonts/lufga-bold-webfont.woff"],"./fonts/lufga-bolditalic-webfont.woff2":[["lufga-bolditalic-webfont.5505a92c.woff2","fonts/lufga-bolditalic-webfont.woff2"],"fonts/lufga-bolditalic-webfont.woff2"],"./fonts/lufga-bolditalic-webfont.woff":[["lufga-bolditalic-webfont.d8545b3a.woff","fonts/lufga-bolditalic-webfont.woff"],"fonts/lufga-bolditalic-webfont.woff"],"./fonts/lufga-extrabold-webfont.woff2":[["lufga-extrabold-webfont.659bea0b.woff2","fonts/lufga-extrabold-webfont.woff2"],"fonts/lufga-extrabold-webfont.woff2"],"./fonts/lufga-extrabold-webfont.woff":[["lufga-extrabold-webfont.3e65ffcb.woff","fonts/lufga-extrabold-webfont.woff"],"fonts/lufga-extrabold-webfont.woff"],"./fonts/lufga-extrabolditalic-webfont.woff2":[["lufga-extrabolditalic-webfont.77533260.woff2","fonts/lufga-extrabolditalic-webfont.woff2"],"fonts/lufga-extrabolditalic-webfont.woff2"],"./fonts/lufga-extrabolditalic-webfont.woff":[["lufga-extrabolditalic-webfont.3a5044f1.woff","fonts/lufga-extrabolditalic-webfont.woff"],"fonts/lufga-extrabolditalic-webfont.woff"],"./fonts/lufga-extralight-webfont.woff2":[["lufga-extralight-webfont.18702827.woff2","fonts/lufga-extralight-webfont.woff2"],"fonts/lufga-extralight-webfont.woff2"],"./fonts/lufga-extralight-webfont.woff":[["lufga-extralight-webfont.aac2b329.woff","fonts/lufga-extralight-webfont.woff"],"fonts/lufga-extralight-webfont.woff"],"./fonts/lufga-extralightitalic-webfont.woff2":[["lufga-extralightitalic-webfont.21f1675e.woff2","fonts/lufga-extralightitalic-webfont.woff2"],"fonts/lufga-extralightitalic-webfont.woff2"],"./fonts/lufga-extralightitalic-webfont.woff":[["lufga-extralightitalic-webfont.d284c753.woff","fonts/lufga-extralightitalic-webfont.woff"],"fonts/lufga-extralightitalic-webfont.woff"],"./fonts/lufga-italic-webfont.woff2":[["lufga-italic-webfont.5904a6a7.woff2","fonts/lufga-italic-webfont.woff2"],"fonts/lufga-italic-webfont.woff2"],"./fonts/lufga-italic-webfont.woff":[["lufga-italic-webfont.0e5d67cb.woff","fonts/lufga-italic-webfont.woff"],"fonts/lufga-italic-webfont.woff"],"./fonts/lufga-light-webfont.woff2":[["lufga-light-webfont.011e47a7.woff2","fonts/lufga-light-webfont.woff2"],"fonts/lufga-light-webfont.woff2"],"./fonts/lufga-light-webfont.woff":[["lufga-light-webfont.2c507212.woff","fonts/lufga-light-webfont.woff"],"fonts/lufga-light-webfont.woff"],"./fonts/lufga-lightitalic-webfont.woff2":[["lufga-lightitalic-webfont.5b9c15d8.woff2","fonts/lufga-lightitalic-webfont.woff2"],"fonts/lufga-lightitalic-webfont.woff2"],"./fonts/lufga-lightitalic-webfont.woff":[["lufga-lightitalic-webfont.f92a889e.woff","fonts/lufga-lightitalic-webfont.woff"],"fonts/lufga-lightitalic-webfont.woff"],"./fonts/lufga-medium-webfont.woff2":[["lufga-medium-webfont.68eeaa9b.woff2","fonts/lufga-medium-webfont.woff2"],"fonts/lufga-medium-webfont.woff2"],"./fonts/lufga-medium-webfont.woff":[["lufga-medium-webfont.da31310a.woff","fonts/lufga-medium-webfont.woff"],"fonts/lufga-medium-webfont.woff"],"./fonts/lufga-mediumitalic-webfont.woff2":[["lufga-mediumitalic-webfont.0e1f49ed.woff2","fonts/lufga-mediumitalic-webfont.woff2"],"fonts/lufga-mediumitalic-webfont.woff2"],"./fonts/lufga-mediumitalic-webfont.woff":[["lufga-mediumitalic-webfont.95bfebdf.woff","fonts/lufga-mediumitalic-webfont.woff"],"fonts/lufga-mediumitalic-webfont.woff"],"./fonts/lufga-regular-webfont.woff2":[["lufga-regular-webfont.4fe7260a.woff2","fonts/lufga-regular-webfont.woff2"],"fonts/lufga-regular-webfont.woff2"],"./fonts/lufga-regular-webfont.woff":[["lufga-regular-webfont.cca1422c.woff","fonts/lufga-regular-webfont.woff"],"fonts/lufga-regular-webfont.woff"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var first = draggedElm.getBoundingClientRect();
+var last = draggedElm.getBoundingClientRect();
+var deltaX = first.left - last.left;
+var deltaY = first.top - last.top;
+var deltaW = first.width / last.width;
+var deltaH = first.height / last.height;
+draggedElm.animate([{
+  transformOrigin: "top left",
+  transform: "\n      translate(".concat(deltaX, "px, ").concat(deltaY, "px)\n      scale(").concat(deltaW, ", ").concat(deltaH, ")\n    ")
+}, {
+  transformOrigin: "top left",
+  transform: "none"
+}], {
+  duration: 300,
+  easing: "ease-in-out",
+  fill: "both"
+});
+},{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -326,4 +341,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","test.js"], null)
+//# sourceMappingURL=/test.e98b79dd.js.map

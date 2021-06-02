@@ -943,70 +943,28 @@ exports["default"] = GoTrue;
 if (typeof window !== 'undefined') {
   window.GoTrue = GoTrue;
 }
-},{"micro-api-client":"node_modules/micro-api-client/lib/index.js","./user.js":"node_modules/gotrue-js/lib/user.js"}],"dashboard.js":[function(require,module,exports) {
+},{"micro-api-client":"node_modules/micro-api-client/lib/index.js","./user.js":"node_modules/gotrue-js/lib/user.js"}],"confirm-user.js":[function(require,module,exports) {
 "use strict";
 
 var _gotrueJs = _interopRequireDefault(require("gotrue-js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var user;
-var user2;
-var loggedIn = false;
-checkUser();
+var token;
+window.addEventListener("DOMContentLoaded", initListeners);
 
-function checkUser() {
-  var auth = new _gotrueJs.default({
-    APIUrl: "https://serene-clarke-d069ee.netlify.app/.netlify/identity",
-    setCookie: true
-  });
-  user = auth.currentUser();
-  console.log(user);
-  setUser();
-  setSidebar();
+function initListeners() {
+  document.querySelector(".confirm-btn").addEventListener("click", clickConfirm);
+  token = window.location.href.split("=")[1];
 }
 
-function setUser() {
-  if (user === null) {
-    console.log("naa dude");
-    loggedIn = false;
-  }
+var auth = new _gotrueJs.default({
+  APIUrl: "https://serene-clarke-d069ee.netlify.app/.netlify/identity",
+  setCookie: true
+});
 
-  if (user !== null) {
-    loggedIn = true;
-    console.log(user);
-    document.querySelector(".username").innerHTML = user.user_metadata.data.full_name;
-  } // document.querySelector(".username").innerHTML =
-  //   user.user_metadata.data.full_name;
-
-
-  document.querySelector(".logout").addEventListener("click", handleLogout);
-}
-
-function handleLogout() {
-  user.logout().then(function (response) {
-    location.reload();
-    loggedIn = false;
-    console.log("User logged out");
-  }).catch(function (error) {
-    console.log("Failed to logout user: %o", error);
-    throw error;
-  });
-  setSidebar();
-}
-
-function setSidebar() {
-  console.log("setSide");
-
-  if (loggedIn === true) {
-    document.querySelector(".sidebar-logged-out").classList.add("hide");
-    document.querySelector(".sidebar-logged-in").classList.remove("hide");
-  }
-
-  if (loggedIn === false) {
-    document.querySelector(".sidebar-logged-out").classList.remove("hide");
-    document.querySelector(".sidebar-logged-in").classList.add("hide");
-  }
+function clickConfirm() {
+  auth.confirm(token, true);
 }
 },{"gotrue-js":"node_modules/gotrue-js/lib/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -1212,5 +1170,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","dashboard.js"], null)
-//# sourceMappingURL=/dashboard.2deb91d7.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","confirm-user.js"], null)
+//# sourceMappingURL=/confirm-user.04b6d7d4.js.map
