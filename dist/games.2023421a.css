@@ -1,12 +1,22 @@
+.game-landing {
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 0;
+}
 .game-element {
   height: 100vh;
   background: none;
+}
+@media only screen and (max-width: 768px) {
+  .game-element {
+    height: calc(100vh - 100px);
+  }
 }
 .hide {
   display: none;
 }
 .games-background {
-  position: absolute;
+  position: fixed;
   z-index: -1;
 }
 .background-img1 {
@@ -22,9 +32,18 @@
   width: 684px;
   height: 684px;
   position: absolute;
-  top: 50vh;
+  top: 30vh;
   left: 70vh;
   transform: rotate(-15deg);
+  opacity: 0.2;
+}
+.background-img3 {
+  width: 684px;
+  height: 684px;
+  position: absolute;
+  top: 30vh;
+  left: 5vw;
+  transform: rotate(15deg);
   opacity: 0.2;
 }
 .arrow-con {
@@ -49,8 +68,24 @@
   transition-duration: 0.5s;
   font-size: 70px;
 }
-.game-caro {
-  height: 100vh !important;
+.game-caro .carousel-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.game-caro .carousel-item h2 {
+  font-family: "lufgamedium";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 6vw !important;
+  color: #2d3331;
+  height: 20%;
+  line-height: normal !important;
+}
+.game-caro .carousel-item img {
+  width: auto !important;
+  max-width: 100% !important;
 }
 
 /*# sourceMappingURL=games.2023421a.css.map */

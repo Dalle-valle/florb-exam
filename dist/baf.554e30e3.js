@@ -384,6 +384,7 @@ function hmrAcceptRun(bundle/*: ParcelRequire */ , id/*: string */ ) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _gsap = require("gsap");
 var _draggable = require("gsap/Draggable");
+var _bottomnavJs = require("./bottomnav.js");
 var _gotrueJs = require("gotrue-js");
 var _gotrueJsDefault = parcelHelpers.interopDefault(_gotrueJs);
 let user;
@@ -391,8 +392,8 @@ _gsap.gsap.registerPlugin(_draggable.Draggable);
 window.addEventListener("DOMContentLoaded", initBaf);
 function initBaf() {
     checkUser();
-}
-function setTool() {
+    _bottomnavJs.bottomNav();
+    setDrag();
 }
 function checkUser() {
     let auth = new _gotrueJsDefault.default({
@@ -402,6 +403,7 @@ function checkUser() {
     user = auth.currentUser();
     console.log(user);
     setButton();
+    addClickColor();
 }
 function setButton() {
     if (user === null) {
@@ -414,6 +416,22 @@ function setButton() {
         document.querySelector(".save-button").innerHTML = "Save Florb!";
         document.querySelector(".save-button").addEventListener("click", saveFlorb);
     }
+}
+function setDrag() {
+    _draggable.Draggable.create(".drag", {
+        bounds: document.getElementById("builder-con"),
+        onDragStart: function() {
+        },
+        onDragEnd: function() {
+            if (this.hitTest("#face-circle", "50%") && this.target.parentNode.id !== "face-svg") {
+                console.log(this);
+                document.querySelector("#face-svg").appendChild(this.target);
+            } else if (!this.hitTest("#face-circle", "50%") && this.target.parentNode.id === "face-svg") {
+                console.log(document.querySelector(`#${this.target.getAttribute("type")}`));
+                document.querySelector(`#${this.target.getAttribute("type")}`).appendChild(this.target);
+            }
+        }
+    });
 }
 function saveFlorb() {
     const s = new XMLSerializer();
@@ -451,33 +469,6 @@ function saveFlorb() {
         } else console.log("it dosedofasd");
     }
 }
-const faceRect = document.querySelector(".face").getBoundingClientRect();
-const colors = document.querySelectorAll(".color");
-const face = document.querySelector(".specialface");
-const mobileFace = document.querySelector(".mobile-face");
-const cx = faceRect.x + faceRect.width / 2;
-const cy = faceRect.y + faceRect.height / 2;
-const coords = document.querySelector(".trackable");
-let inuse = document.querySelector(".inuse");
-var elem = document.querySelector(".draggable");
-var draggie = new Draggabilly(elem, {
-});
-var draggableElems = document.querySelectorAll(".draggable");
-var draggies = [];
-_draggable.Draggable.create(".drag", {
-    bounds: document.getElementById("builder-con"),
-    onDragStart: function() {
-    },
-    onDragEnd: function() {
-        if (this.hitTest("#face-circle", "50%") && this.target.parentNode.id !== "face-svg") {
-            console.log(this);
-            document.querySelector("#face-svg").appendChild(this.target);
-        } else if (!this.hitTest("#face-circle", "50%") && this.target.parentNode.id === "face-svg") {
-            console.log(document.querySelector(`#${this.target.getAttribute("type")}`));
-            document.querySelector(`#${this.target.getAttribute("type")}`).appendChild(this.target);
-        }
-    }
-});
 function checkFlorbExists(florbName, createdFlorbs) {
     let florbCheck = false;
     createdFlorbs.forEach((florb)=>{
@@ -486,46 +477,26 @@ function checkFlorbExists(florbName, createdFlorbs) {
     console.log(florbCheck);
     return florbCheck;
 }
-console.log(colors);
-for (let color of colors){
-    color.addEventListener("click", getColor);
-    function getColor() {
-        console.log("colors");
-        let currentColor = window.getComputedStyle(color)["background-color"];
-        console.log(currentColor);
-        console.log(document.querySelector("#face-circle"));
-        document.querySelector("#face-circle").style.fill = currentColor;
-        face.style.backgroundColor = currentColor;
-    //mobileFace.style.backgroundColor = currentColor;
+function addClickColor() {
+    const colors = document.querySelectorAll(".color");
+    const desktopFace = document.querySelector(".specialface");
+    const mobileFace = document.querySelector("#face-circle");
+    for (let color of colors){
+        color.addEventListener("click", getColor);
+        function getColor() {
+            let currentColor = window.getComputedStyle(color)["background-color"];
+            mobileFace.style.fill = currentColor;
+            desktopFace.style.backgroundColor = currentColor;
+        //mobileFace.style.backgroundColor = currentColor;
+        }
     }
-}
-if (document.title === "Florbs | Dashboard") {
-    document.querySelector(".link-1").classList.add("selected");
-    document.querySelector(".outer-1").classList.remove("hide");
-    document.querySelector(".special-link-1").style.transform = "translateY(30px)";
-    document.querySelector(".bottom-nav").classList.add("nav-1");
-} else if (document.title === "Florbs | Games") {
-    document.querySelector(".link-2").classList.add("selected");
-    document.querySelector(".outer-2").classList.remove("hide");
-    document.querySelector(".special-link-2").style.transform = "translateY(30px)";
-    document.querySelector(".bottom-nav").classList.add("nav-2");
-} else if (document.title === "Florbs | Builder") {
-    document.querySelector(".link-3").classList.add("selected");
-    document.querySelector(".outer-3").classList.remove("hide");
-    document.querySelector(".special-link-3").style.transform = "translateY(30px)";
-    document.querySelector(".bottom-nav").classList.add("nav-3");
-} else if (document.title === "Florbs | Profile") {
-    document.querySelector(".link-4").classList.add("selected");
-    document.querySelector(".outer-4").classList.remove("hide");
-    document.querySelector(".special-link-4").style.transform = "translateY(30px)";
-    document.querySelector(".bottom-nav").classList.add("nav-4");
 }
 document.querySelector(".reset-button").addEventListener("click", resetThis);
 function resetThis() {
     location.reload();
 }
 
-},{"gsap":"1iecp","gsap/Draggable":"7glZ8","gotrue-js":"67DNY","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"1iecp":[function(require,module,exports) {
+},{"gsap":"1iecp","gsap/Draggable":"7glZ8","gotrue-js":"67DNY","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./bottomnav.js":"3FzrL"}],"1iecp":[function(require,module,exports) {
 (function(global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) : typeof define === 'function' && define.amd ? define([
         'exports'
@@ -6575,6 +6546,35 @@ var Admin = /*#__PURE__*/ function() {
 }();
 exports["default"] = Admin;
 
-},{}]},["4c3k5","1AuA5"], "1AuA5", "parcelRequiredca8")
+},{}],"3FzrL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "bottomNav", ()=>bottomNav
+);
+function bottomNav() {
+    if (document.title === "Florbs | Dashboard") {
+        document.querySelector(".link-1").classList.add("selected");
+        document.querySelector(".outer-1").classList.remove("hide");
+        document.querySelector(".special-link-1").style.transform = "translateY(30px)";
+        document.querySelector(".bottom-nav").classList.add("nav-1");
+    } else if (document.title === "Florbs | Games") {
+        document.querySelector(".link-2").classList.add("selected");
+        document.querySelector(".outer-2").classList.remove("hide");
+        document.querySelector(".special-link-2").style.transform = "translateY(30px)";
+        document.querySelector(".bottom-nav").classList.add("nav-2");
+    } else if (document.title === "Florbs | Builder") {
+        document.querySelector(".link-3").classList.add("selected");
+        document.querySelector(".outer-3").classList.remove("hide");
+        document.querySelector(".special-link-3").style.transform = "translateY(30px)";
+        document.querySelector(".bottom-nav").classList.add("nav-3");
+    } else if (document.title === "Florbs | Profile") {
+        document.querySelector(".link-4").classList.add("selected");
+        document.querySelector(".outer-4").classList.remove("hide");
+        document.querySelector(".special-link-4").style.transform = "translateY(30px)";
+        document.querySelector(".bottom-nav").classList.add("nav-4");
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}]},["4c3k5","1AuA5"], "1AuA5", "parcelRequiredca8")
 
 //# sourceMappingURL=baf.554e30e3.js.map

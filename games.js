@@ -1,10 +1,22 @@
 document.addEventListener("DOMContentLoaded", initCaro);
 
+import { bottomNav } from "./bottomnav.js";
+
+bottomNav();
+
 function initCaro() {
   setTimeout(() => {
-    var elems = document.querySelectorAll(".carousel");
+    var elems = document.querySelectorAll(".game-caro");
+    var elem = document.querySelector(".game-caro");
     var elem = document.querySelector(".carousel");
-    var options = { numVisible: 1, fullWidth: true };
+    console.log(elem);
+    var options = {
+      onCycleTo: setBackground,
+      fullWidth: true,
+      duration: 400,
+      dist: 0,
+      padding: 100,
+    };
     var instances = M.Carousel.init(elems, options);
 
     var instance = M.Carousel.getInstance(elem);
@@ -28,7 +40,7 @@ function initCaro() {
       setTimeout(setBackground, 200);
     }
     setBackground();
-  }, 500);
+  }, 200);
 }
 function setBackground() {
   console.log(document.querySelectorAll(".carousel-item").length);

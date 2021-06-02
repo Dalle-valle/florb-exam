@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
-
+import { bottomNav } from "./bottomnav.js";
 import GoTrue from "gotrue-js";
 let user;
 
@@ -9,8 +9,9 @@ gsap.registerPlugin(Draggable);
 window.addEventListener("DOMContentLoaded", initBaf);
 function initBaf() {
   checkUser();
+  bottomNav();
+  setDrag();
 }
-function setTool() {}
 function checkUser() {
   let auth = new GoTrue({
     APIUrl: "https://serene-clarke-d069ee.netlify.app/.netlify/identity",
@@ -19,6 +20,7 @@ function checkUser() {
   user = auth.currentUser();
   console.log(user);
   setButton();
+  addClickColor();
 }
 function setButton() {
   if (user === null) {
@@ -32,6 +34,31 @@ function setButton() {
     document.querySelector(".save-button").innerHTML = "Save Florb!";
     document.querySelector(".save-button").addEventListener("click", saveFlorb);
   }
+}
+function setDrag() {
+  Draggable.create(".drag", {
+    bounds: document.getElementById("builder-con"),
+    onDragStart: function () {},
+    onDragEnd: function () {
+      if (
+        this.hitTest("#face-circle", "50%") &&
+        this.target.parentNode.id !== "face-svg"
+      ) {
+        console.log(this);
+        document.querySelector("#face-svg").appendChild(this.target);
+      } else if (
+        !this.hitTest("#face-circle", "50%") &&
+        this.target.parentNode.id === "face-svg"
+      ) {
+        console.log(
+          document.querySelector(`#${this.target.getAttribute("type")}`)
+        );
+        document
+          .querySelector(`#${this.target.getAttribute("type")}`)
+          .appendChild(this.target);
+      }
+    },
+  });
 }
 function saveFlorb() {
   const s = new XMLSerializer();
@@ -73,43 +100,6 @@ function saveFlorb() {
   }
 }
 
-const faceRect = document.querySelector(".face").getBoundingClientRect();
-const colors = document.querySelectorAll(".color");
-const face = document.querySelector(".specialface");
-const mobileFace = document.querySelector(".mobile-face");
-const cx = faceRect.x + faceRect.width / 2;
-const cy = faceRect.y + faceRect.height / 2;
-const coords = document.querySelector(".trackable");
-let inuse = document.querySelector(".inuse");
-var elem = document.querySelector(".draggable");
-var draggie = new Draggabilly(elem, {});
-
-var draggableElems = document.querySelectorAll(".draggable");
-
-var draggies = [];
-Draggable.create(".drag", {
-  bounds: document.getElementById("builder-con"),
-  onDragStart: function () {},
-  onDragEnd: function () {
-    if (
-      this.hitTest("#face-circle", "50%") &&
-      this.target.parentNode.id !== "face-svg"
-    ) {
-      console.log(this);
-      document.querySelector("#face-svg").appendChild(this.target);
-    } else if (
-      !this.hitTest("#face-circle", "50%") &&
-      this.target.parentNode.id === "face-svg"
-    ) {
-      console.log(
-        document.querySelector(`#${this.target.getAttribute("type")}`)
-      );
-      document
-        .querySelector(`#${this.target.getAttribute("type")}`)
-        .appendChild(this.target);
-    }
-  },
-});
 function checkFlorbExists(florbName, createdFlorbs) {
   let florbCheck = false;
   createdFlorbs.forEach((florb) => {
@@ -120,47 +110,22 @@ function checkFlorbExists(florbName, createdFlorbs) {
   console.log(florbCheck);
   return florbCheck;
 }
-console.log(colors);
+function addClickColor() {
+  const colors = document.querySelectorAll(".color");
+  const desktopFace = document.querySelector(".specialface");
+  const mobileFace = document.querySelector("#face-circle");
+  for (let color of colors) {
+    color.addEventListener("click", getColor);
 
-for (let color of colors) {
-  color.addEventListener("click", getColor);
+    function getColor() {
+      let currentColor = window.getComputedStyle(color)["background-color"];
 
-  function getColor() {
-    console.log("colors");
-    let currentColor = window.getComputedStyle(color)["background-color"];
-    console.log(currentColor);
-    console.log(document.querySelector("#face-circle"));
-    document.querySelector("#face-circle").style.fill = currentColor;
-    face.style.backgroundColor = currentColor;
+      mobileFace.style.fill = currentColor;
+      desktopFace.style.backgroundColor = currentColor;
 
-    //mobileFace.style.backgroundColor = currentColor;
+      //mobileFace.style.backgroundColor = currentColor;
+    }
   }
-}
-
-if (document.title === "Florbs | Dashboard") {
-  document.querySelector(".link-1").classList.add("selected");
-  document.querySelector(".outer-1").classList.remove("hide");
-  document.querySelector(".special-link-1").style.transform =
-    "translateY(30px)";
-  document.querySelector(".bottom-nav").classList.add("nav-1");
-} else if (document.title === "Florbs | Games") {
-  document.querySelector(".link-2").classList.add("selected");
-  document.querySelector(".outer-2").classList.remove("hide");
-  document.querySelector(".special-link-2").style.transform =
-    "translateY(30px)";
-  document.querySelector(".bottom-nav").classList.add("nav-2");
-} else if (document.title === "Florbs | Builder") {
-  document.querySelector(".link-3").classList.add("selected");
-  document.querySelector(".outer-3").classList.remove("hide");
-  document.querySelector(".special-link-3").style.transform =
-    "translateY(30px)";
-  document.querySelector(".bottom-nav").classList.add("nav-3");
-} else if (document.title === "Florbs | Profile") {
-  document.querySelector(".link-4").classList.add("selected");
-  document.querySelector(".outer-4").classList.remove("hide");
-  document.querySelector(".special-link-4").style.transform =
-    "translateY(30px)";
-  document.querySelector(".bottom-nav").classList.add("nav-4");
 }
 
 document.querySelector(".reset-button").addEventListener("click", resetThis);

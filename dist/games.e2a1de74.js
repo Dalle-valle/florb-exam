@@ -381,14 +381,21 @@ function hmrAcceptRun(bundle/*: ParcelRequire */ , id/*: string */ ) {
 }
 
 },{}],"1Q2nK":[function(require,module,exports) {
+var _bottomnavJs = require("./bottomnav.js");
 document.addEventListener("DOMContentLoaded", initCaro);
+_bottomnavJs.bottomNav();
 function initCaro() {
     setTimeout(()=>{
-        var elems = document.querySelectorAll(".carousel");
+        var elems = document.querySelectorAll(".game-caro");
+        var elem = document.querySelector(".game-caro");
         var elem = document.querySelector(".carousel");
+        console.log(elem);
         var options = {
-            numVisible: 1,
-            fullWidth: true
+            onCycleTo: setBackground,
+            fullWidth: true,
+            duration: 400,
+            dist: 0,
+            padding: 100
         };
         var instances = M.Carousel.init(elems, options);
         var instance = M.Carousel.getInstance(elem);
@@ -408,7 +415,7 @@ function initCaro() {
             setTimeout(setBackground, 200);
         }
         setBackground();
-    }, 500);
+    }, 200);
 }
 function setBackground() {
     console.log(document.querySelectorAll(".carousel-item").length);
@@ -419,6 +426,67 @@ function setBackground() {
         document.querySelector(`.background-img${i + 1}`).classList.remove("hide");
     } else document.querySelector(`.background-img${i + 1}`).classList.add("hide");
 }
+
+},{"./bottomnav.js":"3FzrL"}],"3FzrL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "bottomNav", ()=>bottomNav
+);
+function bottomNav() {
+    if (document.title === "Florbs | Dashboard") {
+        document.querySelector(".link-1").classList.add("selected");
+        document.querySelector(".outer-1").classList.remove("hide");
+        document.querySelector(".special-link-1").style.transform = "translateY(30px)";
+        document.querySelector(".bottom-nav").classList.add("nav-1");
+    } else if (document.title === "Florbs | Games") {
+        document.querySelector(".link-2").classList.add("selected");
+        document.querySelector(".outer-2").classList.remove("hide");
+        document.querySelector(".special-link-2").style.transform = "translateY(30px)";
+        document.querySelector(".bottom-nav").classList.add("nav-2");
+    } else if (document.title === "Florbs | Builder") {
+        document.querySelector(".link-3").classList.add("selected");
+        document.querySelector(".outer-3").classList.remove("hide");
+        document.querySelector(".special-link-3").style.transform = "translateY(30px)";
+        document.querySelector(".bottom-nav").classList.add("nav-3");
+    } else if (document.title === "Florbs | Profile") {
+        document.querySelector(".link-4").classList.add("selected");
+        document.querySelector(".outer-4").classList.remove("hide");
+        document.querySelector(".special-link-4").style.transform = "translateY(30px)";
+        document.querySelector(".bottom-nav").classList.add("nav-4");
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"367CR":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule') return;
+        // Skip duplicate re-exports when they have the same value.
+        if (key in dest && dest[key] === source[key]) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}]},["5iilH","1Q2nK"], "1Q2nK", "parcelRequiredca8")
 
