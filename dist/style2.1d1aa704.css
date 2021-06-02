@@ -1238,7 +1238,11 @@ svg {
   flex-direction: column;
   margin-top: -20px;
 }
+.sign-up .option {
+  display: none;
+}
 .sign-up .option.selected {
+  display: block;
   animation-name: unset;
   animation-duration: unset;
   animation-fill-mode: unset;
