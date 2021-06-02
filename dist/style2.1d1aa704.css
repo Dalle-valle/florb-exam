@@ -695,6 +695,34 @@ svg {
 .webshop .image-text-content.special-bg {
   color: white;
 }
+.webshop .dark-green {
+  color: #4aa67b;
+}
+.webshop .florb-world {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+.webshop .pre-order {
+  font-family: var(--primary-font);
+  width: 150px;
+  background: #4aa67b;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  color: white;
+}
+.webshop .flip-up {
+  display: flex;
+  flex-direction: row-reverse !important;
+  justify-content: center;
+}
+.webshop .image-text-text {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
 .webshop .webshop-splash {
   height: 100vh;
   position: relative;
@@ -772,7 +800,7 @@ svg {
   margin-top: -100px !important;
 }
 .webshop .carousel {
-  height: 600px !important;
+  height: 690px !important;
 }
 .webshop .carousel .active .materials-text {
   display: block;
@@ -859,6 +887,9 @@ svg {
   height: 67px;
 }
 @media screen and (min-width: 1000px) {
+  .webshop * {
+    box-sizing: border-box;
+  }
   .webshop h1 {
     font-family: "lufgaextralight";
     font-weight: 200;
@@ -934,9 +965,15 @@ svg {
     width: auto !important;
     margin-left: auto;
   }
+  .webshop .image-text-text {
+    height: 100vh;
+  }
   .webshop .image-text {
     display: flex;
     flex-direction: row;
+  }
+  .webshop .shop-section {
+    height: 100vh;
   }
   .webshop .image-text:nth-child(2) {
     flex-direction: row-reverse;
@@ -956,7 +993,6 @@ svg {
     left: 0;
   }
   .webshop .image-text img {
-    width: 50%;
     padding: 50px;
   }
   .webshop .pack {
