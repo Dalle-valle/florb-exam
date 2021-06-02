@@ -545,6 +545,16 @@ h1 {
     transform: scale(1.2);
   }
 }
+.welcome {
+  margin-bottom: 0;
+}
+.welcome-logo {
+  width: 200px;
+  margin-bottom: -20px;
+}
+.material-tooltip {
+  background: #fb7f7d !important;
+}
 /**Landing**/
 .landing-choice {
   display: flex;
@@ -1161,6 +1171,26 @@ svg {
 }
 .desc-intro .logo-florb {
   width: 100%;
+}
+/**Login**/
+.sign-up h1 {
+  font-family: var(--bold-font);
+  color: #fb7f7d;
+}
+.sign-up h4 {
+  font-family: var(--primary-font);
+  font-size: 12px;
+}
+.sign-up .options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sign-up .option.selected {
+  animation-name: unset;
+  animation-duration: unset;
+  animation-fill-mode: unset;
+  border: 2px solid green;
 }
 
 
