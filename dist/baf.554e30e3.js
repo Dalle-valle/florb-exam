@@ -388,7 +388,12 @@ var _gotrueJs = require("gotrue-js");
 var _gotrueJsDefault = parcelHelpers.interopDefault(_gotrueJs);
 let user;
 _gsap.gsap.registerPlugin(_draggable.Draggable);
-checkUser();
+window.addEventListener("DOMContentLoaded", initBaf);
+function initBaf() {
+    checkUser();
+}
+function setTool() {
+}
 function checkUser() {
     let auth = new _gotrueJsDefault.default({
         APIUrl: "https://serene-clarke-d069ee.netlify.app/.netlify/identity",
@@ -460,20 +465,14 @@ var draggie = new Draggabilly(elem, {
 var draggableElems = document.querySelectorAll(".draggable");
 var draggies = [];
 _draggable.Draggable.create(".drag", {
-    bounds: document.getElementById("svg-con"),
-    inertia: true,
+    bounds: document.getElementById("builder-con"),
     onDragStart: function() {
-        console.log("clicked");
-        this.target.classList.add("inuse");
     },
     onDragEnd: function() {
-        console.log("drag ended");
-        console.log(this.target);
-        this.target.classList.add("inuse");
-        if (this.hitTest("#face-circle", "50%")) {
+        if (this.hitTest("#face-circle", "50%") && this.target.parentNode.id !== "face-svg") {
             console.log(this);
             document.querySelector("#face-svg").appendChild(this.target);
-        } else if (this.target.parentNode.id === "face-svg") {
+        } else if (!this.hitTest("#face-circle", "50%") && this.target.parentNode.id === "face-svg") {
             console.log(document.querySelector(`#${this.target.getAttribute("type")}`));
             document.querySelector(`#${this.target.getAttribute("type")}`).appendChild(this.target);
         }
@@ -487,39 +486,17 @@ function checkFlorbExists(florbName, createdFlorbs) {
     console.log(florbCheck);
     return florbCheck;
 }
-// for (var i = 0; i < draggableElems.length; i++) {
-//   var draggableElem = draggableElems[i];
-//   var draggie = new Draggabilly(draggableElem, {});
-//   draggies.push(draggie);
-// }
-// draggies.forEach((item) => {
-//   item.on("dragEnd", function (event, pointer) {
-//     const faceBounding = document
-//       .querySelector(".mobile-face")
-//       .getBoundingClientRect();
-//     const targetBounding = event.target.getBoundingClientRect();
-//     const rect = event.target.getBoundingClientRect();
-//     const dx = rect.x + rect.width / 2;
-//     const dy = rect.y + rect.height / 2;
-//     const dist = Math.hypot(cx - dx, cy - dy);
-//     console.log(faceBounding);
-//     console.log(targetBounding);
-//     if (faceBounding.width / 2 + targetBounding.width / 4 > dist) {
-//       console.log("fuck");
-//       //event.target.parentElement.classList.add("inuse");
-//       document.querySelector(".mobile-face").appendChild(event.target);
-//     } else {
-//       // event.target.parentElement.classList.remove("inuse");
-//     }
-//   });
-// });
+console.log(colors);
 for (let color of colors){
     color.addEventListener("click", getColor);
     function getColor() {
+        console.log("colors");
         let currentColor = window.getComputedStyle(color)["background-color"];
         console.log(currentColor);
+        console.log(document.querySelector("#face-circle"));
+        document.querySelector("#face-circle").style.fill = currentColor;
         face.style.backgroundColor = currentColor;
-        mobileFace.style.backgroundColor = currentColor;
+    //mobileFace.style.backgroundColor = currentColor;
     }
 }
 if (document.title === "Florbs | Dashboard") {

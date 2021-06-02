@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="builder-con mobile-builder">
+  <div id="builder-con" class="builder-con mobile-builder">
     <form name="florb-name" class="florb-name-form">
       <p>
         <label>Name:
@@ -26,62 +26,88 @@
       </div>
 
     </form>
-    <svg id="svg-con" class="svg-con" width="100%" height="100%" viewbox="0 0 100 100" z-index="-2" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+    <svg id="svg-con" class="svg-con" width="100%" height="100%" viewbox="0 0 200 200" z-index="1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
 
-      <svg id="face-svg" class="face-svg" x="0" y="0" width="100%" height="100%" viewbox="0 0 100 100" z-index="100" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
-        <circle id="face-circle" cx="50" cy="35" r="35" stroke="black" stroke-width="0" fill="lightblue"></circle>
+      <svg id="face-svg" class="face-svg" x="0" y="0" width="100%" height="100%" viewbox="0 0 200 200" z-index="100" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs">
+        <circle id="face-circle" cx="100" cy="20" r="70" stroke="black" stroke-width="0" fill="lightblue"></circle>
 
 
       </svg>
+      <foreignObject width="100%" height="20" x="0" y="120">
+        <div class="tools">
+          <ul class="tabs">
+            <li class="tab "><a href="#colors">Color</a></li>
+            <li class="tab"><a href="#eyes">Eyes</a></li>
+            <li class="tab"><a href="#pupils">Pupils</a></li>
+            <li class="tab"><a href="#brows">Brows</a></li>
+            <li class="tab"><a href="#mouth">Mouth</a></li>
+            <li class="tab"><a href="#teeth">Teeth</a></li>
+          </ul>
+        </div>
+
+
+      </foreignObject>
+
+      <g id="colors" class="colors tool ">
+        <circle class="color color-1" r="15" cx="20" cy="160" type="colors"></circle>
+        <circle class="color color-2" r="15" cx="60" cy="160" type="colors"></circle>
+        <circle class="color color-3" r="15" cx="100" cy="160" type="colors"></circle>
+        <circle class="color color-4" r="15" cx="140" cy="160" type="colors"></circle>
+        <circle class="color color-5" r="15" cx="180" cy="160" type="colors"></circle>
+        <circle class="color color-6" r="15" cx="20" cy="200" type="colors"></circle>
+        <circle class="color color-7" r="15" cx="60" cy="200" type="colors"></circle>
+        <circle class="color color-8" r="15" cx="100" cy="200" type="colors"></circle>
+        <circle class="color color-9" r="15" cx="140" cy="200" type="colors"></circle>
+        <circle class="color color-10" r="15" cx="180" cy="200" type="colors"></circle>
+
+      </g>
       <g id="eyes" class="eyes tool">
 
 
-        <circle class="drag color5" r="5" cx="20" cy="110" type="eyes"></circle>
-        <circle class="drag color6" r="5" cx="74" cy="110" type="eyes"></circle>
-        <circle class="drag color7" r="5" cx="60" cy="110" type="eyes"></circle>
-        <circle class="drag color8" r="5" cx="80" cy="110" fill="red" type="eyes"></circle>
-      </g>
-
-      <g id="colors" class="colors tool active">
-        <circle class="drag color1" r="5" cx="20" cy="110" type="colors"></circle>
-        <circle class="drag color2" r="5" cx="40" cy="110" type="colors"></circle>
-        <circle class="drag color3" r="5" cx="60" cy="110" type="colors"></circle>
-        <circle class="drag color4" r="5" cx="80" cy="110" type="colors"></circle>
-      </g>
-      <g id="pupils" class="colors tool active">
-        <circle class="drag color1" r="5" cx="20" cy="110" type="pupils"></circle>
-        <circle class="drag color2" r="5" cx="40" cy="110" type="pupils"></circle>
+        <ellipse class="drag" cx="30" cy="170" rx="22" ry="22" fill="white" type="eyes"></ellipse>
+        <ellipse class="drag" cx="80" cy="170" rx="22" ry="22" fill="white" type="eyes"></ellipse>
 
       </g>
-      <g id="brows" class="colors tool active">
-        <circle class="drag color2" r="5" cx="40" cy="110" type="brows"></circle>
+
+      <g id="pupils" class="pupils tool ">
+        <circle class="drag" cx="30" cy="160" r="10" fill="black" type="pupils"></circle>
+        <circle class="drag" cx="55" cy="160" r="10" fill="black" type="pupils"></circle>
+        <circle class="drag" cx="85" cy="160" r="5" fill="black" type="pupils"></circle>
+        <circle class="drag" cx="100" cy="160" r="5" fill="black" type="pupils"></circle>
+
+
 
       </g>
-      <g id="mouth" class="colors tool active">
+      <g id="brows" class="brows tool ">
+        <path transform="translate(20,150) scale(0.7)" class="drag" d="M2.58813 0L61.7476 18.7634L60.6153 22.9894L-5.56707e-05 9.65926L2.58813 0Z" fill="#676767" type="brows"></path>
+        <path transform="translate(100,150) scale(0.7)" class="drag" d="M59.8875 0L0.727979 18.7634L1.86031 22.9894L62.4756 9.65926L59.8875 0Z" fill="#676767" type="brows"></path>
 
-        <circle class="drag color3" r="5" cx="60" cy="110" type="mouth"></circle>
       </g>
-      <g id="teeth" class="colors tool active">
+      <g id="mouth" class="mouth tool ">
 
-        <circle class="drag color4" r="5" cx="80" cy="110" type="teeth"></circle>
+        <ellipse class="drag" cx="30" cy="160" rx="16" ry="11" transform="rotate(-11.1077 37.6006 27.5639)" fill="#676767" type="mouth"></ellipse>
+        <path class="drag" transform="translate(100,150) scale(0.7)" d="M51 6.51349C51 9.39134 41.0452 4.55945 26.6821 4.55945C12.3191 4.55945 0 10.0427 0 7.16484C0 4.287 12.3191 0 26.6821 0C41.0452 0 51 3.63565 51 6.51349Z" fill="#676767" type="mouth"></path>
+      </g>
+      <g id="teeth" class="teeth tool ">
+
+        <ellipse class="drag" cx="30" cy="170" rx="22" ry="22" fill="magenta" type="teeth"></ellipse>
       </g>
 
     </svg>
+    <!-- 
 
+    <div class="tools">
+      <ul class="tabs">
+        <li class="tab"><a class="active" href="#colors">Color</a></li>
+        <li class="tab"><a href="#eyes">Eyes</a></li>
+        <li class="tab "><a href="#pupils">Pupils</a></li>
+        <li class="tab "><a href="#brows">Brows</a></li>
+        <li class="tab "><a href="#mouth">Mouth</a></li>
+        <li class="tab "><a href="#teeth">Teeth</a></li>
+      </ul>
+    </div> -->
+    <button class="save-button baf-save">Save Florb!</button>
 
-    <div class="row tools">
-      <div class="col s12">
-        <ul class="tabs">
-          <li class="tab col s2"><a class="active" href="#colors">Color</a></li>
-          <li class="tab col s2"><a href="#eyes">Eyes</a></li>
-          <li class="tab col s2"><a href="#pupils">Pupils</a></li>
-          <li class="tab col s2"><a href="#brows">Brows</a></li>
-          <li class="tab col s2"><a href="#mouth">Mouth</a></li>
-          <li class="tab col s2"><a href="#teeth">Teeth</a></li>
-        </ul>
-      </div>
-
-    </div>
   </div>
   <div class="bottom-nav">
     <a href="/dashboard.html">
@@ -185,7 +211,6 @@
       <div id="test6" class="col s12">Test 6</div>
     </div>
   </div> -->
-  <button class="save-button">Save Florb!</button>
 
   <div class="desktop-builder">
     <div class="row">
@@ -298,9 +323,6 @@
   </a>
   <script src="/webshop.c157bb3b.js"></script>
   
-  <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
-
-  <script src="/baf.554e30e3.js"></script>
   <script>// modules are defined as an array
 // [ module function, map of requires ]
 //
@@ -443,12 +465,12 @@
       this[globalName] = mainExports;
     }
   }
-})({"7gIGj":[function(require,module,exports) {
+})({"hF3MY":[function(require,module,exports) {
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
-module.bundle.HMR_BUNDLE_ID = "75fa9b321768b234509868150bb2f12f"; // @flow
+module.bundle.HMR_BUNDLE_ID = "f7ad0730ed4c1c145243b93e10ac2cad"; // @flow
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE */ /*::
 import type {
   HMRAsset,
@@ -683,13 +705,20 @@ function hmrAcceptRun(bundle/*: ParcelRequire */ , id/*: string */ ) {
     acceptedAssets[id] = true;
 }
 
-},{}],"1bcco":[function(require,module,exports) {
+},{}],"6MkeM":[function(require,module,exports) {
 const tabs = document.querySelectorAll(".tabs");
-for (tab of tabs)var instance = M.Tabs.init(tab);
+for (tab of tabs){
+    console.log(tab);
+    var instance = M.Tabs.init(tab);
+}
 
-},{}]},["7gIGj","1bcco"], "1bcco", "parcelRequiredca8")
+},{}]},["hF3MY","6MkeM"], "6MkeM", "parcelRequiredca8")
 
 </script>
+  <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+
+  <script src="/baf.554e30e3.js"></script>
+
 </body>
 
 </html>

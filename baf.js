@@ -6,7 +6,11 @@ let user;
 
 gsap.registerPlugin(Draggable);
 
-checkUser();
+window.addEventListener("DOMContentLoaded", initBaf);
+function initBaf() {
+  checkUser();
+}
+function setTool() {}
 function checkUser() {
   let auth = new GoTrue({
     APIUrl: "https://serene-clarke-d069ee.netlify.app/.netlify/identity",
@@ -84,16 +88,19 @@ var draggableElems = document.querySelectorAll(".draggable");
 
 var draggies = [];
 Draggable.create(".drag", {
-  bounds: document.getElementById("svg-con"),
-  onDragStart: function () {
-    this.target.classList.add("inuse");
-  },
+  bounds: document.getElementById("builder-con"),
+  onDragStart: function () {},
   onDragEnd: function () {
-    this.target.classList.remove("inuse");
-    if (this.hitTest("#face-circle", "50%")) {
+    if (
+      this.hitTest("#face-circle", "50%") &&
+      this.target.parentNode.id !== "face-svg"
+    ) {
       console.log(this);
       document.querySelector("#face-svg").appendChild(this.target);
-    } else if (this.target.parentNode.id === "face-svg") {
+    } else if (
+      !this.hitTest("#face-circle", "50%") &&
+      this.target.parentNode.id === "face-svg"
+    ) {
       console.log(
         document.querySelector(`#${this.target.getAttribute("type")}`)
       );
@@ -113,14 +120,20 @@ function checkFlorbExists(florbName, createdFlorbs) {
   console.log(florbCheck);
   return florbCheck;
 }
+console.log(colors);
+
 for (let color of colors) {
   color.addEventListener("click", getColor);
 
   function getColor() {
+    console.log("colors");
     let currentColor = window.getComputedStyle(color)["background-color"];
     console.log(currentColor);
+    console.log(document.querySelector("#face-circle"));
+    document.querySelector("#face-circle").style.fill = currentColor;
     face.style.backgroundColor = currentColor;
-    mobileFace.style.backgroundColor = currentColor;
+
+    //mobileFace.style.backgroundColor = currentColor;
   }
 }
 

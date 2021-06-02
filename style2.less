@@ -200,15 +200,27 @@ body {
 
   .tabs .tab a {
     padding: 0 0 !important;
-    font-size: 10px !important;
+    font-size: 6px !important;
     color: black !important;
-    width: 100%;
+    line-height: normal !important;
+    height: auto;
   }
   .tabs a.active {
     box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.06);
   }
   .tabs {
+    display: flex;
+    flex-direction: row;
     overflow: hidden;
+    height: auto;
+    .tab {
+      height: 14px;
+      width: calc(100% / 6);
+    }
+    .indicator {
+      height: 1px;
+      width: calc(100% / 6);
+    }
   }
   .tabs .indicator {
     background-color: black !important;
@@ -220,6 +232,9 @@ body {
   .mobile-row {
     display: flex;
     justify-content: center;
+  }
+  .svg-tab {
+    font-size: 8px;
   }
   .color {
     width: 40px;
@@ -390,8 +405,12 @@ h1 {
 .created-florb {
   height: 100%;
 }
+.delete {
+  width: 100% !important;
+}
 
 .florb-name-form {
+  margin: 20px 0;
   label {
     color: black;
     font-weight: 700;
@@ -414,28 +433,55 @@ h1 {
 
 .builder-con {
   position: relative;
-  width: 100vw;
+  width: 375px;
   display: Flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  overflow: visible;
 }
 
 .svg-con {
-  height: 500px;
+  height: 70vh;
+  max-width: 375px;
 }
 
 .face-svg {
+  overflow: visible !important;
+}
+.baf-save {
+  position: absolute;
+  bottom: -3vh;
+  left: 10px;
 }
 
 .tools {
-  position: absolute;
-  top: 420px;
   width: 100%;
-  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+
+  .active-tool {
+    background-color: blue;
+    color: green;
+  }
+}
+.tabs {
+  overflow: visible !important;
+  display: flex;
+  flex-direction: column;
+  .tab {
+    margin: 0;
+    font-size: 5px;
+  }
+
+  .active {
+    background-color: red;
+  }
 }
 .tool {
   display: none;
 }
+
 .active {
   display: block;
 }
@@ -448,7 +494,12 @@ h1 {
   background: #b8d7cc;
   border-radius: 15px;
 }
-.eyes {
+.eyes ellipse,
+.brows path,
+.mouth path,
+.mouth ellipse {
+  stroke-width: "1";
+  stroke: black;
 }
 
 .eyes svg,
@@ -1139,6 +1190,46 @@ svg {
     }
   }
 }
+.color-1 {
+  background: #75b8cb;
+  fill: #75b8cb;
+}
+.color-2 {
+  background: #3a4e64;
+  fill: #3a4e64;
+}
+.color-3 {
+  background: #a45c5c;
+  fill: #a45c5c;
+}
+.color-4 {
+  fill: #9987b7;
+  background: #9987b7;
+}
+.color-5 {
+  background: #6b747d;
+  fill: #6b747d;
+}
+.color-6 {
+  background: #8fa3a0;
+  fill: #8fa3a0;
+}
+.color-7 {
+  background: #305a82;
+  fill: #305a82;
+}
+.color-8 {
+  background: #2f2d3a;
+  fill: #2f2d3a;
+}
+.color-9 {
+  background: #5fa5cd;
+  fill: #5fa5cd;
+}
+.color-10 {
+  background: #7aceff;
+  fill: #7aceff;
+}
 
 @media only screen and (min-width: 1024px) {
   .mobile-builder {
@@ -1167,33 +1258,6 @@ svg {
         height: 55px;
         border-radius: 50%;
         cursor: pointer;
-      }
-      .color-1 {
-        background: #75b8cb;
-      }
-      .color-2 {
-        background: #3a4e64;
-      }
-      .color-3 {
-        background: #a45c5c;
-      }
-      .color-4 {
-        background: #9987b7;
-      }
-      .color-5 {
-        background: #6b747d;
-      }
-      .color-6 {
-        background: #8fa3a0;
-      }
-      .color-7 {
-        background: #305a82;
-      }
-      .color-8 {
-        background: #2f2d3a;
-      }
-      .color-9 {
-        background: #5fa5cd;
       }
     }
     .button-wrapper {
