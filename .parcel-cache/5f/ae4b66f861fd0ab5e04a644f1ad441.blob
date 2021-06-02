@@ -1,2 +1,0 @@
-const $49d9419e3c2d4cdd6883cdecdc1bebc8$var$tabs = document.querySelectorAll(".tabs");
-for (tab of $49d9419e3c2d4cdd6883cdecdc1bebc8$var$tabs)var $49d9419e3c2d4cdd6883cdecdc1bebc8$var$instance = M.Tabs.init(tab);

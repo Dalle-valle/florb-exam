@@ -1,4 +1,0 @@
-<h2>Peepopog wow</h2>
-<p>Follow this link to confirm your user:</p>
-<a href="https://confident-hoover-cccfcc.netlify.app/confirm-user/#confirmation_token={{ .Token }}">Confirm your
-    mail</a><script src="/confirmation.HASH_REF_1661580fc0cf18a8774dd330ebea4c60.js"></script>

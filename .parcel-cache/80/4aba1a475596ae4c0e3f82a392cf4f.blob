@@ -1,6 +1,0 @@
-#save {
-                background-color: #ff0000;
-                width: 550px;
-                height: 490px;
-                overflow: visible;
-              }

@@ -1,2 +1,0 @@
-document.addEventListener("DOMContentLoaded",(function(){var e=document.querySelectorAll(".carousel");M.Carousel.init(e,{padding:30,dist:0})}));
-//# sourceMappingURL=webshop.HASH_REF_65d127a92e346d0c155d29cb51ec3b9e.js.map

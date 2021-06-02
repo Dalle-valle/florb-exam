@@ -25,11 +25,8 @@ function checkUser() {
 function setButton() {
   if (user === null) {
     document.querySelector(".save-button").innerHTML = "Log in";
-    loggedIn = false;
   }
   if (user !== null) {
-    loggedIn = true;
-
     console.log(user);
     document.querySelector(".save-button").innerHTML = "Save Florb!";
     document.querySelector(".save-button").addEventListener("click", saveFlorb);
@@ -66,18 +63,22 @@ function saveFlorb() {
   console.log(
     document.querySelector("form[name='florb-name']").elements.name.value
   );
-  const test = true;
   const florbName = document.querySelector("form[name='florb-name']").elements
     .name.value;
   console.log(florbName);
   if (florbName === "") {
     document.querySelector(".error-message").innerHTML = "Name your Florb!";
   } else {
-    const createdFlorbs = user.user_metadata.florbs;
+    let createdFlorbs;
+    if (!user.user_metadata.florbs) {
+      createdFlorbs = [];
+    } else {
+      createdFlorbs = user.user_metadata.florbs;
+    }
     if (!checkFlorbExists(florbName, createdFlorbs)) {
       console.log("it doesnt");
       const newFlorb = { name: florbName, svg: str };
-      if (user.user_metadata.florbs.length === 0) {
+      if (createdFlorbs.length === 0) {
         user
           .update({
             data: {
