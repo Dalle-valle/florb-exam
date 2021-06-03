@@ -50,3 +50,7 @@ function deleteFlorb() {
     .then((user) => console.log(user));
   setFlorbs();
 }
+
+document.querySelector(".back-baf").addEventListener("click", () => {
+  history.back();
+});

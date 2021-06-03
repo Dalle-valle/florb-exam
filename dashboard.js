@@ -1,12 +1,12 @@
 import GoTrue from "gotrue-js";
 import { bottomNav } from "./bottomnav.js";
+import "regenerator-runtime/runtime";
 let user;
 let loggedIn = false;
 let allFlorbs;
 let gameImages;
 const endpoint = "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/florbs";
-const gameImagesEndpoint =
-  "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/game";
+const gameImagesEndpoint = "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/game";
 checkUser();
 function checkUser() {
   let auth = new GoTrue({
@@ -30,13 +30,11 @@ function setUser() {
   if (user !== null) {
     loggedIn = true;
     document.querySelector(".logout").classList.remove("hide");
-
+    getFavorites();
     document.querySelector(".login").classList.add("hide");
-    document.querySelector(".username").innerHTML =
-      user.user_metadata.data.full_name;
+    document.querySelector(".username").innerHTML = user.user_metadata.data.full_name;
   }
   document.querySelector(".logout").addEventListener("click", handleLogout);
-  getFavorites();
 }
 function handleLogout() {
   user
