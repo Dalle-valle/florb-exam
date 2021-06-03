@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
-import { bottomNav } from "./bottomnav.js";
+//import { bottomNav } from "./bottomnav.js";
 import GoTrue from "gotrue-js";
 let user;
 
@@ -9,7 +9,7 @@ gsap.registerPlugin(Draggable);
 window.addEventListener("DOMContentLoaded", initBaf);
 function initBaf() {
   checkUser();
-  bottomNav();
+  //bottomNav();
   setDrag();
 }
 function checkUser() {
@@ -134,14 +134,6 @@ function addClickColor() {
       let currentColor = window.getComputedStyle(color)["background-color"];
 
       mobileFace.style.fill = currentColor;
-      desktopFace.style.backgroundColor = currentColor;
-
-      //mobileFace.style.backgroundColor = currentColor;
     }
   }
-}
-
-document.querySelector(".reset-button").addEventListener("click", resetThis);
-function resetThis() {
-  location.reload();
 }
