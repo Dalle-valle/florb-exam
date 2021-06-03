@@ -1,10 +1,21 @@
+import GoTrue from "gotrue-js";
+import { bottomNav } from "./bottomnav.js";
 document.addEventListener("DOMContentLoaded", initCaro);
 
-import { bottomNav } from "./bottomnav.js";
+let user;
+checkUser();
 
-bottomNav();
+function checkUser() {
+  let auth = new GoTrue({
+    APIUrl: "https://serene-clarke-d069ee.netlify.app/.netlify/identity",
+    setCookie: true,
+  });
+  user = auth.currentUser();
+}
 
 function initCaro() {
+  bottomNav();
+
   setTimeout(() => {
     var elems = document.querySelectorAll(".game-caro");
     var elem = document.querySelector(".game-caro");
@@ -40,6 +51,7 @@ function initCaro() {
       setTimeout(setBackground, 200);
     }
     setBackground();
+    setHeartClick();
   }, 200);
 }
 function setBackground() {
@@ -55,5 +67,41 @@ function setBackground() {
     } else {
       document.querySelector(`.background-img${i + 1}`).classList.add("hide");
     }
+  }
+}
+function setHeartClick() {
+  document
+    .querySelectorAll(".heart")
+    .forEach((heart) => heart.addEventListener("click", setFavorite));
+}
+
+function setFavorite() {
+  console.log(this.parentNode.parentNode.parentNode.id);
+
+  const userdata = user.user_metadata.data;
+  if (this.classList.contains("favorite-heart")) {
+    this.classList.remove("favorite-heart");
+    user
+      .update({
+        data: { data: { ...userdata, favoriteGame: "" } },
+      })
+      .then((user) => console.log(user));
+  } else {
+    user
+      .update({
+        data: {
+          data: {
+            ...userdata,
+            favoriteGame: this.parentNode.parentNode.parentNode.id,
+          },
+        },
+      })
+      .then((user) => console.log(user));
+    if (document.querySelector(".favorite-heart")) {
+      document
+        .querySelector(".favorite-heart")
+        .classList.remove("favorite-heart");
+    }
+    this.classList.add("favorite-heart");
   }
 }

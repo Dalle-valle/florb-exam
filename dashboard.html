@@ -1,144 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="./style2.less" rel="stylesheet" />
-    <link rel="stylesheet" href="dashboard.less" />
-    <link rel="stylesheet" href="style.css" />
 
-    <title>Florbs | Dashboard</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="./style2.less" rel="stylesheet" />
+  <link rel="stylesheet" href="dashboard.less" />
+  <link rel="stylesheet" href="style.css" />
 
-  <body class="dash">
-    <div class="row">
-      <div class="col s12 l12 m12">
-        <div class="intro-wrap">
-          <h1>
-            Welcome To <img class="intro-img" src="images/florb-comp-logo.svg" /><br />
-            <span class="username"></span>
-          </h1>
-          <div class="logout-con">
-            <button class="logout">Log out</button>
-            <div class="sidebar-right sidebar-logged-out">
-              <button class="login"><a href="login.html">Log in</a></button>
-            </div>
+  <title>Florbs | Dashboard</title>
+</head>
+
+<body class="dash">
+  <div class="row">
+    <div class="col s12 l12 m12">
+      <div class="intro-wrap">
+        <h1>
+          Welcome To <img class="intro-img" src="images/florb-comp-logo.svg" /><br />
+          <span class="username"></span>
+        </h1>
+        <div class="logout-con">
+          <button class="logout hide">Log out</button>
+          <div class="sidebar-right sidebar-logged-out">
+            <button class="login hide"><a href="login.html">Log in</a></button>
           </div>
         </div>
       </div>
-      <div class="col s12 l3 m12 hide-on-small-only">
-        <div class="fav-bg wrap-that">
-          <a href="florbs.html">
-            <div class="link-icon">
-              <img class="icon-bg" src="images/comp-icon.svg" alt="to compendium" />
-              <h4>Florbs</h4>
-            </div>
-          </a>
-          <a href="baf.html">
-            <div class="link-icon">
-              <img class="icon-bg" src="images/builder-icon.svg" alt="to builder" />
-              <h4>Florb Builder</h4>
-            </div>
-          </a>
-          <a href="games.html">
-            <div class="link-icon">
-              <img class="icon-bg" src="images/games-icon.svg" alt="to games" />
-              <h4>Games</h4>
-            </div>
-          </a>
-        </div>
+    </div>
+    <div class="col s12 l3 m12 hide-on-small-only">
+      <div class="fav-bg wrap-that">
+        <a href="florbs.html">
+          <div class="link-icon icon-1">
+            <img class="icon-bg" src="images/comp-icon.svg" alt="to compendium" />
+            <h4>Florbs</h4>
+          </div>
+        </a>
+        <a href="baf.html">
+          <div class="link-icon icon-2">
+            <img class="icon-bg" src="images/builder-icon.svg" alt="to builder" />
+            <h4>Florb Builder</h4>
+          </div>
+        </a>
+        <a href="games.html">
+          <div class="link-icon icon-3">
+            <img class="icon-bg" src="images/games-icon.svg" alt="to games" />
+            <h4>Games</h4>
+          </div>
+        </a>
       </div>
-      <div class="col s12 l4 m6">
-        <div class="fav-bg">
-          <h2>Favorite Florb</h2>
-          <img class="fav-florb-img" src="images/florb-chars/dang.svg" alt="" />
-          <h3 class="fav-florb-name">Dang</h3>
-        </div>
-      </div>
-
-      <div class="col s12 l4 m6">
-        <div class="fav-bg">
-          <h2>Favorite Game</h2>
-          <img class="fav-game-img" src="images/games/florbsketball.png" alt="" />
-          <h3 class="fav-game-name">Florbsketball</h3>
-        </div>
+    </div>
+    <div class="col s12 l4 m6">
+      <div class="fav-bg">
+        <h2>Favorite Florb</h2>
+        <img class="fav-florb-img" alt="" />
+        <h3 class="fav-florb-name"></h3>
       </div>
     </div>
 
-    <div class="spacer"></div>
-    <div class="bottom-nav">
-      <a href="florbs.html">
-        <div class="menu-link link-1">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
-          </svg>
-          <a class="special-link-1" href="florbs.html">Florbs</a>
-        </div>
-      </a>
-      <a href="games.html">
-        <div class="menu-link link-2">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle cx="39" cy="39" r="21" fill="#F6ACF8" />
-            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
-            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
-            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
-            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
-          </svg>
-          <a class="special-link-2" href="games.html">Games</a>
-        </div>
-      </a>
-      <a href="baf.html">
-        <div class="menu-link link-3">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
-          </svg>
-          <a class="special-link-3" href="baf.html">Builder</a>
-        </div>
-      </a>
-      <a href="dashboard.html">
-        <div class="menu-link link-4">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle cx="39" cy="39" r="21" fill="#4AA67B" />
-            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
-            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
-            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
-            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
-          </svg>
-          <a class="special-link-4" href="dashboard.html">D-board</a>
-        </div>
-      </a>
+    <div class="col s12 l4 m6">
+      <div class="fav-bg">
+        <h2>Favorite Game</h2>
+        <img class="fav-game-img" alt="" />
+        <h3 class="fav-game-name"></h3>
+      </div>
     </div>
+  </div>
 
-    <div class="sidebar-logged-in"></div>
+  <div class="spacer"></div>
+  <div class="bottom-nav">
+    <a href="florbs.html">
+      <div class="menu-link link-1">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
+        </svg>
+        <a class="special-link-1" href="florbs.html">Florbs</a>
+      </div>
+    </a>
+    <a href="games.html">
+      <div class="menu-link link-2">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle cx="39" cy="39" r="21" fill="#F6ACF8" />
+          <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
+          <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
+          <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
+          <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
+        </svg>
+        <a class="special-link-2" href="games.html">Games</a>
+      </div>
+    </a>
+    <a href="baf.html">
+      <div class="menu-link link-3">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
+        </svg>
+        <a class="special-link-3" href="baf.html">Builder</a>
+      </div>
+    </a>
+    <a href="dashboard.html">
+      <div class="menu-link link-4">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle cx="39" cy="39" r="21" fill="#4AA67B" />
+          <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
+          <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
+          <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
+          <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
+        </svg>
+        <a class="special-link-4" href="dashboard.html">D-board</a>
+      </div>
+    </a>
+  </div>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
-    <script src="dashboard.js"></script>
+  <div class="sidebar-logged-in"></div>
 
-    <script src="bottomnav.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        let elems = document.querySelectorAll(".tooltipped");
-        for (tool of elems) {
-          let instances = M.Tooltip.init(elems);
-        }
-      });
-    </script>
-  </body>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+  </script>
+  <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+  <script src="dashboard.js"></script>
+
+  <script src="bottomnav.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let elems = document.querySelectorAll(".tooltipped");
+      for (tool of elems) {
+        let instances = M.Tooltip.init(elems);
+      }
+    });
+  </script>
+</body>
+
 </html>

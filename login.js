@@ -68,7 +68,7 @@ document
       const { email, password, name2 } = form.elements;
       auth
         .signup(email.value, password.value, {
-          data: { full_name: name2.value },
+          data: { full_name: name2.value, favoriteFlorb: "", favoriteGame: "" },
         })
         .then((response) => {
           console.log(response);

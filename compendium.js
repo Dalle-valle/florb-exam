@@ -42,6 +42,8 @@ function showFlorbs() {
     clone.querySelector(".florb-phrase").textContent = florb.phrase;
     clone.querySelector(".florb-desc").textContent = florb.story;
     clone.querySelector("article").setAttribute("id", `florb-${florb.number}`);
+    clone.querySelector("article").setAttribute("name", `${florb.florbname}`);
+
     container.appendChild(clone);
   });
   document.querySelector(".contain").setAttribute("id", `florb-${0}`);
@@ -61,6 +63,17 @@ function checkUser() {
       .querySelectorAll(".favorite")
       .forEach((div) => div.classList.add("hide"));
   } else if (user !== null) {
+    console.log(user.user_metadata.data.favoriteFlorb);
+    const userFaveFlorb = user.user_metadata.data.favoriteFlorb;
+
+    if (userFaveFlorb !== "") {
+      console.log(document.querySelector(`[name='${userFaveFlorb}']`));
+      if (userFaveFlorb !== "") {
+        document
+          .querySelector(`[name='${userFaveFlorb}'] .heart`)
+          .classList.add("favorite-heart");
+      }
+    }
     setHeartClick();
   }
 }
@@ -71,21 +84,25 @@ function setHeartClick() {
 }
 function setFavorite() {
   console.log(this);
-  console.log(this.parentNode.parentNode.parentNode.id);
+  console.log(this.parentNode.parentNode.parentNode.name);
+  const userdata = user.user_metadata.data;
+
   if (this.classList.contains("favorite-heart")) {
     this.classList.remove("favorite-heart");
     user
       .update({
-        data: {
-          favoriteFlorb: "",
-        },
+        data: { data: { ...userdata, favoriteFlorb: "" } },
       })
       .then((user) => console.log(user));
   } else {
     user
       .update({
         data: {
-          favoriteFlorb: this.parentNode.parentNode.parentNode.id,
+          data: {
+            ...userdata,
+            favoriteFlorb:
+              this.parentNode.parentNode.parentNode.getAttribute("name"),
+          },
         },
       })
       .then((user) => console.log(user));
