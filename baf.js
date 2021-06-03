@@ -76,25 +76,37 @@ function saveFlorb() {
       createdFlorbs = user.user_metadata.florbs;
     }
     if (!checkFlorbExists(florbName, createdFlorbs)) {
+      //init save modal
+      const elems = document.querySelectorAll(".modal");
+      const elem = document.querySelector(".modal");
+      const instances = M.Modal.init(elems);
+      const instance = M.Modal.getInstance(elem);
+
       console.log("it doesnt");
       const newFlorb = { name: florbName, svg: str };
       if (createdFlorbs.length === 0) {
-        user
-          .update({
-            data: {
-              florbs: [newFlorb],
-            },
-          })
-          .then((user) => console.log(user));
+        user.update({
+          data: {
+            florbs: [newFlorb],
+          },
+        });
       } else {
-        user
-          .update({
-            data: {
-              florbs: [...user.user_metadata.florbs, newFlorb],
-            },
-          })
-          .then((user) => console.log(user));
+        user.update({
+          data: {
+            florbs: [...user.user_metadata.florbs, newFlorb],
+          },
+        });
       }
+      console.log("yo");
+      //sæt modal indhold
+      document.querySelector(
+        ".new-florb-name"
+      ).innerHTML = `New Florb <strong>${florbName}</strong> added!`;
+      document.querySelector(".new-florb-img").innerHTML = str;
+      instance.open();
+
+      // document.querySelector(".modal #face-circle").setAttribute("cy", "60");
+      // document.querySelector(".modal #face-circle").setAttribute("r", "50");
     } else {
       console.log("it dosedofasd");
     }
