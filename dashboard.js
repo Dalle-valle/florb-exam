@@ -1,4 +1,5 @@
 import GoTrue from "gotrue-js";
+import { bottomNav } from "./bottomnav.js";
 
 let user;
 let user2;
@@ -15,6 +16,7 @@ function checkUser() {
 
   setUser();
   setSidebar();
+  bottomNav();
 }
 
 function setUser() {
@@ -26,8 +28,7 @@ function setUser() {
     loggedIn = true;
 
     console.log(user);
-    document.querySelector(".username").innerHTML =
-      user.user_metadata.data.full_name;
+    document.querySelector(".username").innerHTML = user.user_metadata.data.full_name;
   }
 
   // document.querySelector(".username").innerHTML =

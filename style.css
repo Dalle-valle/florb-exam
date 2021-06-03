@@ -250,14 +250,6 @@ nav {
   display: none;
 }
 .sidebar-right {
-  height: 100vh;
-  background: #ffffff;
-  box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 50px 0 0 50px;
-  padding: 20px;
-  justify-content: space-around;
-  display: flex;
-  flex-direction: column;
 }
 .sidebar-content-1 {
   display: Flex;

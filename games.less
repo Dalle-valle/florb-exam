@@ -1,35 +1,50 @@
+.game-landing {
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 0;
+}
 .game-element {
   height: 100vh;
-  background: none
-
+  background: none;
+  @media only screen and (max-width: 768px) {
+    height: calc(~"100vh - 100px");
+  }
 }
 .hide {
-  display:none;
+  display: none;
 }
 .games-background {
-  position: absolute;
+  position: fixed;
   z-index: -1;
 }
-.background-img1{
-  width:684px;
-  height:684px;
-  position:absolute;
-  top:-100px;
-  left:-100px;
-  transform: rotate(15deg);
-  opacity: .2;
-}
-.background-img2{
+.background-img1 {
   width: 684px;
-height: 684px;
-position: absolute;
-top: 50vh;
-left: 70vh;
-transform: rotate(-15deg);
-opacity: 0.2;
+  height: 684px;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  transform: rotate(15deg);
+  opacity: 0.2;
+}
+.background-img2 {
+  width: 684px;
+  height: 684px;
+  position: absolute;
+  top: 30vh;
+  left: 70vh;
+  transform: rotate(-15deg);
+  opacity: 0.2;
+}
+.background-img3 {
+  width: 684px;
+  height: 684px;
+  position: absolute;
+  top: 30vh;
+  left: 5vw;
+  transform: rotate(15deg);
+  opacity: 0.2;
 }
 .arrow-con {
-
   display: flex;
   align-items: center;
 }
@@ -38,7 +53,7 @@ opacity: 0.2;
   width: 230px;
   height: 122px;
   color: #fbc666;
-  background-color:   #ffffff;
+  background-color: #ffffff;
   cursor: pointer;
   font-size: 50px;
   box-shadow: 0px 6px 16px 8px rgba(0, 0, 0, 0.08);
@@ -48,12 +63,31 @@ opacity: 0.2;
   align-items: center;
   font-weight: 700;
 }
-.arrow:hover{transition-duration: .5s;  
+.arrow:hover {
+  transition-duration: 0.5s;
   font-size: 70px;
 }
 
 .game-caro {
- 
+  height: 100% !important;
+  .carousel-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
 
-    height: 100vh !important;
+    h2 {
+      font-family: "lufgamedium";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 6vw !important;
+      color: #2d3331;
+      height: 20%;
+      line-height: normal !important;
+    }
+    img {
+      //      width: 600px !important;
+      // max-width: 100% !important;
+    }
+  }
 }

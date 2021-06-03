@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css" />
+    <link href="games.less" rel="stylesheet" />
+    <link href="style2.less" rel="stylesheet" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css">
-  <link href="games.less" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
 
+    <title>Florbs | Games</title>
+  </head>
 
-
-  <!-- Compiled and minified JavaScript -->
-
-  <title>Florbs | Games</title>
-</head>
-
-<body>
-  <div class="row">
-    <div class="games-background">
-      <img class="background-img1 hide" src="images/florb-placeholder.png" />
-      <img class="background-img2 hide" src="images/clayman.png" />
-      <img class="background-img3 hide" src="images/weeha-5.png" />
-    </div>
-    <div class="col l1 s12 m6">
-      <div class="sidebar-left">
-        <div class="icon icon-1">icon</div>
-        <div class="icon icon-2">icon</div>
-        <div class="icon icon-3">icon</div>
-        <div class="icon icon-4">icon</div>
-        <div class="icon icon-5">icon</div>
+  <body>
+    <div class="row game-landing">
+      <div class="games-background">
+        <img class="background-img1 hide" src="images/florb-placeholder.png" />
+        <img class="background-img2 hide" src="images/florb-placeholder 2.png" />
+        <img class="background-img3 hide" src="images/weeha-5.png" />
       </div>
-    </div>
-    <div class="col l1 s12 m6 game-element"></div>
-    <!-- <div class="col l1 s12 m6 game-element">
+      <div class="sidebar-left">
+        <div class="icon icon-1"><a href="index.html">Home</a></div>
+        <div class="icon icon-2"><a href="florbs.html">Florbs</a></div>
+        <div class="icon icon-git3"><a href="baf.html">B-a-F</a></div>
+        <div class="icon icon-4"><a href="#">Games</a></div>
+        <div class="icon icon-5"><a href="#">Profile</a></div>
+      </div>
+      <!-- <div class="col l1 s12 m6 game-element">
             <div class="arrow-con">
                 <i class="arrow">
                     <</i> </div> </div> <div class="col l6 s12 m6 landing-element">
@@ -48,22 +43,83 @@
                         ></i> </div>
             </div>
         </div> -->
-    <div class="col l1 arrow-con game-element">
-      <i class="arrow arrow-prev">
-        <</i> </div> <div class="col l6 carousel game-element game-caro">
-          <a class="carousel-item" href="#one!"><img src="images/games/florbsketball.png" /></a>
+      <div class="col l1 s2 push-l2 push-m1 arrow-con game-element">
+        <i class="arrow arrow-prev"> <</i>
+      </div>
+      <div class="col l6 s8 push-l2 carousel carousel-slider game-element game-caro">
+        <a class="carousel-item" href="#one!"
+          ><img src="images/games/florbsketball.png" />
+          <h2>Florbsketball</h2>
+        </a>
 
-          <a class="carousel-item" href="#two!"><img src="images/grumpa-5.png" /></a>
-          <a class="carousel-item" href="#three!"><img src="images/games/florb-is-lava.png" /></a>
+        <a class="carousel-item" href="#two!"
+          ><img src="images/games/row-ya-florb.png" />
+          <h2>Row-ya-florb</h2>
+        </a>
+        <a class="carousel-item" href="#three!"
+          ><img src="images/games/florb-is-lava.png" />
+          <h2>Florb-is-lava</h2>
+        </a>
+      </div>
+      <div class="col l1 s2 push-l2 arrow-con game-element">
+        <i class="arrow arrow-next"> ></i>
+      </div>
     </div>
-    <div class="col l1 arrow-con game-element">
-      <i class="arrow arrow-next"> ></i>
+    <div class="bottom-nav">
+      <a href="dashboard.html">
+        <div class="menu-link link-1">
+          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white" />
+            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D" />
+            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
+            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
+            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
+            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
+          </svg>
+          <a class="special-link-1" href="florbs.html">Florbs</a>
+        </div>
+      </a>
+      <a href="games.html">
+        <div class="menu-link link-2">
+          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white" />
+            <circle cx="39" cy="39" r="21" fill="#F6ACF8" />
+            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
+            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
+            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
+            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
+          </svg>
+          <a class="special-link-2" href="#">Games</a>
+        </div>
+      </a>
+      <a href="baf.html">
+        <div class="menu-link link-3">
+          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white" />
+            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA" />
+            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
+            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
+            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
+            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
+          </svg>
+          <a class="special-link-3" href="#">Builder</a>
+        </div>
+      </a>
+      <a href="profile.html">
+        <div class="menu-link link-4">
+          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white" />
+            <circle cx="39" cy="39" r="21" fill="#4AA67B" />
+            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
+            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
+            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
+            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
+          </svg>
+          <a class="special-link-4" href="#">Profile</a>
+        </div>
+      </a>
     </div>
-    <div class="col l1 s12 m6 game-element"></div>
-    <div class="col l1 s12 m6 game-element"></div>
-  </div>
-
-  <!-- <div class="logo"><img src="images/florb.svg" alt="" /></div>
+    <!-- <div class="logo"><img src="images/florb.svg" alt="" /></div>
     <div class="sidebar-left">
       <div class="icon icon-1">icon</div>
       <div class="icon icon-2">icon</div>
@@ -84,8 +140,7 @@
         <div class="box box-4"><a href="#"></a></div>
       </div>
     </main> -->
-  <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
-  <script type=" text/javascript" src="games.js"></script>
-</body>
-
+    <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script type=" text/javascript" src="games.js"></script>
+  </body>
 </html>

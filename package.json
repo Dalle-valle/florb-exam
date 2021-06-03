@@ -95,6 +95,7 @@
     "getpass": "^0.1.7",
     "gotrue-js": "^0.9.29",
     "graceful-fs": "^4.2.6",
+    "gsap": "^3.6.1",
     "har-schema": "^2.0.0",
     "has": "^1.0.3",
     "has-ansi": "^2.0.0",

@@ -1,23 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="./style2.less" rel="stylesheet" />
+    <link rel="stylesheet" href="dashboard.less" />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="./style2.less" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <title>Florbs | Dashboard</title>
+  </head>
 
-  <title>Florbs | Dashboard</title>
-</head>
+  <body class="dash">
+    <div class="row">
+      <div class="col s12 l12 m12">
+        <div class="intro-wrap">
+          <h1>
+            Welcome To <img class="intro-img" src="images/florb-comp-logo.svg" /><br />
+            <span class="username"></span>
+          </h1>
+          <div class="logout-con">
+            <button class="logout">Log out</button>
+            <div class="sidebar-right sidebar-logged-out">
+              <button class="login"><a href="login.html">Log in</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 l3 m12 hide-on-small-only">
+        <div class="fav-bg wrap-that">
+          <a href="florbs.html">
+            <div class="link-icon">
+              <img class="icon-bg" src="images/comp-icon.svg" alt="to compendium" />
+              <h4>Florbs</h4>
+            </div>
+          </a>
+          <a href="baf.html">
+            <div class="link-icon">
+              <img class="icon-bg" src="images/builder-icon.svg" alt="to builder" />
+              <h4>Florb Builder</h4>
+            </div>
+          </a>
+          <a href="games.html">
+            <div class="link-icon">
+              <img class="icon-bg" src="images/games-icon.svg" alt="to games" />
+              <h4>Games</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col s12 l4 m6">
+        <div class="fav-bg">
+          <h2>Favorite Florb</h2>
+          <img class="fav-florb-img" src="images/florb-chars/dang.svg" alt="" />
+          <h3 class="fav-florb-name">Dang</h3>
+        </div>
+      </div>
 
-<body>
-  <div class="dash-mobile">
+      <div class="col s12 l4 m6">
+        <div class="fav-bg">
+          <h2>Favorite Game</h2>
+          <img class="fav-game-img" src="images/games/florbsketball.png" alt="" />
+          <h3 class="fav-game-name">Florbsketball</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
     <div class="bottom-nav">
-      <a href="dashboard.html">
+      <a href="florbs.html">
         <div class="menu-link link-1">
           <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white" />
@@ -40,7 +94,7 @@
             <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
             <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
           </svg>
-          <a class="special-link-2" href="#">Games</a>
+          <a class="special-link-2" href="games.html">Games</a>
         </div>
       </a>
       <a href="baf.html">
@@ -53,10 +107,10 @@
             <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
             <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
           </svg>
-          <a class="special-link-3" href="#">Builder</a>
+          <a class="special-link-3" href="baf.html">Builder</a>
         </div>
       </a>
-      <a href="profile.html">
+      <a href="dashboard.html">
         <div class="menu-link link-4">
           <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white" />
@@ -66,161 +120,25 @@
             <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
             <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
           </svg>
-          <a class="special-link-4" href="#">Profile</a>
+          <a class="special-link-4" href="dashboard.html">D-board</a>
         </div>
       </a>
     </div>
-  </div>
 
-  <div class="dash-desktop">
-    <div class="row landing">
-      <div class="col l1 s12">
-        <div class="sidebar-left">
-          <div class="icon"><a class="tooltipped" data-position="right" data-tooltip="See all Florbs"  href="florbs.html"><img src="images/comp-icon.svg" alt="to florbs"></a></div>
-          <div class="icon"><a class="tooltipped" data-position="right" data-tooltip="Build Florb"  href="baf.html"><img src="images/builder-icon.svg" alt="to build"></a></div>
-          <div class="icon"><a class="tooltipped" data-position="right" data-tooltip="See all Games"  href="games.html"><img src="images/games-icon.svg" alt="to games"></a></div>
+    <div class="sidebar-logged-in"></div>
 
-        </div>
-      </div>
-      <a href="index.html">
-        <img class="logo" src="images/florb.svg" />
-        <div class="logo"><a class="tooltipped" data-position="right" data-tooltip="Back to Front Page"  href="index.html"><img src="images/florb.svg" alt="to front page"></a></div>
-      </a>
-      <div class="col l5 s12 landing-element">
-        <div class="florb-wrapper">
-          <h1 class="welcome">Welcome to <span><img class="welcome-logo" src="images/florb-comp-logo.svg" alt=""></span>
-          <span class="name-of-user">Blabla</span></h1>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+    <script src="dashboard.js"></script>
 
-          <img class="placeholder" draggable="false" src="images/florb-chars/weeha.svg" alt="" />
-        </div>
-      </div>
-      <div class="col l3 s12 landing-element" style="color: green">
-        <div class="box-wrapper">
-          <div class="boxes">
-            <div class="box box-1">
-              <a href="florbs.html">
-                <div class="menu-option">
-                  <img class="menu-img" src="images/florb-1.svg" alt="" />
-                  <h3>Florbs</h3>
-                </div>
-              </a>
-            </div>
-            <div class="box box-2">
-              <a href="baf.html">
-                <div class="menu-option">
-                  <img class="menu-img" src="images/florb-2.svg" alt="" />
-                  <h3>Florb Builder</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="boxes">
-            <div class="box box-3">
-              <a href="games.html">
-                <div class="menu-option">
-                  <img class="menu-img" src="images/florb-3.svg" alt="" />
-                  <h3>Games</h3>
-                </div>
-              </a>
-            </div>
-            <div class="box box-4">
-              <a href="profile.html">
-                <div class="menu-option">
-                  <img class="menu-img" src="images/florb-4.svg" alt="" />
-                  <h3>Profile</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col l1"></div>
-
-      <div class="col l2 s12 offset-l1 landing-element">
-        <div class="sidebar-right sidebar-logged-in">
-          <div class="sidebar-content-1">
-            <div class="sidebar-text">
-              <p>Hej</p>
-              <span class="username">Oliver</span>
-            </div>
-            <img class="profile-img" src="images/oals.svg" />
-          </div>
-          <div class="sidebar-content-2">
-            <div>
-              <h3>Dit niveau</h3>
-              <p>50/100 <b>point</b></p>
-            </div>
-            <img src="images/level.svg" />
-          </div>
-          <div class="sidebar-content-3">
-            <div class="medalje medalje-1">
-              <img src="images/medal-1.svg" />
-              <p><b>0</b> førstepladser</p>
-            </div>
-            <div class="medalje medalje-2">
-              <img src="images/medal-2.svg" />
-              <p><b>0</b> andenpladser</p>
-            </div>
-            <div class="medalje medalje-1">
-              <img src="images/medal-3.svg" />
-              <p><b>0</b> tredjepladser</p>
-            </div>
-          </div>
-          <div class="sidebar-content-4">
-            <div class="logout-con">
-              <button class="logout">Log out</button>
-            </div>
-
-          </div>
-        </div>
-        <div class="sidebar-right sidebar-logged-out">
-          <button class="btn-large login"><a href="login.html">Log in</a> </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-  </script>
-  <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
-  <script src="dashboard.js"></script>
-
-  <script>
-    if (document.title === "Florbs | Dashboard") {
-      document.querySelector(".link-1").classList.add("selected");
-      document.querySelector(".outer-1").classList.remove("hide");
-      document.querySelector(".special-link-1").style.transform = "translateY(30px)";
-      document.querySelector(".bottom-nav").classList.add("nav-1");
-    } else if (document.title === "Florbs | Games") {
-      document.querySelector(".link-2").classList.add("selected");
-      document.querySelector(".outer-2").classList.remove("hide");
-      document.querySelector(".special-link-2").style.transform = "translateY(30px)";
-      document.querySelector(".bottom-nav").classList.add("nav-2");
-    } else if (document.title === "Florbs | Builder") {
-      document.querySelector(".link-3").classList.add("selected");
-      document.querySelector(".outer-3").classList.remove("hide");
-      document.querySelector(".special-link-3").style.transform = "translateY(30px)";
-      document.querySelector(".bottom-nav").classList.add("nav-3");
-    } else if (document.title === "Florbs | Profile") {
-      document.querySelector(".link-4").classList.add("selected");
-      document.querySelector(".outer-4").classList.remove("hide");
-      document.querySelector(".special-link-4").style.transform = "translateY(30px)";
-      document.querySelector(".bottom-nav").classList.add("nav-4");
-    }
-  </script>
-  <script>
-      document.addEventListener('DOMContentLoaded', function() {
-    let elems = document.querySelectorAll('.tooltipped')
-    for (tool of elems){
-      let instances = M.Tooltip.init(elems);
-    };
-   
-  });
-  </script>
-
-
-
-</body>
-
+    <script src="bottomnav.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let elems = document.querySelectorAll(".tooltipped");
+        for (tool of elems) {
+          let instances = M.Tooltip.init(elems);
+        }
+      });
+    </script>
+  </body>
 </html>
