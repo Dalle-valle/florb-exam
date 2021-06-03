@@ -1,18 +1,51 @@
-.created-florb {
-  height: 200px;
+@font-face {
+  font-family: "lufgaregular";
+  src: url("fonts/lufga-regular-webfont.woff2") format("woff2"), url("fonts/lufga-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-.created-florbs {
-  display: grid;
+.face-svg {
+  margin-bottom: -180px;
+  // width: 80%;
 }
 .delete {
   width: 100%;
 }
 .florb-img {
+  width: 400px;
+}
+
+.florbs-name {
+  position: relative;
+  top: -10px;
+  left: 0;
 }
 svg {
   overflow: visible !important;
 }
+h1 {
+  font-family: "lufgaregular";
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+h3 {
+  color: #fb7f7d;
+  font-family: "lufgaregular";
+  margin-bottom: 100px;
+  text-align: center;
+}
+.button-row {
+  display: flex;
+  justify-content: center;
+}
 
+.created-florb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .delete-button {
   width: 100px;
   height: 35px;
@@ -21,4 +54,23 @@ svg {
   color: white;
   background: #fb7f7d;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  svg {
+    width: 500px;
+  }
+  .created-florbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .face-svg {
+    margin-bottom: -230px;
+  }
+  .florbs-name {
+    top: -30px;
+    left: 30px;
+  }
 }
