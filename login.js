@@ -59,14 +59,14 @@ document.querySelector("form[name='signup']").addEventListener("submit", (e) => 
       })
       .then((response) => {
         console.log(response);
-        showMessage(`<p>Created a user! </p>`, form);
+        showMessageSuccess(`<p>Created user! Check your email to verify account.</p>`, form);
       })
       .catch((error) => {
-        showMessage(`Email address in use`, form);
+        showMessageFail(`<p>Email address in use</p>`, form);
         console.log(error);
       });
   } else {
-    showMessage(`Passwords do not match`, e.target);
+    showMessage(`<p>Passwords do not match</p>`, e.target);
   }
 });
 //login
@@ -88,7 +88,7 @@ document.querySelector("form[name='login']").addEventListener("submit", (e) => {
       window.location.href = "/dashboard.html";
     })
     .catch((error) => {
-      showMessage(`Incorrect email or password`, form);
+      showMessageFail(`<p>Incorrect email or password</p>`, form);
       console.log(error);
     });
 });
@@ -112,25 +112,29 @@ document.querySelector("form[name='recover-pass']").addEventListener("submit", (
   auth
     .requestPasswordRecovery(email)
     .then((response) => {
-      showMessage(`<p>Recovery email sent, check your inbox! </p>`, form);
+      showMessageSuccess(`<p>Recovery email sent, check your inbox! </p>`, form);
       console.log(response);
     })
     .catch((error) => {
-      showMessage(`Something went wrong :(`, form);
+      showMessageFail(`<p>Something went wrong :(</p>`, form);
       console.log(error);
     });
 });
 
 //helper functions
 
-function noAuthFound(form) {
-  showMessage(`<p>Did you paste in your API endpoint?</p>`, form);
-}
-
 function noUserFound(form) {
-  showMessage(`<p>User not found</p>`, form);
+  showMessageFail(`<p>User not found</p>`, form);
 }
 
-function showMessage(msg, el) {
+function showMessageSuccess(msg, el) {
+  console.log(el.querySelector(".message"));
+  el.querySelector(".message").classList.add("succes-msg");
+  el.querySelector(".message").classList.remove("fail-msg");
+  el.querySelector(".message").innerHTML = msg;
+}
+function showMessageFail(msg, el) {
+  el.querySelector(".message").classList.remove("succes-msg");
+  el.querySelector(".message").classList.add("fail-msg");
   el.querySelector(".message").innerHTML = msg;
 }
