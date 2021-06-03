@@ -60,20 +60,17 @@ document
     if (
       e.target.elements.password.value === e.target.elements.password2.value
     ) {
-      console.log("succ");
-
       const form = e.target;
       if (!auth) {
         noAuthFound(form);
       }
 
-      const { email, password, name } = form.elements;
+      const { email, password, name2 } = form.elements;
       auth
         .signup(email.value, password.value, {
-          data: { full_name: name.value },
+          data: { full_name: name2.value },
         })
         .then((response) => {
-          console.log(name.value);
           console.log(response);
           showMessage(
             `<p>Created a user! </p><p>Response: </p><code>${JSON.stringify(
@@ -95,6 +92,7 @@ document
 document.querySelector("form[name='login']").addEventListener("submit", (e) => {
   e.preventDefault();
   const form = e.target;
+  console.log(form);
   if (!auth) {
     noAuthFound(form);
   }
