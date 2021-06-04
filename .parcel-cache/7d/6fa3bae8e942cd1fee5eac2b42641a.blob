@@ -1,4 +1,0 @@
-const $40190b8890676514e503484486faf9d1$var$tabs = document.querySelectorAll(".tabs");
-for (tab of $40190b8890676514e503484486faf9d1$var$tabs){
-    let instance = M.Tabs.init(tab);
-}

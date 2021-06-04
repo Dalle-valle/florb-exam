@@ -1,4 +1,0 @@
-const $7f6cab5724146176fddd7b22b9c7b7ff$var$tabs = document.querySelectorAll(".tabs");
-for (tab of $7f6cab5724146176fddd7b22b9c7b7ff$var$tabs){
-    let instance = M.Tabs.init(tab);
-}
