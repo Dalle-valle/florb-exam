@@ -2,9 +2,9 @@ import GoTrue from "gotrue-js";
 import { bottomNav } from "./bottomnav.js";
 import "regenerator-runtime/runtime";
 let user;
-let loggedIn = false;
 let allFlorbs;
 let gameImages;
+
 const endpoint = "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/florbs";
 const gameImagesEndpoint =
   "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/game";
@@ -24,11 +24,8 @@ function setUser() {
   if (user === null) {
     document.querySelector(".logout").classList.add("hide");
     document.querySelector(".login").classList.remove("hide");
-
-    loggedIn = false;
   }
   if (user !== null) {
-    loggedIn = true;
     document.querySelector(".logout").classList.remove("hide");
     getFavorites();
     document.querySelector(".login").classList.add("hide");
