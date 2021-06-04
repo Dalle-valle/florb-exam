@@ -1,239 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="./baf.less" rel="stylesheet" />
-    <link href="./sidebar.less" rel="stylesheet" />
-    <link href="./style2.less" rel="stylesheet" />
 
-    <title>Florbs | Builder</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="./baf.less" rel="stylesheet" />
+  <link href="./sidebar.less" rel="stylesheet" />
+  <link href="./style2.less" rel="stylesheet" />
 
-  <body>
-    <div class="sidebar-left">
-      <div class="icon">
-        <a class="tooltipped tool-red" data-position="right" data-tooltip="See all Florbs" href="florbs.html"
-          ><img src="images/comp-icon.svg" alt="to florbs"
-        /></a>
-      </div>
-      <div class="icon">
-        <a class="tooltipped" data-position="right" data-tooltip="Build Florb" href="baf.html"
-          ><img src="images/builder-icon.svg" alt="to build"
-        /></a>
-      </div>
-      <div class="icon">
-        <a class="tooltipped" data-position="right" data-tooltip="See all Games" href="games.html"
-          ><img src="images/games-icon.svg" alt="to games"
-        /></a>
-      </div>
-      <a href="webshop.html">
-        <img class="shop-icon icon" src="images/shop-icon.svg" alt="to shop" />
-      </a>
+  <title>Florbs | Builder</title>
+</head>
+
+<body>
+  <div class="sidebar-left">
+    <div class="icon">
+      <a class="tooltipped tool-red" data-position="right" data-tooltip="See all Florbs" href="florbs.html"><img
+          src="images/comp-icon.svg" alt="to florbs" /></a>
     </div>
+    <div class="icon">
+      <a class="tooltipped" data-position="right" data-tooltip="Build Florb" href="baf.html"><img
+          src="images/builder-icon.svg" alt="to build" /></a>
+    </div>
+    <div class="icon">
+      <a class="tooltipped" data-position="right" data-tooltip="See all Games" href="games.html"><img
+          src="images/games-icon.svg" alt="to games" /></a>
+    </div>
+    <a href="webshop.html">
+      <img class="shop-icon icon" src="images/shop-icon.svg" alt="to shop" />
+    </a>
+  </div>
 
-    <div id="builder-con" class="builder-con mobile-builder">
-      <form name="florb-name" class="florb-name-form">
-        <p>
-          <label
-            >Florb:
-            <input type="name" name="name" required />
-          </label>
-        </p>
-        <div class="error-message"></div>
-      </form>
-      <svg
-        id="svg-con"
-        class="svg-con"
-        width="100%"
-        height="100%"
-        viewBox="0 0 200 200"
-        z-index="1"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        xmlns:svgjs="http://svgjs.com/svgjs"
-      >
-        <svg
-          id="face-svg"
-          class="face-svg"
-          x="0"
-          y="0"
-          width="100%"
-          height="100%"
-          viewBox="0 0 200 200"
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns:svgjs="http://svgjs.com/svgjs"
-        >
-          <circle id="face-circle" cx="100" cy="20" r="70" stroke="black" stroke-width="0" fill="lightblue" />
-        </svg>
-        <foreignObject width="100%" height="20" x="0" y="120">
-          <div class="tools">
-            <ul class="tabs">
-              <li class="tab"><a href="#colors">Color</a></li>
-              <li class="tab"><a href="#eyes">Eyes</a></li>
-              <li class="tab"><a href="#pupils">Pupils</a></li>
-              <li class="tab"><a href="#brows">Brows</a></li>
-              <li class="tab"><a href="#mouth">Mouth</a></li>
-              <li class="tab"><a href="#teeth">Teeth</a></li>
-            </ul>
-          </div>
-        </foreignObject>
-
-        <g id="colors" class="colors tool">
-          <circle class="color color-1" r="15" cx="20" cy="160" type="colors"></circle>
-          <circle class="color color-2" r="15" cx="60" cy="160" type="colors"></circle>
-          <circle class="color color-3" r="15" cx="100" cy="160" type="colors"></circle>
-          <circle class="color color-4" r="15" cx="140" cy="160" type="colors"></circle>
-          <circle class="color color-5" r="15" cx="180" cy="160" type="colors"></circle>
-          <circle class="color color-6" r="15" cx="20" cy="200" type="colors"></circle>
-          <circle class="color color-7" r="15" cx="60" cy="200" type="colors"></circle>
-          <circle class="color color-8" r="15" cx="100" cy="200" type="colors"></circle>
-          <circle class="color color-9" r="15" cx="140" cy="200" type="colors"></circle>
-          <circle class="color color-10" r="15" cx="180" cy="200" type="colors"></circle>
-        </g>
-        <g id="eyes" class="eyes tool">
-          <ellipse class="drag" cx="30" cy="170" rx="22" ry="22" fill="white" type="eyes" />
-          <ellipse class="drag" cx="80" cy="170" rx="22" ry="22" fill="white" type="eyes" />
-        </g>
-
-        <g id="pupils" class="pupils tool">
-          <circle class="drag" cx="30" cy="160" r="10" fill="black" type="pupils" />
-          <circle class="drag" cx="55" cy="160" r="10" fill="black" type="pupils" />
-          <circle class="drag" cx="85" cy="160" r="5" fill="black" type="pupils" />
-          <circle class="drag" cx="100" cy="160" r="5" fill="black" type="pupils" />
-        </g>
-        <g id="brows" class="brows tool">
-          <path
-            transform="translate(20,150) scale(0.7)"
-            class="drag"
-            d="M2.58813 0L61.7476 18.7634L60.6153 22.9894L-5.56707e-05 9.65926L2.58813 0Z"
-            fill="#676767"
-            type="brows"
-          />
-          <path
-            transform="translate(100,150) scale(0.7)"
-            class="drag"
-            d="M59.8875 0L0.727979 18.7634L1.86031 22.9894L62.4756 9.65926L59.8875 0Z"
-            fill="#676767"
-            type="brows"
-          />
-        </g>
-        <g id="mouth" class="mouth tool">
-          <ellipse class="drag" cx="30" cy="160" rx="16" ry="11" transform="rotate(-11.1077 37.6006 27.5639)" fill="#676767" type="mouth" />
-          <path
-            class="drag"
-            transform="translate(100,150) scale(0.7)"
-            d="M51 6.51349C51 9.39134 41.0452 4.55945 26.6821 4.55945C12.3191 4.55945 0 10.0427 0 7.16484C0 4.287 12.3191 0 26.6821 0C41.0452 0 51 3.63565 51 6.51349Z"
-            fill="#676767"
-            type="mouth"
-          />
-        </g>
-        <g id="teeth" class="teeth tool">
-          <ellipse class="drag" cx="30" cy="170" rx="22" ry="22" fill="magenta" type="teeth" />
-        </g>
+  <div id="builder-con" class="builder-con mobile-builder">
+    <form name="florb-name" class="florb-name-form">
+      <p>
+        <label>Florb:
+          <input type="name" name="name" required />
+        </label>
+      </p>
+      <div class="error-message"></div>
+    </form>
+    <svg id="svg-con" class="svg-con" width="100%" height="100%" viewBox="0 0 200 200" z-index="1"
+      xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:svgjs="http://svgjs.com/svgjs">
+      <svg id="face-svg" class="face-svg" x="0" y="0" width="100%" height="100%" viewBox="0 0 200 200"
+        xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:svgjs="http://svgjs.com/svgjs">
+        <circle id="face-circle" cx="100" cy="20" r="70" stroke="black" stroke-width="0" fill="lightblue" />
       </svg>
-      <button class="save-button baf-save">Save Florb!</button>
-      <div id="modal1" class="modal modal-fixed-footer modal-baf">
-        <div class="modal-content">
-          <h4 class="new-florb-name"></h4>
-          <div class="new-florb-img-con"></div>
-          <div class="new-florb-img"></div>
+      <foreignObject width="100%" height="20" x="0" y="120">
+        <div class="tools">
+          <ul class="tabs">
+            <li class="tab"><a href="#colors">Color</a></li>
+            <li class="tab"><a href="#eyes">Eyes</a></li>
+            <li class="tab"><a href="#pupils">Pupils</a></li>
+            <li class="tab"><a href="#brows">Brows</a></li>
+            <li class="tab"><a href="#mouth">Mouth</a></li>
+            <li class="tab"><a href="#teeth">Teeth</a></li>
+          </ul>
         </div>
-        <div class="modal-footer modal-baf-footer">
-          <a href="baf.html" class="modal-close waves-effect waves-green btn-flat to-baf">Build-a-Florb</a>
-          <a href="created-florb.html" class="modal-close waves-effect waves-green btn-flat view-florb">View your Florbs!</a>
-        </div>
+      </foreignObject>
+
+      <g id="colors" class="colors tool">
+        <circle class="color color-1" r="15" cx="20" cy="160" type="colors"></circle>
+        <circle class="color color-2" r="15" cx="60" cy="160" type="colors"></circle>
+        <circle class="color color-3" r="15" cx="100" cy="160" type="colors"></circle>
+        <circle class="color color-4" r="15" cx="140" cy="160" type="colors"></circle>
+        <circle class="color color-5" r="15" cx="180" cy="160" type="colors"></circle>
+        <circle class="color color-6" r="15" cx="20" cy="200" type="colors"></circle>
+        <circle class="color color-7" r="15" cx="60" cy="200" type="colors"></circle>
+        <circle class="color color-8" r="15" cx="100" cy="200" type="colors"></circle>
+        <circle class="color color-9" r="15" cx="140" cy="200" type="colors"></circle>
+        <circle class="color color-10" r="15" cx="180" cy="200" type="colors"></circle>
+      </g>
+      <g id="eyes" class="eyes tool">
+        <ellipse class="drag" cx="30" cy="170" rx="22" ry="22" fill="white" type="eyes" />
+        <ellipse class="drag" cx="80" cy="170" rx="22" ry="22" fill="white" type="eyes" />
+        <path class="drag" type="eyes" transform="translate(100,150) scale(0.1)"
+          d="M250 500C388.071 500 500 388.071 500 250C500 111.929 388.071 0 250 0C111.929 0 0 111.929 0 250C0 388.071 111.929 500 250 500Z"
+          fill="white" stroke-width="10" stroke="black" />
+        <path class="drag" type="eyes" transform="translate(150,150) scale(0.1)"
+          d="M250 500C388.071 500 500 388.071 500 250C500 111.929 388.071 0 250 0C111.929 0 0 111.929 0 250C0 388.071 111.929 500 250 500Z"
+          fill="white" stroke-width="10" stroke="black" />
+        <path class="drag" type="eyes" transform="translate(60,200) scale(0.1)"
+          d="M111.02 222.04C172.335 222.04 222.04 172.335 222.04 111.02C222.04 49.7053 172.335 0 111.02 0C49.7054 0 0 49.7053 0 111.02C0 172.335 49.7054 222.04 111.02 222.04Z"
+          fill="white" stroke="black" stroke-width="10" />
+        <path class="drag" type="eyes" transform="translate(20,200) scale(0.1)"
+          d="M169.5 339C263.112 339 339 263.112 339 169.5C339 75.8877 263.112 0 169.5 0C75.8877 0 0 75.8877 0 169.5C0 263.112 75.8877 339 169.5 339Z"
+          fill="#D3410F" />
+        <path class="drag" type="eyes" transform="translate(90,210) scale(0.1)"
+          d="M169.5 339C263.112 339 339 263.112 339 169.5C339 75.8877 263.112 0 169.5 0C75.8877 0 0 75.8877 0 169.5C0 263.112 75.8877 339 169.5 339Z"
+          fill="#D3410F" />
+        <path class="drag" type="eyes" transform="translate(150,210) scale(0.1)"
+          d="M120 240C186.274 240 240 186.274 240 120C240 53.7258 186.274 0 120 0C53.7258 0 0 53.7258 0 120C0 186.274 53.7258 240 120 240Z"
+          fill="#1C1818" />
+
+      </g>
+
+      <g id="pupils" class="pupils tool">
+        <circle class="drag" cx="30" cy="160" r="10" fill="black" type="pupils" />
+        <circle class="drag" cx="55" cy="160" r="10" fill="black" type="pupils" />
+        <circle class="drag" cx="85" cy="160" r="5" fill="black" type="pupils" />
+        <circle class="drag" cx="100" cy="160" r="5" fill="black" type="pupils" />
+      </g>
+      <g id="brows" class="brows tool">
+        <path transform="translate(50,150) scale(0.7)" class="drag"
+          d="M2.58813 0L61.7476 18.7634L60.6153 22.9894L-5.56707e-05 9.65926L2.58813 0Z" fill="#676767" type="brows" />
+        <path transform="translate(120,150) scale(0.7)" class="drag"
+          d="M59.8875 0L0.727979 18.7634L1.86031 22.9894L62.4756 9.65926L59.8875 0Z" fill="#676767" type="brows" />
+        <path transform="translate(50,190) scale(0.15)" class="drag" type="brows"
+          d="M0 156.1L332.03 100.6L344.93 0L5 96.1L0 156.1Z" fill="#1C1818" />
+        <path transform="translate(120,190) scale(0.15)" class="drag" type="brows"
+          d="M344.93 156.1L12.91 100.6L0 0L347.36 95.96L344.93 156.1Z" fill="#1C1818" />
+
+      </g>
+      <g id="mouth" class="mouth tool">
+        <ellipse class="drag" cx="30" cy="160" rx="16" ry="11" transform="rotate(-11.1077 37.6006 27.5639)"
+          fill="#676767" type="mouth" />
+        <path class="drag" transform="translate(100,150) scale(0.7)"
+          d="M51 6.51349C51 9.39134 41.0452 4.55945 26.6821 4.55945C12.3191 4.55945 0 10.0427 0 7.16484C0 4.287 12.3191 0 26.6821 0C41.0452 0 51 3.63565 51 6.51349Z"
+          fill="#676767" type="mouth" />
+
+        <path class="drag" type="mouth" transform="translate(60,120) scale(0.5)" stroke="black" stroke-width="1"
+          d="M231.65 80.2625C231.4 80.9825 231.13 81.6925 230.84 82.4125C215.03 121.763 200.03 169.482 179.21 156.422C159.93 144.332 140.05 119.623 141.83 79.8125L231.65 80.2625Z"
+          fill="white" />
+
+
+      </g>
+      <g id="teeth" class="teeth tool">
+        <path type="teeth" class="drag" transform="translate(110,150) scale(0.2)"
+          d="M101.307 125.354C48.8272 116.094 73.3072 30.3536 76.3072 23.0836C96.5372 -25.9164 61.3072 6.35366 10.3072 89.0837C-23.6928 144.184 33.3072 189.354 81.3072 202.084C132.557 215.674 186.307 140.354 101.307 125.354Z"
+          fill="#1C1818" />
+        <path type="teeth" class="drag" transform="translate(65,180) scale(0.2)"
+          d="M44.5415 125.354C97.0315 116.094 72.5415 30.3537 69.5415 23.0837C49.3215 -25.9163 84.5415 6.35365 135.542 89.0836C169.542 144.194 112.542 189.354 64.5415 202.084C13.3015 215.684 -40.4585 140.354 44.5415 125.354Z"
+          fill="#1C1818" />
+        <path class="drag" type="teeth" transform="translate(60,120) scale(0.5)" stroke="black" stroke-width="1"
+          d="M231.65 80.2625C231.4 80.9825 231.13 81.6925 230.84 82.4125C215.03 121.763 200.03 169.482 179.21 156.422C159.93 144.332 140.05 119.623 141.83 79.8125L231.65 80.2625Z"
+          fill="white" />
+        <path class="drag" type="teeth" transform="translate(-60,120) scale(0.6)" stroke="black" stroke-width="1"
+          d="M231.65 80.2625C231.4 80.9825 231.13 81.6925 230.84 82.4125C215.03 121.763 200.03 169.482 179.21 156.422C159.93 144.332 140.05 119.623 141.83 79.8125L231.65 80.2625Z"
+          fill="white" />
+
+      </g>
+    </svg>
+    <button class="save-button baf-save">Save Florb!</button>
+    <div id="modal1" class="modal modal-fixed-footer modal-baf">
+      <div class="modal-content">
+        <h4 class="new-florb-name"></h4>
+        <div class="new-florb-img-con"></div>
+        <div class="new-florb-img"></div>
+      </div>
+      <div class="modal-footer modal-baf-footer">
+        <a href="baf.html" class="modal-close waves-effect waves-green btn-flat to-baf">Build-a-Florb</a>
+        <a href="created-florb.html" class="modal-close waves-effect waves-green btn-flat view-florb">View your
+          Florbs!</a>
       </div>
     </div>
+  </div>
 
-    <a href="index.html">
-      <div class="logo">
-        <a class="tooltipped" data-position="right" data-tooltip="Back to Front Page" href="dashboard.html"
-          ><img src="images/florb.svg" alt="to front page"
-        /></a>
+  <a href="index.html">
+    <div class="logo">
+      <a class="tooltipped" data-position="right" data-tooltip="Back to Front Page" href="dashboard.html"><img
+          src="images/florb.svg" alt="to front page" /></a>
+    </div>
+  </a>
+  <div class="spacer"></div>
+  <div class="bottom-nav">
+    <a href="florbs.html">
+      <div class="menu-link link-1">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
+        </svg>
+        <a class="special-link-1" href="florbs.html">Florbs</a>
       </div>
     </a>
-    <div class="spacer"></div>
-    <div class="bottom-nav">
-      <a href="florbs.html">
-        <div class="menu-link link-1">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
-          </svg>
-          <a class="special-link-1" href="florbs.html">Florbs</a>
-        </div>
-      </a>
-      <a href="games.html">
-        <div class="menu-link link-2">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle cx="39" cy="39" r="21" fill="#F6ACF8" />
-            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
-            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
-            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
-            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
-          </svg>
-          <a class="special-link-2" href="games.html">Games</a>
-        </div>
-      </a>
-      <a href="baf.html">
-        <div class="menu-link link-3">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
-          </svg>
-          <a class="special-link-3" href="baf.html">Builder</a>
-        </div>
-      </a>
-      <a href="dashboard.html">
-        <div class="menu-link link-4">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle cx="39" cy="39" r="21" fill="#4AA67B" />
-            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
-            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
-            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
-            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
-          </svg>
-          <a class="special-link-4" href="dashboard.html">Profile</a>
-        </div>
-      </a>
-    </div>
+    <a href="games.html">
+      <div class="menu-link link-2">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle cx="39" cy="39" r="21" fill="#F6ACF8" />
+          <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
+          <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
+          <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
+          <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
+        </svg>
+        <a class="special-link-2" href="games.html">Games</a>
+      </div>
+    </a>
+    <a href="baf.html">
+      <div class="menu-link link-3">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
+        </svg>
+        <a class="special-link-3" href="baf.html">Builder</a>
+      </div>
+    </a>
+    <a href="dashboard.html">
+      <div class="menu-link link-4">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle cx="39" cy="39" r="21" fill="#4AA67B" />
+          <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
+          <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
+          <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
+          <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
+        </svg>
+        <a class="special-link-4" href="dashboard.html">Profile</a>
+      </div>
+    </a>
+  </div>
 
-    <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
 
-    <script src="bottomnav.js"></script>
-    <script>
-      const tabs = document.querySelectorAll(".tabs");
-      for (tab of tabs) {
-        console.log(tab);
-        var instance = M.Tabs.init(tab);
+  <script src="bottomnav.js"></script>
+  <script>
+    const tabs = document.querySelectorAll(".tabs");
+    for (tab of tabs) {
+      console.log(tab);
+      var instance = M.Tabs.init(tab);
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let elems = document.querySelectorAll(".tooltipped");
+      for (tool of elems) {
+        let instances = M.Tooltip.init(elems);
       }
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        let elems = document.querySelectorAll(".tooltipped");
-        for (tool of elems) {
-          let instances = M.Tooltip.init(elems);
-        }
-      });
-    </script>
-    <script src="baf.js"></script>
-  </body>
+    });
+  </script>
+  <script src="baf.js"></script>
+</body>
+
 </html>

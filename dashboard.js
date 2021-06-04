@@ -6,7 +6,8 @@ let loggedIn = false;
 let allFlorbs;
 let gameImages;
 const endpoint = "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/florbs";
-const gameImagesEndpoint = "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/game";
+const gameImagesEndpoint =
+  "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/game";
 checkUser();
 function checkUser() {
   let auth = new GoTrue({
@@ -32,7 +33,8 @@ function setUser() {
     document.querySelector(".logout").classList.remove("hide");
     getFavorites();
     document.querySelector(".login").classList.add("hide");
-    document.querySelector(".username").innerHTML = user.user_metadata.data.full_name;
+    document.querySelector(".username").innerHTML =
+      user.user_metadata.data.full_name;
   }
   document.querySelector(".logout").addEventListener("click", handleLogout);
 }
@@ -67,15 +69,4 @@ function setFavorites() {
       document.querySelector(".fav-game-name").innerHTML = image.slug;
     }
   });
-}
-
-function setSidebar() {
-  if (loggedIn === true) {
-    document.querySelector(".sidebar-logged-out").classList.add("hide");
-    document.querySelector(".sidebar-logged-in").classList.remove("hide");
-  }
-  if (loggedIn === false) {
-    document.querySelector(".sidebar-logged-out").classList.remove("hide");
-    document.querySelector(".sidebar-logged-in").classList.add("hide");
-  }
 }
