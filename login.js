@@ -44,7 +44,6 @@ function initListeners() {
 }
 
 function toggleExisting() {
-  console.log("toggleExisting");
   document.querySelector(".login-switch").classList.remove("selected");
   document.querySelector(".create-switch").classList.add("selected");
   document.querySelector(".login").classList.remove("hide");
@@ -54,7 +53,6 @@ function toggleExisting() {
   document.querySelector(".title-sign-up").classList.add("hide");
 }
 function toggleCreate() {
-  console.log("toggleCreate");
   document.querySelector(".login-switch").classList.add("selected");
   document.querySelector(".create-switch").classList.remove("selected");
   document.querySelector(".signup").classList.remove("hide");
@@ -64,7 +62,6 @@ function toggleCreate() {
   document.querySelector(".recover-pass").classList.add("hide");
 }
 function toggleResetPass() {
-  console.log("forgot pass");
   document.querySelector(".login").classList.add("hide");
   document.querySelector(".recover-pass").classList.remove("hide");
 }
@@ -109,7 +106,6 @@ function setForms() {
     .addEventListener("submit", (e) => {
       e.preventDefault();
       const form = e.target;
-      console.log(form);
       if (!auth) {
         noAuthFound(form);
       }
@@ -125,7 +121,6 @@ function setForms() {
         })
         .catch((error) => {
           showMessageFail(`<p>Incorrect email or password</p>`, form);
-          console.log(error);
         });
     });
 
@@ -154,11 +149,9 @@ function setForms() {
             `<p>Recovery email sent, check your inbox! </p>`,
             form
           );
-          console.log(response);
         })
         .catch((error) => {
           showMessageFail(`<p>Something went wrong :(</p>`, form);
-          console.log(error);
         });
     });
 }
@@ -169,7 +162,6 @@ function noUserFound(form) {
 }
 
 function showMessageSuccess(msg, el) {
-  console.log(el.querySelector(".message"));
   el.querySelector(".message").classList.add("succes-msg");
   el.querySelector(".message").classList.remove("fail-msg");
   el.querySelector(".message").innerHTML = msg;

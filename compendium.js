@@ -4,7 +4,6 @@ import { bottomNav } from "./bottomnav.js";
 let user;
 
 document.addEventListener("DOMContentLoaded", start);
-// window.addEventListener("scroll", fillBar);
 
 const endpoint = "https://www.ddalby.dk/florbs/wordpress/wp-json/wp/v2/florbs";
 let allFlorbs;
@@ -58,18 +57,14 @@ function checkUser() {
     setCookie: true,
   });
   user = auth.currentUser();
-  console.log(user);
 
   if (user === null) {
     document
       .querySelectorAll(".favorite")
       .forEach((div) => div.classList.add("hide"));
   } else if (user !== null) {
-    console.log(user.user_metadata.data.favoriteFlorb);
     const userFaveFlorb = user.user_metadata.data.favoriteFlorb;
-    console.log(userFaveFlorb);
     if (userFaveFlorb !== "") {
-      console.log(document.querySelector(`[name='${userFaveFlorb}']`));
       if (userFaveFlorb !== "") {
         document
           .querySelector(`[name='${userFaveFlorb}'] .heart`)
@@ -85,29 +80,23 @@ function setHeartClick() {
     .forEach((heart) => heart.addEventListener("click", setFavorite));
 }
 function setFavorite() {
-  console.log(this);
-  console.log(this.parentNode.parentNode.parentNode.name);
   const userdata = user.user_metadata.data;
 
   if (this.classList.contains("favorite-heart")) {
     this.classList.remove("favorite-heart");
-    user
-      .update({
-        data: { data: { ...userdata, favoriteFlorb: "" } },
-      })
-      .then((user) => console.log(user));
+    user.update({
+      data: { data: { ...userdata, favoriteFlorb: "" } },
+    });
   } else {
-    user
-      .update({
+    user.update({
+      data: {
         data: {
-          data: {
-            ...userdata,
-            favoriteFlorb:
-              this.parentNode.parentNode.parentNode.getAttribute("name"),
-          },
+          ...userdata,
+          favoriteFlorb:
+            this.parentNode.parentNode.parentNode.getAttribute("name"),
         },
-      })
-      .then((user) => console.log(user));
+      },
+    });
     if (document.querySelector(".favorite-heart")) {
       document
         .querySelector(".favorite-heart")
@@ -127,13 +116,9 @@ function observe1() {
       const { target } = entry;
 
       if (entry.intersectionRatio >= 0.5) {
-        console.log(entry.intersectionRatio);
         visibleFlorb = entry.target.id;
-        console.log(entry.target);
         currentFlorbId = parseInt(visibleFlorb.split("-")[1], 10);
 
-        console.log("in sight");
-        console.log(currentFlorbId, sections.length);
         document.querySelector(".current").innerHTML = `${currentFlorbId}/${
           sections.length - 1
         }`;
@@ -159,8 +144,6 @@ function observe1() {
         ) {
           document.querySelector(".a-up").classList.remove("disabled-arrow");
         }
-      } else {
-        console.log("yup");
       }
     });
   };
@@ -181,12 +164,3 @@ function clickPrev() {
     .querySelector(`#florb-${currentFlorbId - 1}`)
     .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
-
-// function fillBar() {
-//   let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-//   let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-//   let scrolled = (winScroll / height) * 100;
-
-//   document.querySelector(".progress-bar").style.width = scrolled + "%";
-//   document.querySelector(".scroll-img").style.transform = `rotate(${scrolled * 25}deg)`;
-// }

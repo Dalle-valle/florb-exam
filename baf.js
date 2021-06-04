@@ -10,7 +10,6 @@ gsap.registerPlugin(Draggable);
 window.addEventListener("DOMContentLoaded", initBaf);
 function initBaf() {
   checkUser();
-  //bottomNav();
   setDrag();
   bottomNav();
 }

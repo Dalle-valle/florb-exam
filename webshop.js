@@ -5,6 +5,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelector(".florb-world").addEventListener("click", () => {
     history.back();
-    console.log("adsf");
   });
 });

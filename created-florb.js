@@ -9,7 +9,6 @@ function checkUser() {
     setCookie: true,
   });
   user = auth.currentUser();
-  console.log(user);
 
   if (user !== null) {
     if (user.user_metadata.florbs.length > 0) {
@@ -41,13 +40,12 @@ function deleteFlorb() {
   const florbId = this.parentNode.parentNode.id;
   const florbArray = user.user_metadata.florbs;
   florbArray.splice(florbId, 1);
-  user
-    .update({
-      data: {
-        florbs: florbArray,
-      },
-    })
-    .then((user) => console.log(user));
+  user.update({
+    data: {
+      florbs: florbArray,
+    },
+  });
+
   setFlorbs();
 }
 
