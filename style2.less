@@ -345,6 +345,7 @@ h1 {
 }
 
 .sidebar-left {
+  background-color: white;
   .icon {
     display: grid;
     place-content: center;
@@ -436,6 +437,7 @@ h1 {
   border: none;
   border-radius: 10px;
   font-family: var(--primary-font);
+  cursor: pointer;
 }
 .reset-button {
   margin-top: 10px;
@@ -634,6 +636,9 @@ h1 {
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 }
 .landing-left {
   font-size: 5rem;
@@ -677,6 +682,9 @@ h1 {
 }
 .logo-container {
   margin-top: 10vh;
+  @media only screen and (max-width: 768px) {
+    margin-top: 40vh;
+  }
   width: 100vw;
   position: absolute;
   display: flex;
@@ -687,6 +695,9 @@ h1 {
   display: flex;
   justify-content: center;
   width: 50%;
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+  }
 }
 svg {
   overflow: visible;
@@ -712,15 +723,16 @@ svg {
 }
 .landing-btn-1 {
   width: 200px;
-  background: #fcfafb;
-  color: #e46f21;
+  background: black;
+  color: white;
   border-radius: 10px;
 }
 .landing-btn-2 {
   width: 200px;
-  background: #b58171;
-  color: #fcfafb;
+  background: black;
+  color: white;
   border-radius: 10px;
+  font-size: 0.4em;
 }
 .landing-btn-1:hover {
   background: #e46f21;
@@ -1558,8 +1570,11 @@ svg {
 .modal-img {
   width: 100%;
 }
-
-.fail-msg {
+.error-message {
+  position: absolute;
+}
+.fail-msg,
+.error-message {
   p {
     color: red;
     margin: 0;

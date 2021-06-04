@@ -91,7 +91,6 @@ function setForms() {
             },
           })
           .then((response) => {
-            console.log(response);
             showMessageSuccess(
               `<p>Created user! Check your email to verify account.</p>`,
               form
@@ -99,10 +98,9 @@ function setForms() {
           })
           .catch((error) => {
             showMessageFail(`<p>Email address in use</p>`, form);
-            console.log(error);
           });
       } else {
-        showMessage(`<p>Passwords do not match</p>`, e.target);
+        showMessageFail(`<p>Passwords do not match</p>`, e.target);
       }
     });
   //login
@@ -164,7 +162,7 @@ function setForms() {
         });
     });
 }
-//helper functions
+//helper functions fra GoTrue
 
 function noUserFound(form) {
   showMessageFail(`<p>User not found</p>`, form);

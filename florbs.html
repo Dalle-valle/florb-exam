@@ -1,184 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="./style2.less" rel="stylesheet" />
-    <link href="./sidebar.less" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="loading-bar.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="./style2.less" rel="stylesheet" />
+  <link href="./sidebar.less" rel="stylesheet" />
 
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <title>Florbs | Florbs</title>
-  </head>
+  <link rel="stylesheet" type="text/css" href="loading-bar.css" />
 
-  <body class="comp">
-    <div class="sidebar-left">
-      <div class="icon">
-        <a class="tooltipped tool-red" data-position="right" data-tooltip="See all Florbs" href="florbs.html"
-          ><img src="images/comp-icon.svg" alt="to florbs"
-        /></a>
-      </div>
-      <div class="icon">
-        <a class="tooltipped" data-position="right" data-tooltip="Build Florb" href="baf.html"
-          ><img src="images/builder-icon.svg" alt="to build"
-        /></a>
-      </div>
-      <div class="icon">
-        <a class="tooltipped" data-position="right" data-tooltip="See all Games" href="games.html"
-          ><img src="images/games-icon.svg" alt="to games"
-        /></a>
-      </div>
-      <a href="webshop.html">
-        <img class="shop-icon icon" src="images/shop-icon.svg" alt="to shop" />
-      </a>
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>Florbs | Florbs</title>
+</head>
+
+<body class="comp">
+  <div class="sidebar-left">
+    <div class="icon">
+      <a class="tooltipped tool-red" data-position="right" data-tooltip="See all Florbs" href="florbs.html"><img
+          src="images/comp-icon.svg" alt="to florbs" /></a>
     </div>
-    <div class="row compendium-con">
-      <div class="col s12 m12 l6 offset-l3">
-        <div class="desc-intro">
-          <div class="contain florbers">
-            <img class="img" src="" alt="" />
-            <img class="materialboxed logo-florb" width="650" src="images/florb-comp-logo.svg" />
-            <h1 class="desc-text-head"></h1>
-            <p class="desc-text-1"></p>
-            <p class="desc-text-2"></p>
-            <p class="desc-text-3"></p>
-            <br />
-            <a href="#comp-start">
-              <div class="mid-it">
-                <img class="down-scroll" src="images/down-scroll.svg" alt="" />
+    <div class="icon">
+      <a class="tooltipped" data-position="right" data-tooltip="Build Florb" href="baf.html"><img
+          src="images/builder-icon.svg" alt="to build" /></a>
+    </div>
+    <div class="icon">
+      <a class="tooltipped" data-position="right" data-tooltip="See all Games" href="games.html"><img
+          src="images/games-icon.svg" alt="to games" /></a>
+    </div>
+    <a href="webshop.html">
+      <img class="shop-icon icon" src="images/shop-icon.svg" alt="to shop" />
+    </a>
+  </div>
+  <div class="row compendium-con">
+    <div class="col s12 m12 l6 offset-l3">
+      <div class="desc-intro">
+        <div class="contain florbers">
+          <img class="img" src="" alt="" />
+          <img class="materialboxed logo-florb" width="650" src="images/florb-comp-logo.svg" />
+          <h1 class="desc-text-head"></h1>
+          <p class="desc-text-1"></p>
+          <p class="desc-text-2"></p>
+          <p class="desc-text-3"></p>
+          <br />
+          <a href="#comp-start">
+            <div class="mid-it">
+              <img class="down-scroll" src="images/down-scroll.svg" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row compendium"></div>
+  </div>
+  <template>
+    <div class="container snap-it">
+      <div class="row">
+        <section class="col l12 florber-snap" id="comp-start">
+          <article class="florb florbers" id="">
+            <div class="col l6 m6 s12">
+              <div class="florb-img"></div>
+            </div>
+            <div class="col l6 m6 s12">
+              <h2 class="florb-name"></h2>
+              <p class="florb-phrase"></p>
+              <p class="florb-desc"></p>
+              <div class="favorite">
+                <p>Set as favorite Florb?</p>
+                <svg class="heart" width="40" height="36" viewBox="0 0 40 36" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.2283 35.2882C7.9457 25.4158 0 20.1863 0 11.8684C0 5.57828 4.48438 0.421875 10.625 0.421875C14.8862 0.421875 18.0482 3.03883 20 6.75117C21.9516 3.03906 25.1136 0.421875 29.375 0.421875C35.5163 0.421875 40 5.5793 40 11.8684C40 20.1853 32.0647 25.4067 20.7717 35.2881C20.3298 35.6748 19.6702 35.6748 19.2283 35.2882V35.2882Z" />
+                </svg>
               </div>
-            </a>
-          </div>
-        </div>
+            </div>
+          </article>
+        </section>
       </div>
-      <div class="row compendium"></div>
     </div>
-    <template>
-      <div class="container snap-it">
-        <div class="row">
-          <section class="col l12 florber-snap" id="comp-start">
-            <article class="florb florbers" id="">
-              <div class="col l6 m6 s12">
-                <div class="florb-img"></div>
-              </div>
-              <div class="col l6 m6 s12">
-                <h2 class="florb-name"></h2>
-                <p class="florb-phrase"></p>
-                <p class="florb-desc"></p>
-                <div class="favorite">
-                  <p>Set as favorite Florb?</p>
-                  <svg class="heart" width="40" height="36" viewBox="0 0 40 36" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M19.2283 35.2882C7.9457 25.4158 0 20.1863 0 11.8684C0 5.57828 4.48438 0.421875 10.625 0.421875C14.8862 0.421875 18.0482 3.03883 20 6.75117C21.9516 3.03906 25.1136 0.421875 29.375 0.421875C35.5163 0.421875 40 5.5793 40 11.8684C40 20.1853 32.0647 25.4067 20.7717 35.2881C20.3298 35.6748 19.6702 35.6748 19.2283 35.2882V35.2882Z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </article>
-          </section>
-        </div>
-      </div>
-    </template>
+  </template>
 
-    <div class="florb-index hide-on-small-only">
-      <img class="a-up" src="images/arrow-up.svg" alt="" />
-      <span class="current">1/10</span>
-      <img class="a-down" src="images/arrow-down.svg" alt="" />
-    </div>
+  <div class="florb-index hide-on-small-only">
+    <img class="a-up" src="images/arrow-up.svg" alt="" />
+    <span class="current">1/10</span>
+    <img class="a-down" src="images/arrow-down.svg" alt="" />
+  </div>
 
-    <div class="bottom-nav">
-      <a href="florbs.html">
-        <div class="menu-link link-1">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
-          </svg>
-          <a class="special-link-1" href="florbs.html">Florbs</a>
-        </div>
-      </a>
-      <a href="games.html">
-        <div class="menu-link link-2">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle cx="39" cy="39" r="21" fill="#F6ACF8" />
-            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
-            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
-            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
-            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
-          </svg>
-          <a class="special-link-2" href="#">Games</a>
-        </div>
-      </a>
-      <a href="">
-        <div class="menu-link link-3">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
-            <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
-            <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
-          </svg>
-          <a class="special-link-3" href="#">Builder</a>
-        </div>
-      </a>
-      <a href="#">
-        <div class="menu-link link-4">
-          <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white" />
-            <circle cx="39" cy="39" r="21" fill="#4AA67B" />
-            <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
-            <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
-            <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
-            <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
-          </svg>
-          <a class="special-link-4" href="#">Profile</a>
-        </div>
-      </a>
-    </div>
-
-    <a href="index.html">
-      <div class="logo">
-        <a class="tooltipped" data-position="right" data-tooltip="Back to Front Page" href="dashboard.html"
-          ><img src="images/florb.svg" alt="to front page"
-        /></a>
+  <div class="bottom-nav">
+    <a href="florbs.html">
+      <div class="menu-link link-1">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-1" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#FB7F7D" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
+        </svg>
+        <a class="special-link-1" href="florbs.html">Florbs</a>
       </div>
     </a>
+    <a href="games.html">
+      <div class="menu-link link-2">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-2" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle cx="39" cy="39" r="21" fill="#F6ACF8" />
+          <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
+          <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
+          <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
+          <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
+        </svg>
+        <a class="special-link-2" href="#">Games</a>
+      </div>
+    </a>
+    <a href="">
+      <div class="menu-link link-3">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-3" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle r="21" transform="matrix(-1 0 0 1 39 39)" fill="#62D0DA" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 45.6317 31.9268)" fill="white" />
+          <circle r="6.85263" transform="matrix(-1 0 0 1 31.9256 34.5792)" fill="white" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 46.9574 30.6)" fill="#2D3331" />
+          <circle r="3.31579" transform="matrix(-1 0 0 1 31.042 36.347)" fill="#2D3331" />
+        </svg>
+        <a class="special-link-3" href="#">Builder</a>
+      </div>
+    </a>
+    <a href="#">
+      <div class="menu-link link-4">
+        <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="hide outer-4" cx="38.5" cy="38.5" r="38.5" fill="white" />
+          <circle cx="39" cy="39" r="21" fill="#4AA67B" />
+          <circle cx="32.3684" cy="31.9268" r="6.85263" fill="white" />
+          <circle cx="46.0743" cy="34.5792" r="6.85263" fill="white" />
+          <circle cx="31.0425" cy="30.6" r="3.31579" fill="#2D3331" />
+          <circle cx="46.9581" cy="36.347" r="3.31579" fill="#2D3331" />
+        </svg>
+        <a class="special-link-4" href="#">Profile</a>
+      </div>
+    </a>
+  </div>
 
-    <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
-    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
-    <script src="compendium.js"></script>
+  <a href="index.html">
+    <div class="logo">
+      <a class="tooltipped" data-position="right" data-tooltip="Back to Front Page" href="dashboard.html"><img
+          src="images/florb.svg" alt="to front page" /></a>
+    </div>
+  </a>
 
-    <script>
-      const tabs = document.querySelectorAll(".tabs");
-      for (tab of tabs) {
-        let instance = M.Tabs.init(tab);
+  <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+  <script src="compendium.js"></script>
+
+  <script>
+    const tabs = document.querySelectorAll(".tabs");
+    for (tab of tabs) {
+      let instance = M.Tabs.init(tab);
+    }
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var elems = document.querySelectorAll(".materialboxed");
+      var instances = M.Materialbox.init(elems);
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let elems = document.querySelectorAll(".tooltipped");
+      for (tool of elems) {
+        let instances = M.Tooltip.init(elems);
       }
-    </script>
+    });
+  </script>
+  <script src="bottomnav.js"></script>
+</body>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var elems = document.querySelectorAll(".materialboxed");
-        var instances = M.Materialbox.init(elems);
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        let elems = document.querySelectorAll(".tooltipped");
-        for (tool of elems) {
-          let instances = M.Tooltip.init(elems);
-        }
-      });
-    </script>
-    <script src="bottomnav.js"></script>
-  </body>
 </html>

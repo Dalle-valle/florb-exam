@@ -20,7 +20,6 @@ function checkUser() {
     setCookie: true,
   });
   user = auth.currentUser();
-  console.log(user);
   setButton();
   addClickColor();
 }
@@ -32,7 +31,6 @@ function setButton() {
     });
   }
   if (user !== null) {
-    console.log(user);
     document.querySelector(".save-button").innerHTML = "Save Florb!";
     document.querySelector(".save-button").addEventListener("click", saveFlorb);
   }
@@ -46,15 +44,11 @@ function setDrag() {
         this.hitTest("#face-circle", "50%") &&
         this.target.parentNode.id !== "face-svg"
       ) {
-        console.log(this);
         document.querySelector("#face-svg").appendChild(this.target);
       } else if (
         !this.hitTest("#face-circle", "50%") &&
         this.target.parentNode.id === "face-svg"
       ) {
-        console.log(
-          document.querySelector(`#${this.target.getAttribute("type")}`)
-        );
         document
           .querySelector(`#${this.target.getAttribute("type")}`)
           .appendChild(this.target);
@@ -65,12 +59,8 @@ function setDrag() {
 function saveFlorb() {
   const s = new XMLSerializer();
   const str = s.serializeToString(document.querySelector(".face-svg"));
-  console.log(
-    document.querySelector("form[name='florb-name']").elements.name.value
-  );
   const florbName = document.querySelector("form[name='florb-name']").elements
     .name.value;
-  console.log(florbName);
   if (florbName === "") {
     document.querySelector(".error-message").innerHTML = "Name your Florb!";
   } else {
@@ -81,13 +71,12 @@ function saveFlorb() {
       createdFlorbs = user.user_metadata.florbs;
     }
     if (!checkFlorbExists(florbName, createdFlorbs)) {
-      //init save modal
+      //init save modal gennem materialize
       const elems = document.querySelectorAll(".modal");
       const elem = document.querySelector(".modal");
       const instances = M.Modal.init(elems);
       const instance = M.Modal.getInstance(elem);
 
-      console.log("it doesnt");
       const newFlorb = { name: florbName, svg: str };
       if (createdFlorbs.length === 0) {
         user.update({
@@ -102,18 +91,15 @@ function saveFlorb() {
           },
         });
       }
-      console.log("yo");
       //sæt modal indhold
       document.querySelector(
         ".new-florb-name"
       ).innerHTML = `New Florb <strong>${florbName}</strong> added!`;
       document.querySelector(".new-florb-img").innerHTML = str;
       instance.open();
-
-      // document.querySelector(".modal #face-circle").setAttribute("cy", "60");
-      // document.querySelector(".modal #face-circle").setAttribute("r", "50");
     } else {
-      console.log("it dosedofasd");
+      document.querySelector(".error-message p").innerHTML =
+        "You've already used this name!";
     }
   }
 }
@@ -125,7 +111,6 @@ function checkFlorbExists(florbName, createdFlorbs) {
       florbCheck = true;
     }
   });
-  console.log(florbCheck);
   return florbCheck;
 }
 function addClickColor() {
