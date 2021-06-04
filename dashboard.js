@@ -18,7 +18,6 @@ function checkUser() {
 
   setUser();
   bottomNav();
-  setFaveListeners();
 }
 
 function setUser() {
