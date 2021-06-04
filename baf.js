@@ -27,6 +27,9 @@ function checkUser() {
 function setButton() {
   if (user === null) {
     document.querySelector(".save-button").innerHTML = "Log in";
+    document.querySelector(".save-button").addEventListener("click", () => {
+      window.location.href = "/login.html";
+    });
   }
   if (user !== null) {
     console.log(user);
@@ -39,12 +42,22 @@ function setDrag() {
     bounds: document.getElementById("builder-con"),
     onDragStart: function () {},
     onDragEnd: function () {
-      if (this.hitTest("#face-circle", "50%") && this.target.parentNode.id !== "face-svg") {
+      if (
+        this.hitTest("#face-circle", "50%") &&
+        this.target.parentNode.id !== "face-svg"
+      ) {
         console.log(this);
         document.querySelector("#face-svg").appendChild(this.target);
-      } else if (!this.hitTest("#face-circle", "50%") && this.target.parentNode.id === "face-svg") {
-        console.log(document.querySelector(`#${this.target.getAttribute("type")}`));
-        document.querySelector(`#${this.target.getAttribute("type")}`).appendChild(this.target);
+      } else if (
+        !this.hitTest("#face-circle", "50%") &&
+        this.target.parentNode.id === "face-svg"
+      ) {
+        console.log(
+          document.querySelector(`#${this.target.getAttribute("type")}`)
+        );
+        document
+          .querySelector(`#${this.target.getAttribute("type")}`)
+          .appendChild(this.target);
       }
     },
   });
@@ -52,8 +65,11 @@ function setDrag() {
 function saveFlorb() {
   const s = new XMLSerializer();
   const str = s.serializeToString(document.querySelector(".face-svg"));
-  console.log(document.querySelector("form[name='florb-name']").elements.name.value);
-  const florbName = document.querySelector("form[name='florb-name']").elements.name.value;
+  console.log(
+    document.querySelector("form[name='florb-name']").elements.name.value
+  );
+  const florbName = document.querySelector("form[name='florb-name']").elements
+    .name.value;
   console.log(florbName);
   if (florbName === "") {
     document.querySelector(".error-message").innerHTML = "Name your Florb!";
@@ -88,7 +104,9 @@ function saveFlorb() {
       }
       console.log("yo");
       //sæt modal indhold
-      document.querySelector(".new-florb-name").innerHTML = `New Florb <strong>${florbName}</strong> added!`;
+      document.querySelector(
+        ".new-florb-name"
+      ).innerHTML = `New Florb <strong>${florbName}</strong> added!`;
       document.querySelector(".new-florb-img").innerHTML = str;
       instance.open();
 

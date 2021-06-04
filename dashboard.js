@@ -17,7 +17,6 @@ function checkUser() {
   user = auth.currentUser();
 
   setUser();
-  setSidebar();
   bottomNav();
 }
 
@@ -47,7 +46,6 @@ function handleLogout() {
     .catch((error) => {
       throw error;
     });
-  setSidebar();
 }
 async function getFavorites() {
   const response = await fetch(endpoint);
