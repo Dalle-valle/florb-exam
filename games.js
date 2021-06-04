@@ -22,7 +22,6 @@ function initCaro() {
     var elem = document.querySelector(".carousel");
     console.log(elem);
     var options = {
-      onCycleTo: setBackground,
       fullWidth: true,
       duration: 400,
       dist: 0,
@@ -43,32 +42,32 @@ function initCaro() {
     function nextCaroItem() {
       console.log("yo");
       instance.next(1);
-      setTimeout(setBackground, 200);
     }
     function prevCaroItem() {
       console.log("yo");
       instance.prev(1);
-      setTimeout(setBackground, 200);
     }
-    setBackground();
-    setHeartClick();
+    if (user === null) {
+      document
+        .querySelectorAll(".favorite")
+        .forEach((div) => div.classList.add("hide"));
+    } else if (user !== null) {
+      console.log(user.user_metadata.data.favoriteGame);
+      const userFaveGame = user.user_metadata.data.favoriteGame;
+      if (userFaveGame !== "") {
+        console.log(document.querySelector(`[name='${userFaveGame}']`));
+        if (userFaveGame !== "") {
+          console.log(document.querySelector(`#${userFaveGame} .heart`));
+          document
+            .querySelector(`#${userFaveGame} .heart`)
+            .classList.add("favorite-heart");
+        }
+      }
+      setHeartClick();
+    }
   }, 200);
 }
-function setBackground() {
-  console.log(document.querySelectorAll(".carousel-item").length);
-  const caroItems = document.querySelectorAll(".carousel-item");
-  for (let i = 0; i < caroItems.length; i++) {
-    if (caroItems[i].classList.contains("active")) {
-      console.log(caroItems[i]);
-      console.log(document.querySelector(`.background-img${i + 1}`));
-      document
-        .querySelector(`.background-img${i + 1}`)
-        .classList.remove("hide");
-    } else {
-      document.querySelector(`.background-img${i + 1}`).classList.add("hide");
-    }
-  }
-}
+
 function setHeartClick() {
   document
     .querySelectorAll(".heart")

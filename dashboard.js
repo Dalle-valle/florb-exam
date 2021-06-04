@@ -61,7 +61,8 @@ function setFavorites() {
   gameImages.forEach((image) => {
     if (image.slug === user.user_metadata.data.favoriteGame) {
       document.querySelector(".fav-game-img").src = image.image.guid;
-      document.querySelector(".fav-game-name").innerHTML = image.slug;
+      document.querySelector(".fav-game-name").innerHTML =
+        image.slug.charAt(0).toUpperCase() + image.slug.slice(1);
     }
   });
 }

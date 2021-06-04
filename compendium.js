@@ -29,7 +29,8 @@ function showFlorbs() {
   const container = document.querySelector(".compendium");
   const florbTemplate = document.querySelector("template");
   container.innerHTML = "";
-  document.querySelector(".desc-text-head").textContent = "Welcome to the World of Florbs";
+  document.querySelector(".desc-text-head").textContent =
+    "Welcome to the World of Florbs";
   document.querySelector(".desc-text-1").textContent =
     "Beneath the floorboards of every children’s room, the Florbs monsters live their lives. This place is known as Foundation. Foundation is where the Florbs gain their powers so they can teach the children all the new moves. ";
   document.querySelector(".desc-text-2").textContent =
@@ -60,7 +61,9 @@ function checkUser() {
   console.log(user);
 
   if (user === null) {
-    document.querySelectorAll(".favorite").forEach((div) => div.classList.add("hide"));
+    document
+      .querySelectorAll(".favorite")
+      .forEach((div) => div.classList.add("hide"));
   } else if (user !== null) {
     console.log(user.user_metadata.data.favoriteFlorb);
     const userFaveFlorb = user.user_metadata.data.favoriteFlorb;
@@ -68,14 +71,18 @@ function checkUser() {
     if (userFaveFlorb !== "") {
       console.log(document.querySelector(`[name='${userFaveFlorb}']`));
       if (userFaveFlorb !== "") {
-        document.querySelector(`[name='${userFaveFlorb}'] .heart`).classList.add("favorite-heart");
+        document
+          .querySelector(`[name='${userFaveFlorb}'] .heart`)
+          .classList.add("favorite-heart");
       }
     }
     setHeartClick();
   }
 }
 function setHeartClick() {
-  document.querySelectorAll(".heart").forEach((heart) => heart.addEventListener("click", setFavorite));
+  document
+    .querySelectorAll(".heart")
+    .forEach((heart) => heart.addEventListener("click", setFavorite));
 }
 function setFavorite() {
   console.log(this);
@@ -95,13 +102,16 @@ function setFavorite() {
         data: {
           data: {
             ...userdata,
-            favoriteFlorb: this.parentNode.parentNode.parentNode.getAttribute("name"),
+            favoriteFlorb:
+              this.parentNode.parentNode.parentNode.getAttribute("name"),
           },
         },
       })
       .then((user) => console.log(user));
     if (document.querySelector(".favorite-heart")) {
-      document.querySelector(".favorite-heart").classList.remove("favorite-heart");
+      document
+        .querySelector(".favorite-heart")
+        .classList.remove("favorite-heart");
     }
     this.classList.add("favorite-heart");
   }
@@ -124,21 +134,29 @@ function observe1() {
 
         console.log("in sight");
         console.log(currentFlorbId, sections.length);
-        document.querySelector(".current").innerHTML = `${currentFlorbId}/${sections.length - 1}`;
+        document.querySelector(".current").innerHTML = `${currentFlorbId}/${
+          sections.length - 1
+        }`;
 
         if (currentFlorbId === 0) {
           document.querySelector(".florb-index").classList.add("hide");
-        } else if (document.querySelector(".florb-index").classList.contains("hide")) {
+        } else if (
+          document.querySelector(".florb-index").classList.contains("hide")
+        ) {
           document.querySelector(".florb-index").classList.remove("hide");
         }
         if (currentFlorbId === sections.length - 1) {
           document.querySelector(".a-down").classList.add("disabled-arrow");
-        } else if (document.querySelector(".a-down").classList.contains("disabled-arrow")) {
+        } else if (
+          document.querySelector(".a-down").classList.contains("disabled-arrow")
+        ) {
           document.querySelector(".a-down").classList.remove("disabled-arrow");
         }
         if (currentFlorbId === 1) {
           document.querySelector(".a-up").classList.add("disabled-arrow");
-        } else if (document.querySelector(".a-up").classList.contains("disabled-arrow")) {
+        } else if (
+          document.querySelector(".a-up").classList.contains("disabled-arrow")
+        ) {
           document.querySelector(".a-up").classList.remove("disabled-arrow");
         }
       } else {
@@ -153,11 +171,15 @@ function observe1() {
   });
 }
 function clickNext() {
-  document.querySelector(`#florb-${currentFlorbId + 1}`).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  document
+    .querySelector(`#florb-${currentFlorbId + 1}`)
+    .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
 
 function clickPrev() {
-  document.querySelector(`#florb-${currentFlorbId - 1}`).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  document
+    .querySelector(`#florb-${currentFlorbId - 1}`)
+    .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
 
 // function fillBar() {
